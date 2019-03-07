@@ -32,5 +32,8 @@
     "hero_html": {
       "content": "<p><a href=\"rooms\">View Rooms</a></p>"
     }
+  },
+  {
+    "_template": "1_col"
   }
 ]
