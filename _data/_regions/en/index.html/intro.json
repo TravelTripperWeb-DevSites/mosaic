@@ -28,6 +28,9 @@
     "hero_title": {
       "content": "Exclusive Luxury in Beverly Hills",
       "_template": "header"
+    },
+    "hero_html": {
+      "content": "<p><a href=\"rooms\">View Rooms</a></p>"
     }
   }
 ]
