@@ -24,6 +24,10 @@
         "caption": "",
         "description": ""
       }
+    },
+    "hero_title": {
+      "content": "Exclusive Luxury in Beverly Hills",
+      "_template": "header"
     }
   }
 ]
