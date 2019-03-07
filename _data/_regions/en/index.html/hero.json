@@ -26,6 +26,9 @@
         "description": ""
       }
     },
-    "_template": "hero"
+    "_template": "hero",
+    "hero_html": {
+      "content": "<p class=\"h4\">Welcome To</p>\n<hr class=\"hr--light\" />\n<p class=\"h1\">Exclusive Luxury In Beverly Hills</p>\n<p class=\"h4\"><a href=\"rooms\">View Rooms</a></p>"
+    }
   }
 ]
