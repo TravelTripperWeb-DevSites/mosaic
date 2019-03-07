@@ -19,3 +19,8 @@ main:
     items: 
   - page_id: _pages/contact.html
     items: 
+  - folder: false
+    url_localized: ''
+    label_localized:
+      en: Events
+    page_id: _pages/events.html
