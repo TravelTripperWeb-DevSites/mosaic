@@ -21,12 +21,13 @@ main:
       en: Events
     page_id: _pages/events.html
     items: 
-  - page_id: _pages/gallery.html
-    items: 
-  - page_id: _pages/contact.html
-    items: 
   - folder: false
     url_localized: ''
     label_localized:
       en: Location
     page_id: _pages/location.html
+    items: 
+  - page_id: _pages/gallery.html
+    items: 
+  - page_id: _pages/contact.html
+    items: 
