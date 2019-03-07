@@ -12,7 +12,7 @@
 //    // colors
 //    $primary: #007bff !default;
 //    $secondary: $gray-600;
-//    $black: #16141a;
+   $black: #161a1b;
 //    $white: #fff;
 //
 //    $green: #28a745 !default;
@@ -43,7 +43,7 @@
 //    );
 //
 //    $body-bg: $white;
-//    $base-text-color: $black;
+   $base-text-color: $black;
 //    $secondary-hover: #1e1c23;
 //    $background-gray: $gray-100;
 //    $footer-color: $black;
@@ -67,14 +67,14 @@
 //    $link-hover-decoration: underline !default;
 //
 //    // Fonts
-//    $family-primary: "Open Sans", sans-serif;
-//    $family-secondary: "Playfair Display", serif;
+   $family-primary: "Gotham A", "Gotham B";
+   $family-secondary: "Playfair Display", serif;
 //    $family-terciary: "Roboto", sans-serif;
 //
-//    $base-font-color: $base-text-color;
-//    $base-body-font: $family-primary;
-//    $base-font-size: 1rem; //1rem = 16px
-//    $base-line-height: 1.5;
+   $base-font-color: $base-text-color;
+   $base-body-font: $family-primary;
+   $base-font-size: 1rem; //1rem = 16px
+   $base-line-height: 1.5;
 //    $font-size-lg: ($base-font-size * 1.25) !default;
 //    $font-size-sm: ($base-font-size * 0.875) !default;
 //    $scale-factor: 1.25; // Major Third
@@ -124,7 +124,7 @@
 //    $grid-columns: 12 !default;
 //    $grid-gutter-width: 30px !default;
 //
-//    $spacer: $base-line-height * 1rem !default;
+   $spacer: $base-line-height * 1rem !default;
 //    $spacers: () !default;
 //    $spacers: map-merge(
 //      (
@@ -432,7 +432,7 @@
 //    $navbar-sticky-background: $white;
 //    $navbar-padding-y: ($spacer / 2) !default;
 //    $navbar-padding-x: $spacer !default;
-//    $navbar-link-font-size: 0.875rem;
+   $navbar-link-font-size: 0.75rem;
 //    $navbar-link-color: $link-color;
 //    $navbar-link-hover: $link-hover-color;
 //    $navbar-group-font-size: 0.875rem;
@@ -450,7 +450,7 @@
 //    $navbar-sticky-link-hover: $primary;
 //
 //    $nav-link-padding-y: $spacer !default;
-//    $nav-link-padding-x: 2rem !default;
+   $nav-link-padding-x: $spacer !default;
 //
 //    $subnav-item-padding-y: 0 !default;
 //    $subnav-item-padding-x: 0 !default;
