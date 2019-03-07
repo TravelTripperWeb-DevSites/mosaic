@@ -1,0 +1,24 @@
+.is-fixed-top+.main {
+  padding-top: 0px !important;
+}
+
+.hero {
+  color: $white;
+
+  .container-fluid {
+      text-align: left !important;
+      margin-left: 0 !important;
+      max-width: 520px;
+  }
+}
+
+hr {
+  width: 104px;
+  border-bottom: 1px solid;
+  border-top: 0;
+  margin: $spacer 0;
+
+  &.hr--light {
+    color: $white;
+  }
+}
