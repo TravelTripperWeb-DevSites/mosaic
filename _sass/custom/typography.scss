@@ -67,20 +67,17 @@
   }
 }
 
-.nav__link {
-  border-bottom: 0px;
+.navbar {
+  .nav__link {
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 0px $spacer;
 
-  &:hover {
-
-  }
-}
-
-.link--cta {
-  border-bottom: 1px solid;
-  padding-bottom: 8px;
-
-  &:hover {
-    color: #161A1B;
-    text-decoration: none;
+    &:hover {
+      border-bottom: 1px solid;
+      text-decoration: none;
+      margin-bottom: -1px;
+    }
   }
 }

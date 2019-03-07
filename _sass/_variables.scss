@@ -61,7 +61,7 @@
 //    $yiq-text-dark: $gray-900 !default;
 //    $yiq-text-light: $white !default;
 //
-//    $link-color: $base-text-color;
+   $link-color: $base-text-color;
 //    $link-decoration: none !default;
 //    $link-hover-color: $primary;
 //    $link-hover-decoration: underline !default;
@@ -166,12 +166,12 @@
 //
 //    $border-width: 1px !default;
 //    $border-color: $base-text-color;
-//    $border-radius: 0.25rem !default;
+   $border-radius: 0 !default;
 //
-//    $input-btn-padding-y: 0.5rem !default;
-//    $input-btn-padding-x: 1rem !default;
-//    $input-btn-font-size: $base-font-size !default;
-//    $input-btn-line-height: $base-line-height !default;
+   $input-btn-padding-y: 0rem !default;
+   $input-btn-padding-x: 2rem !default;
+   $input-btn-font-size: 0.75rem !default;
+   $input-btn-line-height: 3.2 !default;
 //
 //    $input-btn-focus-width: 0.2rem !default;
 //    $input-btn-focus-color: rgba($border-color, 0.25) !default;
@@ -185,9 +185,9 @@
 //    $component-active-bg:         theme-color("primary") !default;
 //
 //    //buttons
-//    $btn-letter-spacing: normal;
+   $btn-letter-spacing: 1px;
 //    $btn-font-size: $input-btn-font-size !default;
-//    $btn-font-weight: 400 !default;
+   $btn-font-weight: 700 !default;
 //    $btn-line-height: $input-btn-line-height;
 //    $btn-border-radius: $border-radius !default;
 //    $btn-border-width: $input-btn-border-width;
@@ -434,7 +434,7 @@
 //    $navbar-padding-x: $spacer !default;
    $navbar-link-font-size: 0.75rem;
 //    $navbar-link-color: $link-color;
-//    $navbar-link-hover: $link-hover-color;
+   $navbar-link-hover: $link-color;
 //    $navbar-group-font-size: 0.875rem;
 //    $navbar-group-color: $link-color;
 //    $navbar-group-hover: $link-hover-color;

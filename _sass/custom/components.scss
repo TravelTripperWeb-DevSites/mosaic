@@ -7,8 +7,14 @@
 
   .container-fluid {
       text-align: left !important;
-      margin-left: 0 !important;
-      max-width: 520px;
+  }
+
+  .hero-content {
+    max-width: 520px;
+  }
+
+  a {
+    color: $white;
   }
 }
 
