@@ -4,9 +4,11 @@
 
 .hero {
   color: $white;
+  height: 100vh;
 
   .container-fluid {
       text-align: left !important;
+      z-index: 1;
   }
 
   .hero-content {
