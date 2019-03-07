@@ -24,7 +24,9 @@
         "alt": "Home Hero Pic@2x",
         "caption": "",
         "description": ""
-      }
+      },
+      "mask_color": "#000000",
+      "mask_opacity": "80"
     },
     "_template": "hero",
     "hero_html": {
