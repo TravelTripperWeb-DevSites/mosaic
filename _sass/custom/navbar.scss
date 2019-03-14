@@ -1,0 +1,49 @@
+.navbar {
+  .nav__link {
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 0px $spacer;
+
+    &:hover {
+      border-bottom: 1px solid;
+      text-decoration: none;
+      margin-bottom: -9px;
+      padding-bottom: 8px;
+    }
+
+    &.navbar-brand {
+      &:hover {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .btn--primary {
+    background-color: $white;
+    border-color: $white;
+    color: $base-text-color;
+
+    &:hover {
+      background-color: $base-text-color;
+      border-color: $base-text-color;
+      color: $white;
+    }
+  }
+
+  &.sticky {
+    .btn--primary {
+      background-color: $black;
+      border-color: $black;
+      color: $white;
+
+      &:hover {
+        background-color: #D5D2A8;
+        border-color: #D5D2A8;
+        color: $black;
+      }
+    }
+  }
+}

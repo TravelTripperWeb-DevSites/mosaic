@@ -1,0 +1,29 @@
+.btn {
+  text-transform: uppercase;
+}
+
+.link--cta {
+  border-bottom: 1px solid;
+  line-height: 40px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding-bottom: 8px;
+
+  &:hover {
+    color: $base-text-color;
+    text-decoration: none;
+  }
+}
+
+.navbar .btn--primary {
+  background-color: $white;
+  border-color: $white;
+  color: $base-text-color;
+
+  &:hover {
+    background-color: $base-text-color;
+    border-color: $base-text-color;
+    color: $white;
+  }
+}

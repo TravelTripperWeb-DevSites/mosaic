@@ -1,0 +1,18 @@
+{% assign background_image = item.hero_image.image %}
+{% if background_image %}
+  {% assign bg_image_url = background_image.url_large %}
+  {% if bg_image_url == nil %}
+    {% assign bg_image_url = background_image.url %}
+  {% endif %}
+
+  {% capture container_style %} style="background-image: url('{{bg_image_url}}');"  {% endcapture %}
+{% endif %}
+
+<section class="hero flex-column align-items-center justify-content-center" {{container_style}} >
+    <div class="container-fluid container-lg text-center">
+      {{title_tag}}{{ item.hero_title.content}}{{title_tag_end}}
+    </div>
+    <div class="container-fluid container-lg text-center" data-live-editable-type='html' data-live-editable-key='hero_html'>
+      {{ item.hero_html.content}}
+    </div>
+</section>
