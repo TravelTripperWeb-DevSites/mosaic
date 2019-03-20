@@ -47,3 +47,19 @@
     }
   }
 }
+
+
+.greedy-nav-links {
+  flex: 1;
+  overflow: hidden;
+
+  .nav__link {
+    flex: none;
+  }
+}
+
+.footer-nav {
+  a {
+    color: $black;
+  }
+}

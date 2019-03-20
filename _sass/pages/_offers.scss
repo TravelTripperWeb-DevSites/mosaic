@@ -1,0 +1,17 @@
+.special-offer-listing {
+  max-width: 624px;
+  margin-bottom: $spacer;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 0;
+  }
+}
+
+.special-offer-listing__image {
+  line-height: 0;
+  height: 200px;
+}

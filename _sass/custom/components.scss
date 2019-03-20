@@ -26,7 +26,95 @@ hr {
   border-top: 0;
   margin: $spacer 0;
 
+  &.hr--secondary {
+    color: $secondary;
+  }
+
   &.hr--light {
     color: $white;
+  }
+
+  &.hr--full {
+    width: 100%;
+  }
+}
+
+.splash {
+  background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	padding: $spacer;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+	@include media-breakpoint-up(md) {
+		min-height: 625px;
+	}
+
+  &.splash--bordered {
+    border-bottom: 8px solid $secondary;
+  }
+}
+
+.instagram__listings {
+  .instagram__listing {
+    line-height: 0;
+    max-width: 225px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// Custom overwrite for InstaFeed
+
+.c-instagram-feed {
+
+  .c-instagram-feed__profile-link {
+    @extend .h3;
+  }
+
+  .c-instagram-feed__tag-link {
+    @extend .h4;
+  }
+
+  .c-instagram-feed__list {
+    justify-content: center;
+  }
+
+  .photo-list {
+    display: flex;
+    justify-content: space-between;
+    height: 162px;
+    max-width: 720px;
+    width: 100%;
+
+    .photo {
+      width: 159px;
+      height: 162px;
+
+      &:nth-child(1n+5) {
+        display: none;
+      }
+    }
+  }
+}
+
+.form-control {
+  height: auto;
+  font-size: .75rem;
+}
+
+.form-control.custom-input {
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: 1px solid $black;
+  padding-left: 0;
+
+  &:focus {
+    box-shadow: none;
   }
 }

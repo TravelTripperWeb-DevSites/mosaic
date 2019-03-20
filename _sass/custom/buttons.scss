@@ -9,6 +9,7 @@
   font-weight: 700;
   letter-spacing: 1px;
   padding-bottom: 8px;
+  text-transform: uppercase;
 
   &:hover {
     color: $base-text-color;
@@ -16,14 +17,18 @@
   }
 }
 
-.navbar .btn--primary {
-  background-color: $white;
-  border-color: $white;
-  color: $base-text-color;
+.btn--submit {
+  background-color: $gray-100;
+  padding: 0;
+  width: 40px;
+}
+
+.btn--tertiary {
+  background-color: #626c75;
+  color: $white;
 
   &:hover {
-    background-color: $base-text-color;
-    border-color: $base-text-color;
+    background-color: $black;
     color: $white;
   }
 }

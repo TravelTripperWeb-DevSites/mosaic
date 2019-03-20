@@ -1,5 +1,5 @@
 //    //grays
-//    $gray-100: #f8f9fa !default;
+   $gray-100: #f7f7f7 !default;
 //    $gray-200: #e9ecef !default;
 //    $gray-300: #dee2e6 !default;
 //    $gray-400: #ced4da !default;
@@ -11,7 +11,7 @@
 //
 //    // colors
 //    $primary: #007bff !default;
-//    $secondary: $gray-600;
+   $secondary: #d5d2a8;
    $black: #161a1b;
    $white: #fff;
 //
@@ -24,7 +24,7 @@
 //    $info: $cyan !default;
 //    $warning: $yellow !default;
 //    $danger: $red !default;
-//    $light: $gray-100 !default;
+   $light: $gray-100 !default;
 //    $dark: $gray-800 !default;
 //
 //    $theme-colors: () !default;
@@ -426,10 +426,10 @@
 //    //navbar
 //    $navbar-z: 30 !default;
 //    $navbar-fixed-z: 30 !default;
-//    $navbar-main-height: 124px;
+   $navbar-main-height: 168px;
 //    $navbar-device-height: 88px;
   $navbar-background: transparent;
-   $navbar-sticky-background: $white;
+  $navbar-sticky-background: $white;
 //    $navbar-padding-y: ($spacer / 2) !default;
 //    $navbar-padding-x: $spacer !default;
   $navbar-link-font-size: 0.75rem;
