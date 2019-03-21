@@ -1,2 +1,19 @@
 // About Page Elements
 // ==========================================================================
+.amenities-section {
+    ul {
+        padding-left: 20px;
+    }
+
+    li {
+        margin-bottom: $spacer / 2;
+    }
+}
+
+.amenities__image {
+    height: 250px;
+
+    @include media-breakpoint-up(md){
+        height: auto;
+    }
+}

@@ -118,3 +118,17 @@ hr {
     box-shadow: none;
   }
 }
+
+.review-box {
+  background-color: rgba(41, 56, 74, 0.8);
+  border-bottom: 8px solid $secondary;
+  max-width: 475px;
+  padding: 64px 80px;
+
+  blockquote {
+    font-family: $family-secondary;
+    font-size: 28px;
+    line-height: 40px;
+    font-style: italic;
+  }
+}

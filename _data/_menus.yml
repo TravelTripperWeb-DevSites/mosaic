@@ -5,8 +5,6 @@ main:
   items:
   - page_id: _pages/about.html
     items:
-  - page_id: _pages/test.html
-    items:
   - page_id: _pages/offers.html
     items:
   - folder: false
