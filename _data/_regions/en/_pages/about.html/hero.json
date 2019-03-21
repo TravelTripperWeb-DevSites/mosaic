@@ -1,0 +1,8 @@
+[
+  {
+    "hero_html": {
+      "content": "<section class=\"hero-content\">\n<p class=\"h4\">Our Hotel</p>\n<hr class=\"hr--light\" />\n<p class=\"h1 mb-3\">Welcome to a World of Comfort</p>\n<p class=\"h4\"><a class=\"link--cta\" href=\"#amenities\">View Amenities</a></p>\n</section>"
+    },
+    "_template": "hero"
+  }
+]
