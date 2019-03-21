@@ -29,7 +29,10 @@
         "alt": "Our Hotel Hero Pic@2x",
         "caption": "",
         "description": ""
-      }
-    }
+      },
+      "mask_color": "#000000",
+      "mask_opacity": ".6"
+    },
+    "skip_h1": true
   }
 ]
