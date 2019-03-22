@@ -119,6 +119,18 @@ hr {
   }
 }
 
+.custom-select {
+  -webkit-appearance: none;
+  padding-left: 1rem;
+}
+
+.custom-label {
+  font-family: $family-primary;
+  font-size: 12px;
+  line-height: $base-line-height;
+  text-transform: uppercase;
+}
+
 .review-box {
   background-color: rgba(41, 56, 74, 0.8);
   border-bottom: 8px solid $secondary;
@@ -130,5 +142,30 @@ hr {
     font-size: 28px;
     line-height: 40px;
     font-style: italic;
+  }
+}
+
+.card-listing {
+  margin-bottom: $spacer;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 0;
+  }
+}
+
+.card-listing__image {
+  line-height: 0;
+  height: 200px;
+
+  @include media-breakpoint-up(md) {
+    height: 275px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    height: 360px;
   }
 }

@@ -2,7 +2,7 @@
   note the nav.is-fixed-top must immediately precede div.main for div.main top-margin to work property
 {% endcomment %}
 
-<nav class="navbar greedy is-fixed-top nav--main" id="js-navbar--main">
+<nav class="navbar is-fixed-top nav--main" id="js-navbar--main">
   <div class="container-fluid p-0">
     <a class="nav__link navbar-brand" href="/">
       <span class="nav__logo"
@@ -18,12 +18,11 @@
         {% endif %}
       </span>
     </a>
-  <ul class="nav d-none greedy-nav-links d-lg-flex align-items-center text-uppercase justify-content-end pr-2">
+  <ul class="nav d-none d-lg-flex align-items-center text-uppercase justify-content-end pr-2">
     {% assign items = site.data._menus.main.items %}
     {% include nav/nav-item-list.html items=items %}
     {% include nav/language-nav.html %}
   </ul>
-  <button class="hidden-nav-btn">MENU</button>
   <ul class='hidden-links d-none'></ul>
   <div class="d-none d-lg-block">
      <a href="https://{{site.data.hotel_settings._portal_id}}.reztrip.com/" role="button" class="btn btn--primary" show-booking-widget>{% t 'book_now' %}</a>
