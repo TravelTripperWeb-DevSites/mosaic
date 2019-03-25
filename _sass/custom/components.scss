@@ -183,3 +183,9 @@ hr {
     }
   }
 }
+
+.restaurant--callout__images {
+  img {
+    @extend .objectfit;
+  }
+}
