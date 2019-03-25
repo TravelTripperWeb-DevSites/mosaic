@@ -20,6 +20,10 @@
   }
 }
 
+.hero--short {
+  height: 50vh;
+}
+
 hr {
   width: 104px;
   border-bottom: 1px solid;
@@ -136,13 +140,13 @@ hr {
   border-bottom: 8px solid $secondary;
   max-width: 475px;
   padding: 64px 80px;
+}
 
-  blockquote {
-    font-family: $family-secondary;
-    font-size: 28px;
-    line-height: 40px;
-    font-style: italic;
-  }
+.blockquote {
+  font-family: $family-secondary;
+  font-size: 28px;
+  line-height: 40px;
+  font-style: italic;
 }
 
 .card-listing {
@@ -167,5 +171,15 @@ hr {
 
   @include media-breakpoint-up(lg) {
     height: 360px;
+  }
+}
+
+.table-borderless {
+  tr {
+    border-top: 1px solid $black;
+
+    &:last-child {
+      border-bottom: 1px solid $black;
+    }
   }
 }

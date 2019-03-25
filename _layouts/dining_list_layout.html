@@ -1,0 +1,76 @@
+---
+layout: default
+---
+
+{% region hero, type:hero %}
+
+<section class="dining--callout container">
+  <section class="row pt-4">
+      <div class="col-md-4 d-flex justify-content-md-center py-3">
+        <div class="d-inline-block pb-md-0 pb-3">
+            {% regionblock restaurant_headings type:html %}
+            <p>Mosaic Hotel Beverly Hills’ Dining Room, with its fresh California cuisine, offers intimate indoor seating or al fresco dining in our outdoor privately heated cabanas. Open for breakfast, lunch, and dinner, the Dining Room at our Beverly Hills hotel provides a comfortable neighborhood retreat with an elegant lobby bar showcasing the finest liqueurs, wines and cocktails.</p>
+            <a href="/contact" class="link--cta">Contact Us</a>
+            {% endregionblock %}
+        </div>
+      </div>
+      <div class="dining-callout__quote col-md-7 p-3 p-md-4 offset-md-1 bg--dark text-white align-items-center d-flex">
+      {% regionblock restaurant_text type:html %}
+        <blockquote class="blockquote">Labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum</blockquote>
+      {% endregionblock %}
+      </div>
+  </section>
+  <section class="row pb-4">
+    <div class="dining-slider w-100">
+      <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553520786/izzwpiugfv9o0tqza2rk.jpg" class="objectfit">
+    </div>
+  </section>
+  <section class="row dining--callout__buttons pb-4">
+    <a class="btn btn--tertiary" href="#">Breakfast Menu</a>
+    <a class="btn btn--tertiary" href="#">Lunch Menu</a>
+    <a class="btn btn--tertiary" href="#">Happy Hour Menu</a>
+    <a class="btn btn--tertiary" href="#">Dinner Menu</a>
+  </section>
+</section>
+
+<section class="bg--light py-4">
+  <div class="container">
+    <h4 class="h2 text-center mb-4">Operating Hours</h4>
+    <table class="table table-borderless">
+      <tr>
+        <td class="h4">Breakfast</td>
+        <td class="text-right">7:00am - 11:30am</td>
+      </tr>
+      <tr>
+        <td class="h4">Lunch</td>
+        <td class="text-right">12:00pm - 4:00pm (7 days a week)</td>
+      </tr>
+      <tr>
+        <td class="h4">Happy Hour</td>
+        <td class="text-right">5:00pm - 6:00pm (Thursday - Saturday)</td>
+      </tr>
+      <tr>
+        <td class="h4">Dinner</td>
+        <td class="text-right">6:30pm - 11:00pm (7 days a week)</td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<section class="splash splash--bordered" style="background-image:url('//res.cloudinary.com/traveltripperweb/image/upload/v1552920050/pbnets1kdany3sb1wjzo.jpg');">
+	<div class="container">
+		<div class="splash__content">
+      {% regionblock splash_subtitle, type:header %}
+        <h4 class="h4 mb-3">Special Occasions</h4>
+      {% endregionblock %}
+      {% regionblock splash_title, type:header %}
+        <h2 class="h1 mb-3">Planning a stylish &<br>memorable event?</h2>
+      {% endregionblock %}
+      <div>
+        {% regionblock splash_cta, type:html %}
+          <a href="#" role="button" class="link--cta">Learn More</a>
+        {% endregionblock %}
+      </div>
+		</div>
+	</div>
+</section>
