@@ -5,7 +5,8 @@
     padding: 0;
     margin: 0px $spacer;
 
-    &:hover {
+    &:hover,
+    &.active {
       color: $white;
       border-bottom: 1px solid;
       text-decoration: none;
@@ -62,6 +63,10 @@
         border-color: #D5D2A8;
         color: $black;
       }
+    }
+
+    .nav__link.active {
+      color: $black;
     }
 
     .nav__logo {

@@ -1,6 +1,10 @@
 // Rooms & Room Details Page Elements
 // ==========================================================================
-
+.room-list {
+  .room-listing:nth-child(even){
+    background-color: $light;
+  }
+}
 
 .room-listing__image {
   border-bottom: 8px solid #d5d2a8;

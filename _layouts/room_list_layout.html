@@ -1,0 +1,99 @@
+---
+layout: generic
+---
+
+<!-- {% assign rooms = site.data._models.rooms | sort:"order" %}
+<section class="room-list">
+  {% for room in rooms %}
+    {% include components/room %}
+  {% endfor %}
+</section> -->
+
+<section>
+  <ul class="nav--filter list-unstyled bg--light d-flex justify-content-center py-3 flex-column flex-lg-row align-items-center">
+    <li>
+        <a data-filter="all" class="filter--option active">All Rooms</a>
+    </li>
+    <li>
+      <a data-filter="queen" class="filter--option">Luxury Queen Room</a>
+    </li>
+    <li>
+      <a data-filter="king" class="filter--option">Luxury King Room</a>
+    </li>
+    <li>
+      <a data-filter="suites" class="filter--option">Luxury Suites</a>
+    </li>
+    <li>
+      <a data-filter="executive" class="filter--option">The Executive Suite</a>
+    </li>
+  </ul>
+  <section class="room-list">
+    <div class="room-listing py-4 filter-item" data-filter="queen">
+      <div class="container align-items-center d-lg-flex">
+        <div class="col-lg-6">
+          <div class="room-listing__image">
+            <img class="objectfit" src="//res.cloudinary.com/traveltripperweb/image/upload/v1552671665/sd0mcuum0bpkjqenvk9v.jpg">
+          </div>
+        </div>
+        <div class="col-lg-6 p-4">
+          <div>
+            <h3 class="h3 text-secondary">Luxury Queen Room</h3>
+            <hr class="hr--secondary">
+            <h4 class="h4 mb-3">tonights rate <span class="text-secondary">$275</span></h4>
+            <p>Mosaic Hotel's 49 newly-redesigned contemporary guestrooms offer distinctive low-slung clean-lined chairs, luxurious linens and state-of-the-art technology.</p>
+            <div class="cta-wrap">
+                <a class="link--cta mr-2" href="#">View Room</a>
+                <a class="btn btn--secondary">Book Room</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="room-listing py-4 filter-item" data-filter="king">
+      <div class="container align-items-center d-lg-flex">
+        <div class="col-lg-6">
+          <div class="room-listing__image">
+            <img class="objectfit" src="//res.cloudinary.com/traveltripperweb/image/upload/v1552671665/sd0mcuum0bpkjqenvk9v.jpg">
+          </div>
+        </div>
+        <div class="col-lg-6 p-4">
+          <div>
+            <h3 class="h3 text-secondary">Luxury King Room</h3>
+            <hr class="hr--secondary">
+            <h4 class="h4 mb-3">tonights rate <span class="text-secondary">$275</span></h4>
+            <p>Mosaic Hotel's 49 newly-redesigned contemporary guestrooms offer distinctive low-slung clean-lined chairs, luxurious linens and state-of-the-art technology.</p>
+            <div class="cta-wrap">
+                <a class="link--cta mr-2" href="#">View Room</a>
+                <a class="btn btn--secondary">Book Room</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="room-listing py-4 filter-item" data-filter="executive">
+      <div class="container align-items-center d-lg-flex">
+        <div class="col-lg-6">
+          <div class="room-listing__image">
+            <img class="objectfit" src="//res.cloudinary.com/traveltripperweb/image/upload/v1552671665/sd0mcuum0bpkjqenvk9v.jpg">
+          </div>
+        </div>
+        <div class="col-lg-6 p-4">
+          <div>
+            <h3 class="h3 text-secondary">Executive Suite</h3>
+            <hr class="hr--secondary">
+            <h4 class="h4 mb-3">tonights rate <span class="text-secondary">$275</span></h4>
+            <p>Mosaic Hotel's 49 newly-redesigned contemporary guestrooms offer distinctive low-slung clean-lined chairs, luxurious linens and state-of-the-art technology.</p>
+            <div class="cta-wrap">
+                <a class="link--cta mr-2" href="#">View Room</a>
+                <a class="btn btn--secondary">Book Room</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+{% include components/special-offers.html %}
+
+{% include components/instagram %}
