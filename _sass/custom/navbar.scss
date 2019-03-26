@@ -22,6 +22,23 @@
     }
   }
 
+  .nav {
+    @include media-breakpoint-up(xl) {
+      display: flex !important;
+    }
+  }
+
+  .nav__logo--sticky {
+    display: none;
+
+    img {
+      height: calc(#{$navbar-device-height} - #{2 * $navbar-padding-y});
+      @include media-breakpoint-up(lg) {
+        height: calc(#{$navbar-main-height} - #{2 * $navbar-padding-y});
+      }
+    }
+  }
+
   .btn--primary {
     background-color: $white;
     border-color: $white;
@@ -46,6 +63,22 @@
         color: $black;
       }
     }
+
+    .nav__logo {
+      display: none;
+    }
+
+    .nav__logo--sticky {
+      display: block;
+    }
+  }
+
+  &.nav--active {
+    background-color: transparent;
+
+    &.sticky {
+      background-color: $navbar-sticky-background;
+    }
   }
 }
 
@@ -62,5 +95,38 @@
 .footer-nav {
   a {
     color: $black;
+  }
+}
+
+.navbar__burger {
+  background-color: transparent;
+
+  span {
+    color: $white;
+  }
+
+  .sticky & {
+    span {
+      color: $black;
+    }
+  }
+}
+
+.nav--device {
+  width: auto;
+  position: absolute;
+  right: $spacer;
+  top: $navbar-device-height;
+
+  @include media-breakpoint-up(lg) {
+    top: $navbar-main-height;
+  }
+
+  &.is-active {
+    display: block !important;
+
+    @include media-breakpoint-up(xl) {
+      display: none !important;
+    }
   }
 }
