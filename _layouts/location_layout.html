@@ -18,3 +18,44 @@ layout: generic
     </div>
   </div>
 </section>
+
+<section class="bg--light py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 align-items-center d-flex">
+        <p class="blockquote border--left">The Pacific Ocean & the Hollywood Hills are only 15 minutes away</p>
+      </div>
+      <div class="col-lg-9">
+        <div class="row">
+          <div class="col-md-7">
+            <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553636397/a3pdfxfow4wp5vatkcfo.jpg" class="objectfit">
+          </div>
+          <div class="col-md-5">
+            <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553636397/dv0aimptnhndphs7uywe.jpg" class="objectfit">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="splash splash--bordered" style="background-image:url('//res.cloudinary.com/traveltripperweb/image/upload/v1553635760/jtkhfgyg0wefbbhdraxx.jpg');">
+	<div class="container">
+		<div class="splash__content">
+      {% regionblock splash_subtitle, type:header %}
+        <h4 class="h4 mb-3">Dine & Drink</h4>
+      {% endregionblock %}
+      <hr class="hr">
+      {% regionblock splash_title, type:header %}
+        <h2 class="h1 mb-3">Join Us for<br>Apre´ Spree</h2>
+      {% endregionblock %}
+      <div>
+        {% regionblock splash_cta, type:html %}
+          <a href="/dining" role="button" class="link--cta">Learn More</a>
+        {% endregionblock %}
+      </div>
+		</div>
+	</div>
+</section>
+
+{% include components/instagram %}

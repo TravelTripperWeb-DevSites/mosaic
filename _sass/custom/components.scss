@@ -147,6 +147,11 @@ hr {
   font-size: 28px;
   line-height: 40px;
   font-style: italic;
+
+  &.border--left {
+    border-left: 8px solid $secondary;
+    padding-left: $spacer;
+  }
 }
 
 .card-listing {
