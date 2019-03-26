@@ -28,6 +28,9 @@
       }
     },
     "skip_h1": true,
-    "_template": "hero"
+    "_template": "hero",
+    "hero_html": {
+      "content": "<section class=\"hero-content\">\n<p class=\"h4\">Location</p>\n<hr class=\"hr--light\" />\n<p class=\"h1 mb-3\">Peaceful Oasis in Beverly Hills</p>\n<p class=\"h4\"><a class=\"link--cta\" href=\"#map\">View Map</a></p>\n</section>"
+    }
   }
 ]
