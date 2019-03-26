@@ -189,3 +189,31 @@ hr {
     @extend .objectfit;
   }
 }
+
+.nav--filter {
+  list-style-type: none;
+
+  @include media-breakpoint-up(lg) {
+    li {
+      margin-right: $spacer * 3;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.filter--option {
+  font-family: $family-primary;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 32px;
+  text-transform: uppercase;
+
+  &:hover,
+  &.active {
+    padding-bottom: 8px;
+    border-bottom: 1px solid $black;
+  }
+}
