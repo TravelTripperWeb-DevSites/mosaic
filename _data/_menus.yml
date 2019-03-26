@@ -8,6 +8,10 @@ main:
     url_localized: ''
     label_localized:
       en: Our Hotel
+  - folder: false
+    url_localized: ''
+    page_id: _pages/rooms.html
+    items: 
   - page_id: _pages/offers.html
     items: 
   - folder: false
@@ -32,6 +36,3 @@ main:
     items: 
   - page_id: _pages/contact.html
     items: 
-  - folder: false
-    url_localized: ''
-    page_id: _pages/rooms.html
