@@ -17,17 +17,20 @@
           <span class="condensed-hotel-name">{{site.data.hotel_settings.name}}</span>
         {% endif %}
       </span>
+      <span class="nav__logo--sticky">
+        <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1552666394/w9f64ce7uplxsuxcbnvq.png" alt="Mosaic" />
+      </span>
     </a>
-  <ul class="nav d-none d-lg-flex align-items-center text-uppercase justify-content-end pr-2">
+  <ul class="nav d-none align-items-center text-uppercase justify-content-end pr-2">
     {% assign items = site.data._menus.main.items %}
     {% include nav/nav-item-list.html items=items %}
     {% include nav/language-nav.html %}
   </ul>
   <ul class='hidden-links d-none'></ul>
-  <div class="d-none d-lg-block">
+  <div class="d-none d-xl-block">
      <a href="https://{{site.data.hotel_settings._portal_id}}.reztrip.com/" role="button" class="btn btn--primary" show-booking-widget>{% t 'book_now' %}</a>
   </div>
-  <a role="button" aria-label="menu" aria-expanded="false" data-target="navMenu" class="navbar__burger d-lg-none">
+  <a role="button" aria-label="menu" aria-expanded="false" data-target="navMenu" class="navbar__burger d-xl-none">
     <span aria-hidden="true"></span>
     <span aria-hidden="true"></span>
     <span aria-hidden="true"></span>
