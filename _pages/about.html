@@ -56,12 +56,12 @@ meta_tags:
 		<div class="review-box text-white">
       <p class="h4 mb-3">Guest Reviews</p>
       <hr class="hr--secondary">
-      {% assign reviews = site.data._models.reviews %}
+      {% assign reviewz = site.data._models.reviews  | sort:"order" %}
       <div class="review-box__wrap">
-        {% for review in reviews %}
+        {% for review in reviewz %}
         <div class="review-box__item">
           <blockquote class="blockquote">{{ review.text }}</blockquote>
-          <p class="h4 small">{{ review.reviewer_name }}{% if review.review_date and review.review_date != '' %}, {{ review.review_date }}</p>
+          <p class="h4 small">{{ review.reviewer_name }}{% if review.review_date and review.review_date != '' %}, {{ review.review_date | date: "%-d %B %Y" }}{% endif %}</p>
         </div>
         {% endfor %}
       </div>
