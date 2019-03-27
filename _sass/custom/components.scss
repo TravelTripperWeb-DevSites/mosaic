@@ -248,3 +248,25 @@ hr {
     border-bottom: 1px solid $black;
   }
 }
+
+.tns-outer {
+  .tns-nav {
+    button {
+      width: 6px;
+      height: 6px;
+      padding: 0;
+      background-color: $white;
+      border-color: $white;
+      opacity: .5;
+
+      &.tns-nav-active {
+        width: 12px;
+        height: 12px;
+        margin-top: -4px;
+        background-color: $white;
+        border-color: $white;
+        opacity: 1;
+      }
+    }
+  }
+}

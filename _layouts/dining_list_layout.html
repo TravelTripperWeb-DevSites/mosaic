@@ -22,7 +22,12 @@ layout: default
   </section>
   <section class="row pb-4">
     <div class="dining-slider w-100">
-      <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553520786/izzwpiugfv9o0tqza2rk.jpg" class="objectfit">
+      {% assign dining-slider = site.data._models.dining_slider %}
+      <div class="dining-slider__wrap">
+        {% for img in dining-slider %}
+        <img class="objectfit" src="{{ img.image.url_large }}" alt="{{ img.image.alt }}">
+        {% endfor %}
+      </div>
     </div>
   </section>
   <section class="row dining--callout__buttons pb-4">

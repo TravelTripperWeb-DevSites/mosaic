@@ -23,4 +23,13 @@ readyDoc(function () {
 			}
 		});
 	}
+
+	if (document.getElementsByClassName('dining-slider').length > 0) {
+		// Slider With Images
+		var slider = tns({
+			container: '.dining-slider__wrap',
+			speed: 300,
+			controls: false
+		});
+	}
 });
