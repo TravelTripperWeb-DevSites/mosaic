@@ -1,8 +1,10 @@
 {
   "image": {
+    "required": true,
     "type": "image"
   },
   "order": {
+    "required": true,
     "type": "order"
   }
 }
