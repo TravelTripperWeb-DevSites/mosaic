@@ -7,12 +7,7 @@
     "type": "git",
     "url": "https://github.com/TravelTripperWeb-Sites/blank-template"
   },
-  "keywords": [
-    "jekyll",
-    "bedrock",
-    "zom",
-    "blank-template"
-  ],
+  "keywords": ["jekyll", "bedrock", "zom", "blank-template"],
   "author": "John Burkhard, Alex Mekelburg, Shaun Callaghan",
   "engines": {
     "node": ">= 8.11.3"
@@ -30,7 +25,7 @@
     "uglify-js": "^2.6.1"
   },
   "scripts": {
-    "babel": "babel --presets es2015 -o _jssrc/main.bundle.js",
+    "babel": "babel --presets es2015 _jssrc/app.js -o _jssrc/main.bundle.js",
     "uglify": "uglifyjs _jssrc/main.bundle.js -c -m -o _assets/js/main.min.js",
     "build:css": "npm run sass",
     "build:js": "npm run babel && npm run uglify",
