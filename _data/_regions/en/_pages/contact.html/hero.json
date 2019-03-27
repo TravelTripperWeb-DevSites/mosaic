@@ -29,6 +29,9 @@
     "_template": "hero",
     "hero_html": {
       "content": "<section class=\"hero-content\">\n<h1 class=\"h4\">Contact Us</h1>\n<hr class=\"hr--light\" />\n<p class=\"h1 mb-3\">We&rsquo;d Love to Hear From You</p>\n</section>"
+    },
+    "advanced_options": {
+      "custom_classes": "hero--short"
     }
   }
 ]
