@@ -2,3 +2,24 @@
   border-bottom: 8px solid $secondary;
   line-height: 0;
 }
+
+.special-offers {
+  .special-offers-listings {
+    .card-listing {
+      margin-left: -3px;
+
+      @include media-breakpoint-up(md) {
+        margin-left: -30px;
+      }
+    }
+  }
+
+  &__controls {
+    padding: 0;
+
+    li {
+      display: inline-block;
+      list-style: none;
+    }
+  }
+}
