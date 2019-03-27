@@ -27,7 +27,9 @@ readyDoc(function() {
 			container: '.rooms-slider-container',
 			speed: 300,
 			mouseDrag: true,
-      items: 1.5,
+      edgePadding: 150,
+      swipeAngle: false,
+      items: 1.1,
       gutter: 80,
       loop: true,
       nav: true,
@@ -35,11 +37,6 @@ readyDoc(function() {
       nextButton: "#customNavItemsRooms .next", // next button
       navContainer: '#customNavItemsRooms .custom-control-items__nav',
 		});
-
-    function changeSlide(num) {
-      sliderRooms.goTo(num);
-    }
-
 	}
 
 	if (document.getElementsByClassName('dining-slider').length > 0) {

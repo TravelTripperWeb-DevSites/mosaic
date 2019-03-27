@@ -24,16 +24,14 @@ readyDoc(function () {
 	}
 
 	if (document.getElementsByClassName('rooms-slider-container').length > 0) {
-		var changeSlide = function changeSlide(num) {
-			sliderRooms.goTo(num);
-		};
-
 		// Slider With Images
 		var sliderRooms = tns({
 			container: '.rooms-slider-container',
 			speed: 300,
 			mouseDrag: true,
-			items: 1.5,
+			edgePadding: 150,
+			swipeAngle: false,
+			items: 1.1,
 			gutter: 80,
 			loop: true,
 			nav: true,
