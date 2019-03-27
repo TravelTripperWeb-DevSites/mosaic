@@ -136,17 +136,43 @@ hr {
 }
 
 .review-box {
-  background-color: rgba(41, 56, 74, 0.8);
-  border-bottom: 8px solid $secondary;
   max-width: 475px;
   padding: 64px 80px;
+  background-color: rgba(41, 56, 74, .8);
+  border-bottom: 8px solid $secondary;
+
+  .h4 {
+    font-size: $base-font-size;
+    font-weight: 400;
+  }
+
+  &__wrap {
+
+  }
+
+  &__item {
+    .h4 {
+      text-transform: none;
+    }
+  }
+
+  &__controls {
+    margin: 30px 0 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      list-style: none;
+    }
+  }
 }
 
 .blockquote {
+  margin-bottom: 30px;
   font-family: $family-secondary;
   font-size: 28px;
-  line-height: 40px;
   font-style: italic;
+  line-height: 40px;
 
   &.border--left {
     border-left: 8px solid $secondary;
@@ -221,4 +247,33 @@ hr {
     padding-bottom: 8px;
     border-bottom: 1px solid $black;
   }
+}
+
+.tns-outer {
+  .tns-nav {
+    button {
+      width: 6px;
+      height: 6px;
+      padding: 0;
+      background-color: $white;
+      border-color: $white;
+      opacity: .5;
+
+      &.tns-nav-active {
+        width: 12px;
+        height: 12px;
+        margin-top: -4px;
+        background-color: $white;
+        border-color: $white;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.tns-item {
+  opacity: .5;
+}
+.tns-slide-active {
+  opacity: 1;
 }

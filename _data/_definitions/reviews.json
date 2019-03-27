@@ -1,0 +1,16 @@
+{
+  "text": {
+    "required": true,
+    "type": "text"
+  },
+  "reviewer_name": {
+    "type": "string"
+  },
+  "review_date": {
+    "type": "date"
+  },
+  "order": {
+    "type": "integer",
+    "required": true
+  }
+}
