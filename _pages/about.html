@@ -56,15 +56,14 @@ meta_tags:
 		<div class="review-box text-white">
       <p class="h4 mb-3">Guest Reviews</p>
       <hr class="hr--secondary">
+      {% assign reviews = site.data._models.reviews %}
       <div class="review-box__wrap">
+        {% for review in reviews %}
         <div class="review-box__item">
-          <blockquote class="blockquote">I thought this was a lovely boutique hotel. I was travelling solo and they made me feel most welcome</blockquote>
-          <p class="h4 small">G.Ann, 13 Febuary 2019</p>
+          <blockquote class="blockquote">{{ review.text }}</blockquote>
+          <p class="h4 small">{{ review.reviewer_name }}{% if review.review_date and review.review_date != '' %}, {{ review.review_date }}</p>
         </div>
-        <div class="review-box__item">
-          <blockquote>This is a second quote</blockquote>
-          <p class="h4 small">G.Ann, 13 Febuary 2019</p>
-        </div>
+        {% endfor %}
       </div>
       <ul class="review-box__controls" id="reviews-controls">
         <li><i class="fa fa-arrow-left"></i></li>

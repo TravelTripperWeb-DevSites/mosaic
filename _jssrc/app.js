@@ -16,7 +16,9 @@ readyDoc(function() {
 			autoplay: true,
 			autoplayHoverPause: true,
 			autoplayTimeout: 3500,
+			autoplayButtonOutput: false,
 			mouseDrag: true,
+			navAsThumbnails: "#custom-nav",
 			controlsContainer: "#reviews-controls",
 		});
 	}
@@ -29,6 +31,7 @@ readyDoc(function() {
 			autoplay: true,
 			autoplayHoverPause: true,
 			autoplayTimeout: 3500,
+			autoplayButtonOutput: false,
 			autoHeight: true,
 			mouseDrag: true,
 			controls: false
