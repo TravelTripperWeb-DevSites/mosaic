@@ -6,10 +6,23 @@
           <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1552666394/w9f64ce7uplxsuxcbnvq.png" width="158px">
         </div>
         <h3 class="h2 mb-3">Special Offers</h3>
-        <ul class="d-none d-md-block special-offers__controls" id="offers-controls">
+        <!-- <ul class=" special-offers__controls" id="offers-controls">
           <li><i class="fa fa-arrow-left"></i></li>
           <li><i class="fa fa-arrow-right"></i></li>
-        </ul>
+        </ul> -->
+        <div class="special-offers__controls" id="customNavItemsOffers">
+          <span class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
+            <i class="fa fa-arrow-left"></i>
+          </span>
+          <div class="custom-control-items__nav">
+            {% for offer in offers %}
+              <button data-nav="{{forloop.index0}}" tabindex="0" aria-selected="true" aria-controls="tns1-item{{forloop.index0}}" type="button" class="{% if forloop.index == 1 %}tns-nav-active{% endif %}"></button>
+            {% endfor %}
+          </div>
+          <span class="next" data-controls="next" aria-controls="customize" tabindex="-1">
+            <i class="fa fa-arrow-right"></i>
+          </span>
+        </div>
       </div>
       <div class="special-offers-listings col-md-9">
         <div class="special-offers-listings__wrap">
@@ -40,10 +53,6 @@
             </div>
           </div>
         </div>
-        <ul class="d-block d-md-none special-offers__controls" id="offers-controls">
-          <li><i class="fa fa-arrow-left"></i></li>
-          <li><i class="fa fa-arrow-right"></i></li>
-        </ul>
       </div>
     </div>
   </div>

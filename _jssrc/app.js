@@ -6,7 +6,7 @@ function readyDoc(fn) {
 
 readyDoc(function() {
 
-  if (document.getElementsByClassName('review-box__wrap').length > 0) {
+	if (document.getElementsByClassName('review-box__wrap').length > 0) {
 		// Slider With Images
 		var slider = tns({
 			container: '.review-box__wrap',
@@ -26,18 +26,18 @@ readyDoc(function() {
 			container: '.rooms-slider-container',
 			speed: 300,
 			mouseDrag: true,
-      items: 1.5,
-      gutter: 80,
-      loop: true,
-      nav: true,
-      prevButton: "#customNavItemsRooms .prev", // previous button
-      nextButton: "#customNavItemsRooms .next", // next button
-      navContainer: '#customNavItemsRooms .custom-control-items__nav',
+			items: 1.5,
+			gutter: 80,
+			loop: true,
+			nav: true,
+			prevButton: "#customNavItemsRooms .prev", // previous button
+			nextButton: "#customNavItemsRooms .next", // next button
+			navContainer: '#customNavItemsRooms .custom-control-items__nav',
 		});
 
-    function changeSlide(num) {
-      sliderRooms.goTo(num);
-    }
+		function changeSlide(num) {
+			sliderRooms.goTo(num);
+		}
 
 	}
 
@@ -60,17 +60,18 @@ readyDoc(function() {
 		// Slider With Images
 		var slider = tns({
 			container: '.special-offers-listings__wrap',
-			items: 1,
+			items: 1.1,
 			gutter: 15,
 			speed: 300,
 			mouseDrag: true,
-			edgePadding: 12,
 			nav: false,
-			controlsContainer: "#offers-controls",
+			prevButton: "#customNavItemsOffers .prev", // previous button
+			nextButton: "#customNavItemsOffers .next", // next button
+			navContainer: '#customNavItemsOffers .custom-control-items__nav',
 			"responsive": {
 				"768": {
-					gutter: 80,
-					edgePadding: 150,
+					items: 1.4,
+					gutter: 80
 				}
 			}
 		});
