@@ -22,7 +22,7 @@ layout: default
   </section>
   <section class="row pb-4">
     <div class="dining-slider w-100">
-      {% assign dining-slider = site.data._models.dining_slider %}
+      {% assign dining-slider = site.data._models.dining_slider | sort:"order" %}
       <div class="dining-slider__wrap">
         {% for img in dining-slider %}
         <img class="objectfit" src="{{ img.image.url_large }}" alt="{{ img.image.alt }}">

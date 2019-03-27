@@ -8,8 +8,6 @@ function readyDoc(fn) {
 
 readyDoc(function () {
 
-	// Slider With Images
-
 	if (document.getElementsByClassName('review-box__wrap').length > 0) {
 		// Slider With Images
 		var slider = tns({
@@ -26,17 +24,22 @@ readyDoc(function () {
 	}
 
 	if (document.getElementsByClassName('rooms-slider-container').length > 0) {
+		var changeSlide = function changeSlide(num) {
+			sliderRooms.goTo(num);
+		};
+
 		// Slider With Images
-		var slider = tns({
+		var sliderRooms = tns({
 			container: '.rooms-slider-container',
 			speed: 300,
-			autoplay: true,
-			autoplayHoverPause: true,
-			autoplayTimeout: 3500,
-			autoplayButtonOutput: false,
 			mouseDrag: true,
-			navAsThumbnails: "#custom-nav",
-			controlsContainer: "#reviews-controls"
+			items: 1.5,
+			gutter: 80,
+			loop: true,
+			nav: true,
+			prevButton: "#customNavItemsRooms .prev", // previous button
+			nextButton: "#customNavItemsRooms .next", // next button
+			navContainer: '#customNavItemsRooms .custom-control-items__nav'
 		});
 	}
 
