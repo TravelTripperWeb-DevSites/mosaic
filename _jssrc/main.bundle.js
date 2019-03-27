@@ -25,6 +25,21 @@ readyDoc(function () {
 		});
 	}
 
+	if (document.getElementsByClassName('rooms-slider-container').length > 0) {
+		// Slider With Images
+		var slider = tns({
+			container: '.rooms-slider-container',
+			speed: 300,
+			autoplay: true,
+			autoplayHoverPause: true,
+			autoplayTimeout: 3500,
+			autoplayButtonOutput: false,
+			mouseDrag: true,
+			navAsThumbnails: "#custom-nav",
+			controlsContainer: "#reviews-controls"
+		});
+	}
+
 	if (document.getElementsByClassName('dining-slider').length > 0) {
 		// Slider With Images
 		var slider = tns({

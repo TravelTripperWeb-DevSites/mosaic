@@ -61,7 +61,8 @@ meta_tags:
         {% for review in reviews %}
         <div class="review-box__item">
           <blockquote class="blockquote">{{ review.text }}</blockquote>
-          <p class="h4 small">{{ review.reviewer_name }}{% if review.review_date and review.review_date != '' %}, {{ review.review_date }}</p>
+          <p class="h4 small">{{ review.reviewer_name }}
+            {% if review.review_date and review.review_date != '' %}, {{ review.review_date }} {% endif %}</p>
         </div>
         {% endfor %}
       </div>
