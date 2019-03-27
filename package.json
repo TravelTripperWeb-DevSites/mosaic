@@ -7,7 +7,12 @@
     "type": "git",
     "url": "https://github.com/TravelTripperWeb-Sites/blank-template"
   },
-  "keywords": ["jekyll", "bedrock", "zom", "blank-template"],
+  "keywords": [
+    "jekyll",
+    "bedrock",
+    "zom",
+    "blank-template"
+  ],
   "author": "John Burkhard, Alex Mekelburg, Shaun Callaghan",
   "engines": {
     "node": ">= 8.11.3"
