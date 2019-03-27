@@ -1,2 +1,39 @@
 // Shared Page Elements
 // ==========================================================================
+.custom-control-items {
+  margin: auto;
+  .prev, .next {
+    display: inline-block;
+    padding: 0 10px;
+    color: $white;
+  }
+  &__nav {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    button {
+      position: relative;
+      top: -2px;
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      margin: 0 10px;
+      padding: 0;
+      list-style: none;
+      cursor: pointer;
+      background-color: rgba($white, .5);
+      border: 0;
+      border-radius: 50%;
+      box-shadow: none;
+      &:focus {
+        outline: 0;
+      }
+      &.tns-nav-active {
+        top: 0;
+        width: 12px;
+        height: 12px;
+        background-color: $white;
+      }
+    }
+  }
+}
