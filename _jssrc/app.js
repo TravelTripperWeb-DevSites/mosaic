@@ -13,12 +13,11 @@ readyDoc(function() {
 		var slider = tns({
 			container: '.review-box__wrap',
 			speed: 300,
+			autoplay: true,
+			autoplayHoverPause: true,
+			autoplayTimeout: 3500,
+			mouseDrag: true,
 			controlsContainer: "#reviews-controls",
-			"responsive": {
-				"768": {
-					items: 1
-				}
-			}
 		});
 	}
 
@@ -27,6 +26,11 @@ readyDoc(function() {
 		var slider = tns({
 			container: '.dining-slider__wrap',
 			speed: 300,
+			autoplay: true,
+			autoplayHoverPause: true,
+			autoplayTimeout: 3500,
+			autoHeight: true,
+			mouseDrag: true,
 			controls: false
 		});
 	}
