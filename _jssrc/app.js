@@ -16,7 +16,9 @@ readyDoc(function() {
 			autoplayTimeout: 3500,
 			autoplayButtonOutput: false,
 			mouseDrag: true,
-			controlsContainer: "#reviews-controls",
+			prevButton: "#reviews-controls .prev", // previous button
+			nextButton: "#reviews-controls .next", // next button
+			navContainer: '#reviews-controls .custom-control-items__nav'
 		});
 	}
 
