@@ -32,19 +32,29 @@ readyDoc(function() {
 			container: '.rooms-slider-container',
 			speed: 300,
 			mouseDrag: true,
-			items: 1.5,
-			gutter: 80,
-			loop: true,
-			nav: true,
-			prevButton: "#customNavItemsRooms .prev", // previous button
-			nextButton: "#customNavItemsRooms .next", // next button
-			navContainer: '#customNavItemsRooms .custom-control-items__nav',
+      gutter: 12,
+      edgePadding: 40,
+      items: 1,
+      loop: true,
+      nav: true,
+      center: true,
+      prevButton: "#customNavItemsRooms .prev", // previous button
+      nextButton: "#customNavItemsRooms .next", // next button
+      navContainer: '#customNavItemsRooms .custom-control-items__nav',
+      "responsive": {
+        "768": {
+          gutter: 160,
+          edgePadding: 100,
+          items: 1,
+        },
+        "1300": {
+          edgePadding: 200,
+        },
+        "1600": {
+          edgePadding: 400,
+        }
+      }
 		});
-
-		function changeSlide(num) {
-			sliderRooms.goTo(num);
-		}
-
 	}
 
 	if (document.getElementsByClassName('dining-slider').length > 0) {

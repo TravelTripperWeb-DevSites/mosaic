@@ -29,22 +29,33 @@ readyDoc(function () {
 	}
 
 	if (document.getElementsByClassName('rooms-slider-container').length > 0) {
-		var changeSlide = function changeSlide(num) {
-			sliderRooms.goTo(num);
-		};
-
 		// Slider With Images
 		var sliderRooms = tns({
 			container: '.rooms-slider-container',
 			speed: 300,
 			mouseDrag: true,
-			items: 1.5,
-			gutter: 80,
+			gutter: 12,
+			edgePadding: 40,
+			items: 1,
 			loop: true,
 			nav: true,
+			center: true,
 			prevButton: "#customNavItemsRooms .prev", // previous button
 			nextButton: "#customNavItemsRooms .next", // next button
-			navContainer: '#customNavItemsRooms .custom-control-items__nav'
+			navContainer: '#customNavItemsRooms .custom-control-items__nav',
+			"responsive": {
+				"768": {
+					gutter: 160,
+					edgePadding: 100,
+					items: 1
+				},
+				"1300": {
+					edgePadding: 200
+				},
+				"1600": {
+					edgePadding: 400
+				}
+			}
 		});
 	}
 
