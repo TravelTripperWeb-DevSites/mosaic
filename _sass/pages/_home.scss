@@ -15,9 +15,21 @@
     }
 
     &__text-group {
-      display: flex;
+      position: relative;
       background-color: $gray-100;
       @include make-col-ready;
+      @include media-breakpoint-up(md) {
+        display: flex;
+      }
+    }
+    #close_offer_btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 10px;
+      @include media-breakpoint-up(md) {
+        display: none;
+      }
     }
   }
   &__offer-text {
@@ -25,6 +37,7 @@
     flex: 1 0 0;
     flex-direction: column;
     justify-content: center;
+    padding: 20px 12px;
     text-align: center;
     p {
       margin-bottom: 0;
@@ -32,17 +45,26 @@
     }
   }
   &__offer-btn {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-width: 70px;
+    margin-bottom: 24px;
+    text-align: center;
+    @include media-breakpoint-up(md) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-width: 70px;
+      margin-bottom: 0;
+    }
+
     p {
       margin-bottom: 0;
       text-transform: uppercase;
     }
   }
   .btn--secondary {
-    margin-right: -15px;
-    padding: 15px 30px;
+    margin: 0 auto;
+    @include media-breakpoint-up(md) {
+      margin-right: -15px;
+      padding: 15px 30px;
+    }
   }
 }
