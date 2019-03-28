@@ -5,6 +5,13 @@ function readyDoc(fn) {
 }
 
 readyDoc(function() {
+	if (document.getElementById("close_offer_btn")) {
+		document.getElementById("close_offer_btn").onclick = function() {
+			var offerBar = document.getElementById("hero-offer");
+			offerBar.style.display = 'none';
+		}
+	}
+
 
 	if (document.getElementsByClassName('review-box__wrap').length > 0) {
 		// Slider With Images
@@ -28,28 +35,28 @@ readyDoc(function() {
 			container: '.rooms-slider-container',
 			speed: 300,
 			mouseDrag: true,
-      gutter: 12,
-      edgePadding: 40,
-      items: 1,
-      loop: true,
-      nav: true,
-      center: true,
-      prevButton: "#customNavItemsRooms .prev", // previous button
-      nextButton: "#customNavItemsRooms .next", // next button
-      navContainer: '#customNavItemsRooms .custom-control-items__nav',
-      "responsive": {
-        "768": {
-          gutter: 160,
-          edgePadding: 100,
-          items: 1,
-        },
-        "1300": {
-          edgePadding: 200,
-        },
-        "1600": {
-          edgePadding: 400,
-        }
-      }
+			gutter: 12,
+			edgePadding: 40,
+			items: 1,
+			loop: true,
+			nav: true,
+			center: true,
+			prevButton: "#customNavItemsRooms .prev", // previous button
+			nextButton: "#customNavItemsRooms .next", // next button
+			navContainer: '#customNavItemsRooms .custom-control-items__nav',
+			"responsive": {
+				"768": {
+					gutter: 160,
+					edgePadding: 100,
+					items: 1,
+				},
+				"1300": {
+					edgePadding: 200,
+				},
+				"1600": {
+					edgePadding: 400,
+				}
+			}
 		});
 	}
 
