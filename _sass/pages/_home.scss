@@ -1,1 +1,44 @@
+.home-hero {
+  position: relative;
 
+  &__actions-bar {
+    @include make-container;
+    @include make-container-max-widths;
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    &__wrap {
+      @include make-row;
+    }
+
+    &__text-group {
+      display: flex;
+      background-color: $gray-100;
+      @include make-col-ready;
+    }
+  }
+  &__offer-text {
+    display: flex;
+    flex: 1 0 0;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    p {
+      margin-bottom: 0;
+      text-transform: uppercase;
+    }
+  }
+  &__offer-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 160px;
+  }
+  .btn--secondary {
+    padding: 15px 30px;
+    margin-right: -15px;
+  }
+}

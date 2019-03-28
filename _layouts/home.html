@@ -2,4 +2,30 @@
 layout: default
 ---
 
-TEST
+<div class="home-hero">
+  {% region hero, type:hero %}
+
+  <div class="home-hero__actions-bar">
+    <div class="home-hero__actions-bar__wrap">
+      <div class="home-hero__actions-bar__text-group">
+
+        <div class="home-hero__offer-text">
+          <p>{% region hero_offer, type:header %}</p>
+        </div>
+        <div class="home-hero__offer-btn">
+          <a href="#" class="btn btn--secondary">Book Now</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+{% regionblock intro, type:mixed %}
+  <h1>New Page</h1>
+  <p>Edit your content</p>
+{% endregionblock %}
+
+{{ content }}
+
+{% region outro, type:mixed %}
