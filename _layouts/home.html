@@ -10,10 +10,10 @@ layout: default
       <div class="home-hero__actions-bar__text-group">
 
         <div class="home-hero__offer-text">
-          <p>{% region hero_offer, type:html %}</p>
+          {% region hero_offer, type:html %}
         </div>
         <div class="home-hero__offer-btn">
-          <a href="#" class="btn btn--secondary">Book Now</a>
+          {% region hero_offer_link, type:html %} 
         </div>
 
       </div>

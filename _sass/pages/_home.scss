@@ -36,6 +36,10 @@
     flex-direction: column;
     justify-content: center;
     max-width: 160px;
+    p {
+      margin-bottom: 0;
+      text-transform: uppercase;
+    }
   }
   .btn--secondary {
     padding: 15px 30px;
