@@ -35,14 +35,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 160px;
+    min-width: 70px;
     p {
       margin-bottom: 0;
       text-transform: uppercase;
     }
   }
   .btn--secondary {
-    padding: 15px 30px;
     margin-right: -15px;
+    padding: 15px 30px;
   }
 }
