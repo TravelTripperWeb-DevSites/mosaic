@@ -32,7 +32,7 @@
     "skip_h1": true,
     "_template": "hero",
     "hero_html": {
-      "content": "<section class=\"hero-content\">\n<p class=\"h4\">Special Events</p>\n<hr class=\"hr--light\" />\n<p class=\"h1 mb-3\">Memories that will last a lifetime</p>\n<p class=\"h4\"><a class=\"btn btn--secondary\" href=\"#request\">Request for proposal</a></p>\n</section>"
+      "content": "<section class=\"hero-content\">\n<p class=\"h4\">Special Events</p>\n<hr class=\"hr--light\" />\n<p class=\"h1 mb-3\">Memories that will last a lifetime</p>\n<p class=\"h4\"><a class=\"btn btn--secondary\" href=\"#request\">Request for proposal</a></p>\n</section>\n<div class=\"scroll-down-icon\"><img src=\"//res.cloudinary.com/traveltripperweb/image/upload/v1553781182/qw6s5v2wh9ftsbr8rhon.png\" width=\"17px\" /></div>"
     }
   }
 ]
