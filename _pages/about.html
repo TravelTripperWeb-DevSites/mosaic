@@ -39,21 +39,39 @@ meta_tags:
 <section class="container">
   <div class="row align-items-center py-4">
     <div class="col-lg-5 mb-3 mb-lg-0">
+        {% regionblock visualtour_tagline, type: header %}
         <p class="h4">Visual Tour</p>
+        {% endregionblock %}
         <hr/>
+        {% regionblock visualtour_title, type: header %}
         <h2 class="h2 mb-3">Newly-redesigned contemporary luxury</h2>
+        {% endregionblock %}
+        {% regionblock visualtour_detail, type: text %}
         <p>The most intimate hotel in Beverly Hills and Los Angeles, the Mosaic Hotel offers richly designed rooms and suites only found in true luxury boutique hotels.</p>
+        {% endregionblock %}
+        {% regionblock visualtour_url, type: html %}
         <a href="/gallery" class="link--cta">View Gallery</a>
+        {% endregionblock %}
     </div>
     <div class="col-lg-7">
       <div class="row">
         <div class="col-6">
+          {% regionblock visualtour_image1, type: image %}
           <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553111600/scjefjqb0t1kmj8jgkrz.jpg" class="objectfit">
+          {% endregionblock %}
         </div>
         <div class="col-6">
           <div class="row">
-            <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553111607/kq4jkg878pjehexu2h8f.jpg" class="objectfit mb-2">
-            <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553111613/dvgzi4iiwndbpcnvj7j8.jpg" class="objectfit">
+            <div class="objectfit mb-2">
+              {% regionblock visualtour_image2, type: image %}
+              <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553111607/kq4jkg878pjehexu2h8f.jpg">
+              {% endregionblock %}
+            </div>
+            <div class="objectfit">
+              {% regionblock visualtour_image3, type: image %}
+              <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553111613/dvgzi4iiwndbpcnvj7j8.jpg">
+              {% endregionblock %}
+            </div>
           </div>
         </div>
       </div>
