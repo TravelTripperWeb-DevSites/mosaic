@@ -1,11 +1,48 @@
 // Shared Page Elements
 // ==========================================================================
+.rooms-slider-container {
+  margin-bottom: 46px;
+  &__item {
+    .row {
+      @include media-breakpoint-up(lg) {
+        padding: 64px 0;
+      }
+      border: 1px solid $light-grey;
+      .room-listing {
+        &__image {
+          position: relative;
+          @include media-breakpoint-up(md) {
+            left: -80px;
+          }
+        }
+        &__text {
+          padding: 24px 20px 30px;
+          @include media-breakpoint-up(lg) {
+            padding: 0 80px 0 0;
+          }
+          .btn--secondary {
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+  }
+}
+.rooms-slider-controls-wrap {
+  max-width: 1064px;
+}
 .custom-control-items {
+  position: relative;
   margin: auto;
+  text-align: center;
   .prev, .next {
     display: inline-block;
     padding: 0 10px;
     color: $white;
+    cursor: pointer;
+    &:focus {
+      outline: 0;
+    }
   }
   &__nav {
     display: inline-block;
@@ -34,6 +71,18 @@
         height: 12px;
         background-color: $white;
       }
+    }
+  }
+  .cta-wrap {
+    margin-top: 10px;
+    @include media-breakpoint-up(md) {
+      position: absolute;
+      top: -14px;
+      right: 0;
+      margin-top: 0;
+    }
+    .link--cta {
+      color: $white;
     }
   }
 }

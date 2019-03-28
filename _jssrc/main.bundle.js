@@ -30,15 +30,28 @@ readyDoc(function () {
 			container: '.rooms-slider-container',
 			speed: 300,
 			mouseDrag: true,
-			edgePadding: 150,
-			swipeAngle: false,
-			items: 1.1,
-			gutter: 80,
+			gutter: 12,
+			edgePadding: 40,
+			items: 1,
 			loop: true,
 			nav: true,
+			center: true,
 			prevButton: "#customNavItemsRooms .prev", // previous button
 			nextButton: "#customNavItemsRooms .next", // next button
-			navContainer: '#customNavItemsRooms .custom-control-items__nav'
+			navContainer: '#customNavItemsRooms .custom-control-items__nav',
+			"responsive": {
+				"768": {
+					gutter: 160,
+					edgePadding: 100,
+					items: 1
+				},
+				"1300": {
+					edgePadding: 200
+				},
+				"1600": {
+					edgePadding: 400
+				}
+			}
 		});
 	}
 
