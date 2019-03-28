@@ -12,16 +12,26 @@ meta_tags:
 
 <section class="bg--light">
   <div class="container">
-    <div class="row align-items-center py-2 py-md-4">
-      <div class="col-md-6">
-        <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1552663289/fkl75c2jkeykeve7yvev.jpg" class="objectfit">
+    <div class="row py-2 py-md-5">
+      <div class="col-md-6 objectfit border-box-image">
+        {% regionblock ourstory_image, type: image %}
+        <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1552663289/fkl75c2jkeykeve7yvev.jpg" alt="Our Story">
+        {% endregionblock %}
       </div>
-      <div class="col-md-6 pt-3 pt-md-0">
+      <div class="col-md-6 bordered-box">
+        {% regionblock ourstory_tagline, type: header %}
         <p class="h4">Our Story</p>
+        {% endregionblock %}
         <hr/>
+        {% regionblock ourstory_title, type: header %}
         <h2 class="h2 mb-3">Urban Oasis</h2>
+        {% endregionblock %}
+        {% regionblock ourstory_detail, type: text %}
         <p>The Mosaic Hotel Beverly Hills, is an exclusive luxury Beverly Hills hotel. Whether you are traveling to Beverly Hills for business or pleasure, you will find a world of comfort, just steps from Rodeo Drive shopping and Beverly Hills attractions. You will find elegant styles, unpretentious service and luxury at the Mosaic.</p>
+        {% endregionblock %}
+        {% regionblock ourstory_url, type: html %}
         <a href="/contact" class="link--cta">Contact Us</a>
+        {% endregionblock %}
       </div>
     </div>
   </div>
@@ -65,10 +75,23 @@ meta_tags:
         </div>
         {% endfor %}
       </div>
-      <ul class="review-box__controls" id="reviews-controls">
+      <!-- <ul class="review-box__controls" id="reviews-controls">
         <li><i class="fa fa-arrow-left"></i></li>
         <li><i class="fa fa-arrow-right"></i></li>
-      </ul>
+      </ul> -->
+      <div class="review-box__controls" id="reviews-controls">
+        <span class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
+          <i class="fa fa-arrow-left"></i>
+        </span>
+        <div class="custom-control-items__nav">
+          {% for review in reviewz %}
+            <button data-nav="{{forloop.index0}}" tabindex="0" aria-selected="true" aria-controls="tns1-item{{forloop.index0}}" type="button" class="{% if forloop.index == 1 %}tns-nav-active{% endif %}"></button>
+          {% endfor %}
+        </div>
+        <span class="next" data-controls="next" aria-controls="customize" tabindex="-1">
+          <i class="fa fa-arrow-right"></i>
+        </span>
+      </div>
 		</div>
 	</div>
 </section>

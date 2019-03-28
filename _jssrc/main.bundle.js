@@ -18,8 +18,9 @@ readyDoc(function () {
 			autoplayTimeout: 3500,
 			autoplayButtonOutput: false,
 			mouseDrag: true,
-			navAsThumbnails: "#custom-nav",
-			controlsContainer: "#reviews-controls"
+			prevButton: "#reviews-controls .prev", // previous button
+			nextButton: "#reviews-controls .next", // next button
+			navContainer: '#reviews-controls .custom-control-items__nav'
 		});
 	}
 
@@ -53,6 +54,27 @@ readyDoc(function () {
 			autoHeight: true,
 			mouseDrag: true,
 			controls: false
+		});
+	}
+
+	if (document.getElementsByClassName('special-offers').length > 0) {
+		// Slider With Images
+		var slider = tns({
+			container: '.special-offers-listings__wrap',
+			items: 1.1,
+			gutter: 15,
+			speed: 300,
+			mouseDrag: true,
+			nav: false,
+			prevButton: "#customNavItemsOffers .prev", // previous button
+			nextButton: "#customNavItemsOffers .next", // next button
+			navContainer: '#customNavItemsOffers .custom-control-items__nav',
+			"responsive": {
+				"768": {
+					items: 1.4,
+					gutter: 80
+				}
+			}
 		});
 	}
 });

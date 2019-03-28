@@ -123,6 +123,10 @@ hr {
   }
 }
 
+.form-wrap {
+  max-width: 800px;
+}
+
 .custom-select {
   -webkit-appearance: none;
   padding-left: 1rem;
@@ -268,5 +272,37 @@ hr {
         opacity: 1;
       }
     }
+  }
+}
+
+.tns-item {
+  opacity: .5;
+}
+.tns-slide-active {
+  opacity: 1;
+}
+
+.border-box-image {
+  z-index: 1;
+  max-height: 560px;
+}
+
+.bordered-box {
+  margin: -7px 15px 7px;
+  padding: 30px 25px;
+  border: solid 1px $secondary;
+
+  @include media-breakpoint-up(md) {
+    flex: 0 0 57%;
+    max-width: 57%;
+    margin: 0 0 0 -7%;
+    padding: 30px 50px 30px 100px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    flex: 0 0 56%;
+    max-width: 56%;
+    margin: 5% 0 0 -7%;
+    padding: 60px 80px 150px 150px;
   }
 }
