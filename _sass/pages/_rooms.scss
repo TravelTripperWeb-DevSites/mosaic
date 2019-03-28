@@ -1,12 +1,26 @@
 // Rooms & Room Details Page Elements
 // ==========================================================================
 .room-list {
-  .room-listing:nth-child(even){
+  .room-listing {
+    .h3 {
+      color: $dark-text;
+    }
+    &__price {
+      font-family: $family-primary;
+      font-size: $base-font-size;
+      font-weight: 500;
+      line-height: 24px;
+      color: $black;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+  .room-listing:nth-child(even) {
     background-color: $light;
   }
 }
 
 .room-listing__image {
-  border-bottom: 8px solid #d5d2a8;
   line-height: 0;
+  border-bottom: 8px solid $secondary;
 }

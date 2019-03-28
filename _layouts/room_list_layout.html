@@ -26,13 +26,13 @@ layout: generic
         </div>
         <div class="col-lg-6 p-4">
           <div>
-            <h3 class="h3 text-secondary">{{room.name}}</h3>
-            <hr class="hr--secondary">
-            <h4 class="h4 mb-3">tonights rate <span class="text-secondary">$275</span></h4>
+            <h3 class="h3">{{room.name}}</h3>
+            <hr class="hr">
+            <h4 class="h4 mb-3 room-listing__price">tonights rate <span>$275</span></h4>
             <p>{{room.short_description}}</p>
             <div class="cta-wrap">
-              <a class="link--cta mr-2" href="/rooms/{{room.url_friendly_name}}/">View Room</a>
-              <a class="btn btn--secondary" href="{{room.booking_url}}">Book Room</a>
+              <a class="link--cta mr-4" href="/rooms/{{room.url_friendly_name}}/">View Room</a>
+              <a class="btn btn--tertiary" href="{{room.booking_url}}">Book Room</a>
             </div>
           </div>
         </div>
