@@ -26,9 +26,9 @@
 
 hr {
   width: 104px;
-  border-bottom: 1px solid;
-  border-top: 0;
   margin: $spacer 0;
+  border-top: 0;
+  border-bottom: 1px solid;
 
   &.hr--secondary {
     color: $secondary;
