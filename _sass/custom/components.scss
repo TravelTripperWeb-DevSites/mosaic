@@ -47,13 +47,14 @@ hr {
   background-repeat: no-repeat;
 	background-position: top center;
 	background-size: cover;
-	padding: $spacer;
+	padding: 20px 15px;
   justify-content: center;
   display: flex;
   flex-direction: column;
 
 	@include media-breakpoint-up(md) {
 		min-height: 625px;
+    padding: 80px;
 	}
 
   &.splash--bordered {
@@ -140,10 +141,13 @@ hr {
 }
 
 .review-box {
-  max-width: 475px;
-  padding: 64px 80px;
+  padding: 40px 25px;
   background-color: rgba(41, 56, 74, .8);
   border-bottom: 8px solid $secondary;
+
+  @include media-breakpoint-up(md) {
+    padding: 64px 80px;
+  }
 
   .h4 {
     font-size: $base-font-size;
