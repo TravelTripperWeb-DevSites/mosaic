@@ -31,6 +31,12 @@
     "display_field": "name",
     "model_name": "room_bed_types"
   },
+  "room_category": {
+    "required": true,
+    "type": "model",
+    "display_field": "name",
+    "model_name": "room_categories"
+  },
   "images": {
     "required": true,
     "type": "image",
