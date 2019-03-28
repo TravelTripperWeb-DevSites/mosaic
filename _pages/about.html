@@ -14,14 +14,24 @@ meta_tags:
   <div class="container">
     <div class="row align-items-center py-2 py-md-4">
       <div class="col-md-6">
+        {% regionblock ourstory_image, type: image %}
         <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1552663289/fkl75c2jkeykeve7yvev.jpg" class="objectfit">
+        {% endregionblock %}
       </div>
       <div class="col-md-6 pt-3 pt-md-0">
+        {% regionblock ourstory_tagline, type: header %}
         <p class="h4">Our Story</p>
+        {% endregionblock %}
         <hr/>
+        {% regionblock ourstory_title, type: header %}
         <h2 class="h2 mb-3">Urban Oasis</h2>
+        {% endregionblock %}
+        {% regionblock ourstory_detail, type: text %}
         <p>The Mosaic Hotel Beverly Hills, is an exclusive luxury Beverly Hills hotel. Whether you are traveling to Beverly Hills for business or pleasure, you will find a world of comfort, just steps from Rodeo Drive shopping and Beverly Hills attractions. You will find elegant styles, unpretentious service and luxury at the Mosaic.</p>
+        {% endregionblock %}
+        {% regionblock ourstory_url, type: html %}
         <a href="/contact" class="link--cta">Contact Us</a>
+        {% endregionblock %}
       </div>
     </div>
   </div>
