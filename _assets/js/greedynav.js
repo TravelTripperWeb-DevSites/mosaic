@@ -6,15 +6,14 @@ Copyright (c) 2015 Luke Jackson
 
 document.ready(() => {
   const greedy = document.getElementsByClassName('greedy')[0];
-  const greedyNavLinks = document.getElementsByClassName('greedy-nav-links')[0];
-  const btn = document.getElementsByClassName('hidden-nav-btn')[0];
+  const greedyNavLinks = document.getElementsByClassName('greedy-nav__links')[0];
+  const btn = document.getElementsByClassName('greedy-nav--menu')[0];
   const vlinks = [].slice.call(greedyNavLinks.getElementsByClassName('nav__item'));
-  const hlinks = greedy.getElementsByClassName('hidden-links')[0];
+  const hlinks = greedy.getElementsByClassName('greedy__hidden-links')[0];
   const closingTime = 1000;
 
   let numOfItems = 0;
   let totalSpace = 0;
-
   let breakWidths = [];
 
   // Get initial state
@@ -22,6 +21,9 @@ document.ready(() => {
     totalSpace += vlink.offsetWidth;
     numOfItems += 1;
     breakWidths.push(totalSpace);
+    console.log('totalSpace:', totalSpace);
+    console.log('numOfItems:', numOfItems);
+    console.log('breakwidths:', breakWidths);
   });
 
   let availableSpace
@@ -32,21 +34,22 @@ document.ready(() => {
   function check() {
 
     // Get instant state
-    availableSpace = greedy.offsetWidth - 10;
-    numOfVisibleItems = vlinks.length;
+    availableSpace = greedyNavLinks.offsetWidth - 10;
+    numOfVisibleItems = greedyNavLinks.childElementCount;
     requiredSpace = breakWidths[numOfVisibleItems - 1];
     console.log('required: ', requiredSpace);
     console.log('available: ', availableSpace);
     // There is not enough space
     if (requiredSpace > availableSpace) {
       console.log('not enough space!');
-      hlinks.insertBefore(vlinks[vlinks.length-1], hlinks.firstChild);
+      hlinks.insertBefore(vlinks[numOfVisibleItems - 1], hlinks.firstChild);
       numOfVisibleItems -= 1;
+
       check();
       // There is more than enough space
     } else if (availableSpace > breakWidths[numOfVisibleItems]) {
       console.log('enough space!');
-      hlinks.children().first().appendTo(vlinks);
+      greedyNavLinks.appendChild(hlinks.firstChild);
       numOfVisibleItems += 1;
       check();
     }
@@ -58,7 +61,9 @@ document.ready(() => {
   }
 
   // Window listeners
-  window.addEventListener('resize', check());
+  window.onresize = () => {
+    check();
+  };
 
   // btn.on('click', function() {
   //   $hlinks.toggleClass('hidden');

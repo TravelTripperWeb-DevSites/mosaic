@@ -2,8 +2,8 @@
   note the nav.is-fixed-top must immediately precede div.main for div.main top-margin to work property
 {% endcomment %}
 
-<nav class="navbar is-fixed-top nav--main" id="js-navbar--main">
-  <div class="container-fluid p-0">
+<nav class="navbar greedy is-fixed-top nav--main" id="js-navbar--main">
+  <div class="container-fluid p-0 flex-nowrap">
     <a class="nav__link navbar-brand" href="/">
       <span class="nav__logo"
         data-live-edit-settings='hotel_settings'
@@ -21,16 +21,24 @@
         <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1552666394/w9f64ce7uplxsuxcbnvq.png" alt="Mosaic" />
       </span>
     </a>
-  <ul class="nav d-none align-items-center text-uppercase justify-content-end pr-2">
+  <ul class="nav greedy-nav__links align-items-center text-uppercase justify-content-end pr-2">
     {% assign items = site.data._menus.main.items %}
     {% include nav/nav-item-list.html items=items %}
     {% include nav/language-nav.html %}
   </ul>
+  <a role="button" aria-label="menu" aria-expanded="false" data-target="navMenu" class="navbar__burger greedy-nav--menu">
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+  </a>
+  <ul class="nav--device greedy__hidden-links" navMenu>
+  </ul>
+  <!-- <button class="greedy-nav--menu">Menu</button> -->
   <ul class='hidden-links d-none'></ul>
-  <div class="d-none d-xl-block">
+  <div>
      <a href="https://{{site.data.hotel_settings._portal_id}}.reztrip.com/" role="button" class="btn btn--primary" show-booking-widget>{% t 'book_now' %}</a>
   </div>
-  <a role="button" aria-label="menu" aria-expanded="false" data-target="navMenu" class="navbar__burger d-xl-none">
+  <!-- <a role="button" aria-label="menu" aria-expanded="false" data-target="navMenu" class="navbar__burger d-xl-none">
     <span aria-hidden="true"></span>
     <span aria-hidden="true"></span>
     <span aria-hidden="true"></span>
@@ -39,6 +47,6 @@
     {% assign items = site.data._menus.main.items %}
     {% include nav/nav-item-list.html items=items %}
     {% include nav/language-nav.html %}
-  </ul>
+  </ul> -->
 
 </nav>
