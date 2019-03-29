@@ -85,35 +85,45 @@ meta_tags:
   </div>
 </section>
 
-<section class="restaurant--callout container pb-4">
-  <section class="row py-4">
-    <div class="col-md-4 d-flex justify-content-md-center">
-      <div class="d-inline-block text-md-right pb-md-0 pb-3">
-        {% regionblock restaurant_headings type:html %}
-          <h5 class="h4">Eat & Drink</h5>
-          <h4 class="h2">Restaurant</h4>
+<section class="bg--white">
+  <div class="container pb-3 pb-md-5">
+    <section class="row py-3 py-md-5">
+      <div class="col-md-4 d-flex justify-content-md-center">
+        <div class="d-inline-block text-md-right pb-md-0 pb-3">
+          {% regionblock eatdrink_tagline, type: header %}
+          <h5 class="h4 with-line">Eat & Drink</h5>
+          {% endregionblock %}
+          {% regionblock eatdrink_title, type: header %}
+          <h4 class="h2">Dining & Bar</h4>
+          {% endregionblock %}
+        </div>
+      </div>
+      <div class="col-md-8 px-2 px-xl-5">
+        {% regionblock eatdrink_detail, type: text %}
+        <p>Mosaic Hotel Beverly Hills’ Dining Room, with its fresh California cuisine, offers intimate indoor seating or in our outdoor privately heated cabanas.</p>
+        {% endregionblock %}
+        {% regionblock eatdrink_url, type: html %}
+        <a href='/restaurant/' class="link--cta">Learn More</a>
         {% endregionblock %}
       </div>
-    </div>
-    <div class="col-md-8 pr-md-5">
-      {% regionblock restaurant_text type:html %}
-        <p>Mosaic Hotel Beverly Hills’ Dining Room, with its fresh California cuisine, offers intimate indoor seating or in our outdoor privately heated cabanas.</p>
-        <a href='/restaurant' class="link--cta">Learn More</a>
-      {% endregionblock %}
-    </div>
-  </section>
-  <section class="row restaurant--callout__images">
-    <div class="col-7">
-      {% regionblock restaurant_image_one, type:image %}
-        <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1552680488/sxh5nijg4osvwwzcuim9.jpg" class="objectfit">
-      {% endregionblock %}
-    </div>
-    <div class="col-5">
-      {% regionblock restaurant_image_two, type:image %}
-        <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1552680488/ljw2bw2tb9yosyccw5lz.jpg" class="objectfit">
-      {% endregionblock %}
-    </div>
-  </section>
+    </section>
+    <section class="row">
+      <div class="col-7">
+        <div class="objectfit w-100 h-100">
+          {% regionblock eatdrink_img1, type: image %}
+          <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553181569/za3rxfq54l2hhvbfzebs.jpg">
+          {% endregionblock %}
+        </div>
+      </div>
+      <div class="col-5">
+        <div class="objectfit w-100 h-100">
+          {% regionblock eatdrink_img2, type: image %}
+          <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553181573/saoz47lpo4wq1shqxxl1.jpg">
+          {% endregionblock %}
+        </div>
+      </div>
+    </section>
+  </div>
 </section>
 
 <section class="bg--light">
