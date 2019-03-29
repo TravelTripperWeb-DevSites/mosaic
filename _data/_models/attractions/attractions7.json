@@ -1,0 +1,379 @@
+{
+  "order": 6,
+  "name_localized": {
+    "en": "The Annenberg Space for Photography"
+  },
+  "sub_title_localized": {
+    "en": "The Annenberg Space for Photography"
+  },
+  "category": "attraction",
+  "description_localized": {
+    "en": "<p>Annenberg Space for Photography is a world-famous cultural destination dedicated to exhibiting both digital and print photography in an intimate environment.</p>"
+  },
+  "image": {
+    "name": "The Annenberg Space for Photography",
+    "content_type": "image/jpeg",
+    "date_added": "2019-03-29-060329",
+    "url_thumb": "//res.cloudinary.com/traveltripperweb/image/upload/c_fill,g_faces,h_140,w_140/v1553853809/ielkud4fdnc6c17colag.jpg",
+    "url_xsmall": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_300,w_300/v1553853809/ielkud4fdnc6c17colag.jpg",
+    "url_small": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_768,w_768/v1553853809/ielkud4fdnc6c17colag.jpg",
+    "url_medium": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_992,w_992/v1553853809/ielkud4fdnc6c17colag.jpg",
+    "url_large": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_1200,w_1200/v1553853809/ielkud4fdnc6c17colag.jpg",
+    "url_xlarge": "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_1920,w_1920/v1553853809/ielkud4fdnc6c17colag.jpg",
+    "width": 1024,
+    "height": 768,
+    "format": "jpg",
+    "url": "//res.cloudinary.com/traveltripperweb/image/upload/v1553853809/ielkud4fdnc6c17colag.jpg",
+    "resource_type": "image",
+    "size": 256018,
+    "path": "//res.cloudinary.com/traveltripperweb/image/upload/v1553853809/ielkud4fdnc6c17colag.jpg",
+    "file_size": null,
+    "alt": "The Annenberg Space for Photography",
+    "caption": "",
+    "description": ""
+  },
+  "location": {
+    "name": "The Annenberg Space for Photography",
+    "address": "2000 Avenue of the Stars #10, Los Angeles, CA 90067, USA",
+    "phone": "(213) 403-3000",
+    "place_id": "ChIJU9_33fK7woARHo5NSMzJu4c",
+    "reference": "ChIJU9_33fK7woARHo5NSMzJu4c",
+    "latitude": 34.05821720000001,
+    "longitude": -118.41355870000001,
+    "google_place": {
+      "address_components": [
+        {
+          "long_name": "10",
+          "short_name": "10",
+          "types": [
+            "subpremise"
+          ]
+        },
+        {
+          "long_name": "2000",
+          "short_name": "2000",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Avenue of the Stars",
+          "short_name": "Avenue of the Stars",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Century City",
+          "short_name": "Century City",
+          "types": [
+            "neighborhood",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Los Angeles",
+          "short_name": "Los Angeles",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Los Angeles County",
+          "short_name": "Los Angeles County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "California",
+          "short_name": "CA",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "90067",
+          "short_name": "90067",
+          "types": [
+            "postal_code"
+          ]
+        },
+        {
+          "long_name": "4700",
+          "short_name": "4700",
+          "types": [
+            "postal_code_suffix"
+          ]
+        }
+      ],
+      "adr_address": "<span class=\"street-address\">2000 Avenue of the Stars #10</span>, <span class=\"locality\">Los Angeles</span>, <span class=\"region\">CA</span> <span class=\"postal-code\">90067-4700</span>, <span class=\"country-name\">USA</span>",
+      "formatted_address": "2000 Avenue of the Stars #10, Los Angeles, CA 90067, USA",
+      "formatted_phone_number": "(213) 403-3000",
+      "geometry": {
+        "location": {
+          "lat": 34.05821720000001,
+          "lng": -118.41355870000001
+        },
+        "viewport": {
+          "south": 34.05679646970851,
+          "west": -118.4148595302915,
+          "north": 34.05949443029151,
+          "east": -118.41216156970847
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png",
+      "id": "534425858c03a4214990154baacd05a49c37997a",
+      "international_phone_number": "+1 213-403-3000",
+      "name": "The Annenberg Space for Photography",
+      "opening_hours": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1800",
+              "hours": 18,
+              "minutes": 0,
+              "nextDate": 1554080400000
+            },
+            "open": {
+              "day": 0,
+              "time": "1100",
+              "hours": 11,
+              "minutes": 0,
+              "nextDate": 1554055200000
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1800",
+              "hours": 18,
+              "minutes": 0,
+              "nextDate": 1554339600000
+            },
+            "open": {
+              "day": 3,
+              "time": "1100",
+              "hours": 11,
+              "minutes": 0,
+              "nextDate": 1554314400000
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1800",
+              "hours": 18,
+              "minutes": 0,
+              "nextDate": 1554426000000
+            },
+            "open": {
+              "day": 4,
+              "time": "1100",
+              "hours": 11,
+              "minutes": 0,
+              "nextDate": 1554400800000
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1800",
+              "hours": 18,
+              "minutes": 0,
+              "nextDate": 1553907600000
+            },
+            "open": {
+              "day": 5,
+              "time": "1100",
+              "hours": 11,
+              "minutes": 0,
+              "nextDate": 1553882400000
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1800",
+              "hours": 18,
+              "minutes": 0,
+              "nextDate": 1553994000000
+            },
+            "open": {
+              "day": 6,
+              "time": "1100",
+              "hours": 11,
+              "minutes": 0,
+              "nextDate": 1553968800000
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 11:00 am – 6:00 pm",
+          "Thursday: 11:00 am – 6:00 pm",
+          "Friday: 11:00 am – 6:00 pm",
+          "Saturday: 11:00 am – 6:00 pm",
+          "Sunday: 11:00 am – 6:00 pm"
+        ]
+      },
+      "photos": [
+        {
+          "height": 3234,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100531492565256616099/photos\">Tatsuya Ouchi</a>"
+          ],
+          "width": 4852
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103098382416976783311/photos\">Diana Kapran</a>"
+          ],
+          "width": 4032
+        },
+        {
+          "height": 1000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/118166921493569147817/photos\">The Annenberg Space for Photography</a>"
+          ],
+          "width": 1920
+        },
+        {
+          "height": 3006,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111983828544098703383/photos\">ML Aguilar</a>"
+          ],
+          "width": 5344
+        },
+        {
+          "height": 1536,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112965742822651648940/photos\">Nicole Otero</a>"
+          ],
+          "width": 2048
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/106977060272587064137/photos\">Fabio Terasaka</a>"
+          ],
+          "width": 4032
+        },
+        {
+          "height": 2304,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102343576359256805882/photos\">Stéphane Ferracci</a>"
+          ],
+          "width": 4608
+        },
+        {
+          "height": 2366,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112041815041384721974/photos\">Sandy Meola</a>"
+          ],
+          "width": 2851
+        },
+        {
+          "height": 3036,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115706670530279920465/photos\">Brandon Craw</a>"
+          ],
+          "width": 4048
+        },
+        {
+          "height": 3036,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107726823827081015440/photos\">Jon Rawlinson</a>"
+          ],
+          "width": 4048
+        }
+      ],
+      "place_id": "ChIJU9_33fK7woARHo5NSMzJu4c",
+      "plus_code": {
+        "compound_code": "3H5P+7H Los Angeles, California, United States",
+        "global_code": "85633H5P+7H"
+      },
+      "rating": 4.7,
+      "reference": "ChIJU9_33fK7woARHo5NSMzJu4c",
+      "reviews": [
+        {
+          "author_name": "Lee Rainsdon",
+          "author_url": "https://www.google.com/maps/contrib/117630519354181726299/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh6.googleusercontent.com/-LfJ90rGavE8/AAAAAAAAAAI/AAAAAAAADSU/-08Dj1wuH84/s128-c0x00000000-cc-rp-mo-ba4/photo.jpg",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "This is a great small space that shows different forms of art. The parking is good there is a large parking structure below the venue. The parking is validated at the venue. The space is small but they use the area they have well and even have a small gift shop tailored to the current works on display. The staff was helpful and friendly.",
+          "time": 1546389794
+        },
+        {
+          "author_name": "Richard L.",
+          "author_url": "https://www.google.com/maps/contrib/101026791383027661205/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/-NhPoyOq0HkE/AAAAAAAAAAI/AAAAAAABusc/oESev4qXCaw/s128-c0x00000000-cc-rp-mo-ba2/photo.jpg",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "I’ve been to the Annenberg space for photography at least 20 times over the last five years. This is a premier place for photographs and for learning about whatever the subject matter is at the time of the exhibit. It’s free for the lectures and to go into the museum so that’s a nice thing$ At the present time does an exhibit about animals, see live and conservation. It’s definitely worth checking this place out but definitely call before you come down here as sometimes they may be closed between exhibits. The parking is at a major discount when you come here but make sure you bring your ticket up to the counter to be validated.",
+          "time": 1541738094
+        },
+        {
+          "author_name": "jerry redfern",
+          "author_url": "https://www.google.com/maps/contrib/107260115426038557663/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh5.googleusercontent.com/-BkjAhqRKIz0/AAAAAAAAAAI/AAAAAAAABEU/pLUKLT7YLEQ/s128-c0x00000000-cc-rp-mo-ba4/photo.jpg",
+          "rating": 4,
+          "relative_time_description": "2 months ago",
+          "text": "Kinda small space with poor street access set amid shiny, towering edifices to Hollywood's extremely wealthy. DO NOT FORGET TO HAVE PARKING VALIDATED because it's $4.50 per 12 minutes otherwise in the neighboring building. \nAll that said, we saw a beautiful exhibit of Joel Sartore's Photo Ark project - a little ironic in light of the surrounding excess.",
+          "time": 1546819852
+        },
+        {
+          "author_name": "Carlito Nati",
+          "author_url": "https://www.google.com/maps/contrib/101680887019881172299/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh5.googleusercontent.com/-43Kkn4Ho9VI/AAAAAAAAAAI/AAAAAAAAQIQ/j2WahhRcU2c/s128-c0x00000000-cc-rp-mo-ba5/photo.jpg",
+          "rating": 4,
+          "relative_time_description": "4 months ago",
+          "text": "The ASP is a very small museum but with phenomenal exhibits. The museum is located at Century City neighborhood by 2000 Ave of the Stars bldg. Admission is always free. Public parking is available around the area. We went to see the Ark exhibit. It was truly amazing and quite an experience seeing those endangered animal species photographed. Staff are helpful and professional. Overall, I highly recommend this museum.",
+          "time": 1541346339
+        },
+        {
+          "author_name": "John Lopez",
+          "author_url": "https://www.google.com/maps/contrib/104641109578163726836/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/-rW5PAHuOYG4/AAAAAAAAAAI/AAAAAAABdEw/nTH2WB7L-tk/s128-c0x00000000-cc-rp-mo-ba5/photo.jpg",
+          "rating": 4,
+          "relative_time_description": "2 months ago",
+          "text": "Squeezing in on the last day of an installation may not be the best way to experience a space for the first time, but that was our situation. We made it in to see the Photographic Ark and in total we had a good experience. The fact that they do this and charge nothing to the public (short of parking, but even that is heavily discounted with validation) is commendable and worth an extra star in the rating. We were surprised that the space was as small as it was, so there were narrow spaces with the work displayed throughout. The space was at capacity and that made truly taking in the work very difficult. It's unfortunate as well in that the limited amount of space had the unfortunate effect of making this truly huge project seem small. But overall it was worth the visit and I was glad were able to see this work, even if it wasn't in an ideal situation. It's also worth noting the staff was friendly and accommodating.",
+          "time": 1547433168
+        }
+      ],
+      "scope": "GOOGLE",
+      "types": [
+        "museum",
+        "point_of_interest",
+        "establishment"
+      ],
+      "url": "https://maps.google.com/?cid=9780632894988717598",
+      "user_ratings_total": 610,
+      "utc_offset": -420,
+      "vicinity": "2000 Avenue of the Stars #10, Los Angeles",
+      "website": "http://annenbergphotospace.org/",
+      "html_attributions": null
+    }
+  }
+}
