@@ -138,4 +138,30 @@ readyDoc(function() {
 		});
 	}
 
+  if (document.getElementsByClassName('filtered-galleries').length > 0) {
+    document.querySelector(".filtered-galleries #list").onclick = function() {
+      document.querySelector(".filtered-galleries .gallery-items").classList.remove("grid-view");
+    };
+    document.querySelector(".filtered-galleries #grid").onclick = function() {
+      document.querySelector(".filtered-galleries .gallery-items").classList.add("grid-view");
+    };
+    var filterItems = document.querySelectorAll(".filtered-galleries .gallery-nav li a");
+    document.querySelector(".filtered-galleries .gallery-nav .fa-chevron-down").onclick = function() {
+      for(var i=0;i<filterItems.length;i++) {
+        filterItems[i].style.display = "block";
+      }
+    }
+    if(window.innerWidth < 768) {
+      for(var i=0;i<filterItems.length;i++) {
+        filterItems[i].onclick = function(e) {
+          for(var j=0;j<document.querySelectorAll(".filtered-galleries .gallery-nav li a").length;j++) {
+            document.querySelectorAll(".filtered-galleries .gallery-nav li a")[j].style.display = "none";
+          }
+          e.target.style.display = "block";
+        }
+      }
+    }
+
+  }
+
 })

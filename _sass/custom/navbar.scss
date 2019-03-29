@@ -52,7 +52,7 @@
     }
   }
 
-  &.sticky {
+  &.sticky, &.sticky-fixed {
     .btn--primary {
       background-color: $black;
       border-color: $black;
@@ -81,7 +81,7 @@
   &.nav--active {
     background-color: transparent;
 
-    &.sticky {
+    &.sticky, &.sticky-fixed {
       background-color: $navbar-sticky-background;
     }
   }
@@ -110,7 +110,7 @@
     color: $white;
   }
 
-  .sticky & {
+  .sticky &, .sticky-fixed & {
     span {
       color: $black;
     }
@@ -132,6 +132,14 @@
 
     @include media-breakpoint-up(xl) {
       display: none !important;
+    }
+  }
+}
+
+.navbar {
+  &.sticky-fixed {
+    .nav__link {
+      color: $black;
     }
   }
 }
