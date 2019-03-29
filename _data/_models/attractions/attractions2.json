@@ -33,48 +33,48 @@
     "description": ""
   },
   "location": {
-    "name": "Westfield San Francisco Centre",
-    "address": "865 Market St, San Francisco, CA 94103, USA",
-    "phone": "(415) 512-6776",
-    "place_id": "ChIJ6zMe3oWAhYARaZ33Z1BAMRo",
-    "reference": "ChIJ6zMe3oWAhYARaZ33Z1BAMRo",
-    "latitude": 37.784142,
-    "longitude": -122.4068825,
+    "name": "Westfield Century City",
+    "address": "10250 Santa Monica Blvd, Los Angeles, CA 90067, USA",
+    "phone": "(310) 277-3898",
+    "place_id": "ChIJhcGq9Iy7woARs8VXy7WsEZ0",
+    "reference": "ChIJhcGq9Iy7woARs8VXy7WsEZ0",
+    "latitude": 34.0586592,
+    "longitude": -118.4190309,
     "google_place": {
       "address_components": [
         {
-          "long_name": "865",
-          "short_name": "865",
+          "long_name": "10250",
+          "short_name": "10250",
           "types": [
             "street_number"
           ]
         },
         {
-          "long_name": "Market Street",
-          "short_name": "Market St",
+          "long_name": "Santa Monica Boulevard",
+          "short_name": "Santa Monica Blvd",
           "types": [
             "route"
           ]
         },
         {
-          "long_name": "SoMa",
-          "short_name": "SoMa",
+          "long_name": "Century City",
+          "short_name": "Century City",
           "types": [
             "neighborhood",
             "political"
           ]
         },
         {
-          "long_name": "San Francisco",
-          "short_name": "SF",
+          "long_name": "Los Angeles",
+          "short_name": "Los Angeles",
           "types": [
             "locality",
             "political"
           ]
         },
         {
-          "long_name": "San Francisco County",
-          "short_name": "San Francisco County",
+          "long_name": "Los Angeles County",
+          "short_name": "Los Angeles County",
           "types": [
             "administrative_area_level_2",
             "political"
@@ -97,32 +97,32 @@
           ]
         },
         {
-          "long_name": "94103",
-          "short_name": "94103",
+          "long_name": "90067",
+          "short_name": "90067",
           "types": [
             "postal_code"
           ]
         }
       ],
-      "adr_address": "<span class=\"street-address\">865 Market St</span>, <span class=\"locality\">San Francisco</span>, <span class=\"region\">CA</span> <span class=\"postal-code\">94103</span>, <span class=\"country-name\">USA</span>",
-      "formatted_address": "865 Market St, San Francisco, CA 94103, USA",
-      "formatted_phone_number": "(415) 512-6776",
+      "adr_address": "<span class=\"street-address\">10250 Santa Monica Blvd</span>, <span class=\"locality\">Los Angeles</span>, <span class=\"region\">CA</span> <span class=\"postal-code\">90067</span>, <span class=\"country-name\">USA</span>",
+      "formatted_address": "10250 Santa Monica Blvd, Los Angeles, CA 90067, USA",
+      "formatted_phone_number": "(310) 277-3898",
       "geometry": {
         "location": {
-          "lat": 37.784142,
-          "lng": -122.4068825
+          "lat": 34.0586592,
+          "lng": -118.4190309
         },
         "viewport": {
-          "south": 37.7829083697085,
-          "west": -122.4085713802915,
-          "north": 37.78560633029149,
-          "east": -122.40587341970848
+          "south": 34.05539585,
+          "west": -118.42244834999997,
+          "north": 34.06203524999999,
+          "east": -118.41492975
         }
       },
       "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
-      "id": "25d4bf0577c1d6e6c1ad6372dca5c4efaa5d74da",
-      "international_phone_number": "+1 415-512-6776",
-      "name": "Westfield San Francisco Centre",
+      "id": "221af871a40de04c8a3614d48151f0a07bc4d985",
+      "international_phone_number": "+1 310-277-3898",
+      "name": "Westfield Century City",
       "opening_hours": {
         "open_now": false,
         "periods": [
@@ -145,10 +145,10 @@
           {
             "close": {
               "day": 1,
-              "time": "2030",
-              "hours": 20,
-              "minutes": 30,
-              "nextDate": 1554175800000
+              "time": "2100",
+              "hours": 21,
+              "minutes": 0,
+              "nextDate": 1554177600000
             },
             "open": {
               "day": 1,
@@ -161,10 +161,10 @@
           {
             "close": {
               "day": 2,
-              "time": "2030",
-              "hours": 20,
-              "minutes": 30,
-              "nextDate": 1554262200000
+              "time": "2100",
+              "hours": 21,
+              "minutes": 0,
+              "nextDate": 1554264000000
             },
             "open": {
               "day": 2,
@@ -177,10 +177,10 @@
           {
             "close": {
               "day": 3,
-              "time": "2030",
-              "hours": 20,
-              "minutes": 30,
-              "nextDate": 1554348600000
+              "time": "2100",
+              "hours": 21,
+              "minutes": 0,
+              "nextDate": 1554350400000
             },
             "open": {
               "day": 3,
@@ -193,10 +193,10 @@
           {
             "close": {
               "day": 4,
-              "time": "2030",
-              "hours": 20,
-              "minutes": 30,
-              "nextDate": 1554435000000
+              "time": "2100",
+              "hours": 21,
+              "minutes": 0,
+              "nextDate": 1554436800000
             },
             "open": {
               "day": 4,
@@ -209,10 +209,10 @@
           {
             "close": {
               "day": 5,
-              "time": "2030",
-              "hours": 20,
-              "minutes": 30,
-              "nextDate": 1553916600000
+              "time": "2200",
+              "hours": 22,
+              "minutes": 0,
+              "nextDate": 1553922000000
             },
             "open": {
               "day": 5,
@@ -225,10 +225,10 @@
           {
             "close": {
               "day": 6,
-              "time": "2030",
-              "hours": 20,
-              "minutes": 30,
-              "nextDate": 1554003000000
+              "time": "2200",
+              "hours": 22,
+              "minutes": 0,
+              "nextDate": 1554008400000
             },
             "open": {
               "day": 6,
@@ -240,144 +240,144 @@
           }
         ],
         "weekday_text": [
-          "Monday: 10:00 am – 8:30 pm",
-          "Tuesday: 10:00 am – 8:30 pm",
-          "Wednesday: 10:00 am – 8:30 pm",
-          "Thursday: 10:00 am – 8:30 pm",
-          "Friday: 10:00 am – 8:30 pm",
-          "Saturday: 10:00 am – 8:30 pm",
+          "Monday: 10:00 am – 9:00 pm",
+          "Tuesday: 10:00 am – 9:00 pm",
+          "Wednesday: 10:00 am – 9:00 pm",
+          "Thursday: 10:00 am – 9:00 pm",
+          "Friday: 10:00 am – 10:00 pm",
+          "Saturday: 10:00 am – 10:00 pm",
           "Sunday: 11:00 am – 7:00 pm"
         ]
       },
       "photos": [
         {
-          "height": 4032,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/107467563025287704731/photos\">vinod palan</a>"
-          ],
-          "width": 3024
-        },
-        {
-          "height": 2736,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/117148199602544876966/photos\">Shi-Ting Chu</a>"
-          ],
-          "width": 3648
-        },
-        {
-          "height": 2592,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/103439367467363781610/photos\">Sandro Eid</a>"
-          ],
-          "width": 4608
-        },
-        {
-          "height": 4032,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/111606016709248269863/photos\">Gerry Armintia</a>"
-          ],
-          "width": 3024
-        },
-        {
-          "height": 2988,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/112674475934698300992/photos\">Alvaro Escobedo</a>"
-          ],
-          "width": 5312
-        },
-        {
           "height": 3024,
           "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/118364358732084327650/photos\">David Moore</a>"
+            "<a href=\"https://maps.google.com/maps/contrib/110228420131916486732/photos\">Jadei</a>"
           ],
           "width": 4032
         },
         {
-          "height": 4000,
+          "height": 4608,
           "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/115991804913160158412/photos\">Jonghoon Park</a>"
+            "<a href=\"https://maps.google.com/maps/contrib/104684796418103365648/photos\">Steve Booth</a>"
           ],
-          "width": 4000
+          "width": 3456
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105441404939178340286/photos\">Xiao Bao</a>"
+          ],
+          "width": 3024
+        },
+        {
+          "height": 2048,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108738302921438473747/photos\">Jerry Zhou</a>"
+          ],
+          "width": 1366
+        },
+        {
+          "height": 1836,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109390517586800925644/photos\">Ulrike Nohrer</a>"
+          ],
+          "width": 3264
         },
         {
           "height": 3024,
           "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/110268800892178767777/photos\">Jeremy Long</a>"
+            "<a href=\"https://maps.google.com/maps/contrib/108071196242848570263/photos\">Subash Wilfred</a>"
           ],
           "width": 4032
         },
         {
-          "height": 4656,
+          "height": 1836,
           "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/104343844886198131026/photos\">Twiners Liam</a>"
+            "<a href=\"https://maps.google.com/maps/contrib/103851756864643633276/photos\">Divinity Entertainment and Promotions</a>"
           ],
-          "width": 3492
+          "width": 3264
         },
         {
-          "height": 2268,
+          "height": 3024,
           "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/116630431812853890037/photos\">LaTonya Jackson</a>"
+            "<a href=\"https://maps.google.com/maps/contrib/107513876923387296210/photos\">Alex K</a>"
+          ],
+          "width": 4032
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117410369574302338086/photos\">Alex Bowles</a>"
+          ],
+          "width": 1960
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116418254005302142023/photos\">Winnie S</a>"
           ],
           "width": 4032
         }
       ],
-      "place_id": "ChIJ6zMe3oWAhYARaZ33Z1BAMRo",
+      "place_id": "ChIJhcGq9Iy7woARs8VXy7WsEZ0",
       "plus_code": {
-        "compound_code": "QHMV+M6 SoMa, San Francisco, CA, United States",
-        "global_code": "849VQHMV+M6"
+        "compound_code": "3H5J+F9 Los Angeles, California, United States",
+        "global_code": "85633H5J+F9"
       },
-      "rating": 4.3,
-      "reference": "ChIJ6zMe3oWAhYARaZ33Z1BAMRo",
+      "rating": 4.4,
+      "reference": "ChIJhcGq9Iy7woARs8VXy7WsEZ0",
       "reviews": [
         {
-          "author_name": "Arthur AWI",
-          "author_url": "https://www.google.com/maps/contrib/115651246898785477042/reviews",
+          "author_name": "Kelly Clyburn",
+          "author_url": "https://www.google.com/maps/contrib/116302852526954761510/reviews",
           "language": "en",
-          "profile_photo_url": "https://lh3.googleusercontent.com/-vxFLNEoGMbE/AAAAAAAAAAI/AAAAAAAAjKM/zoxQYimvCyU/s128-c0x00000000-cc-rp-mo-ba6/photo.jpg",
-          "rating": 5,
-          "relative_time_description": "a week ago",
-          "text": "I went to this place with friends for Lunch. Varieties of types of foods available. I tried the Thai seafood. It's delicious and quick service. After having lunch, we did the shopping. Good place for shopaholic... Check out the photos.",
-          "time": 1553027777
-        },
-        {
-          "author_name": "Calise Garrick",
-          "author_url": "https://www.google.com/maps/contrib/108087669400373286146/reviews",
-          "language": "en",
-          "profile_photo_url": "https://lh3.googleusercontent.com/-sVM79_i3Opk/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3reRHLBbu4uchGc7mbZos-aazZO54g/s128-c0x00000000-cc-rp-mo-ba4/photo.jpg",
-          "rating": 5,
-          "relative_time_description": "a month ago",
-          "text": "I had an appointment at Burk William Spa. My massage therapist was J.R. for a deep tissue massage.  He was very polite and knowledgeable. J.R. explained his technique before he started. I definitely can feel the pressure in my muscles relax. I greatly appreciate  a great experience.",
-          "time": 1551242411
-        },
-        {
-          "author_name": "Kelsey Rei",
-          "author_url": "https://www.google.com/maps/contrib/117836203323035503836/reviews",
-          "language": "en",
-          "profile_photo_url": "https://lh6.googleusercontent.com/-9YxPlLspFUs/AAAAAAAAAAI/AAAAAAAAAMI/Rrk5WfCvVdk/s128-c0x00000000-cc-rp-mo/photo.jpg",
+          "profile_photo_url": "https://lh4.googleusercontent.com/-pP0iQ3yIy3k/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rfi8eT3G54CMsJshYuQtHeSV95GUQ/s128-c0x00000000-cc-rp-mo-ba3/photo.jpg",
           "rating": 5,
           "relative_time_description": "in the last week",
-          "text": "Love this mall. Right off Powell Bart Station, so it's pretty easy to get to if you're not a SF local! Plenty of stores for everyone's need, and some snack places. Spacious and well kept, everyone in the stores were nice when I went. Clean bathrooms, too.",
-          "time": 1553542769
+          "text": "What better place to take your teenage kid and their friend than to the mall. This place was huge and filled with shops that carried things that you normally only see on tv when you are from a small town. Great place to kill time while in the middle of Beverly Hills. There was a massive food court to eat at that had both chain restaurants along with specialty food, you could easily spend days there and not eat the same thing twice. I am sure you could see a celebrity or two if you were there at the right time.",
+          "time": 1553681889
         },
         {
-          "author_name": "Mo Soliman",
-          "author_url": "https://www.google.com/maps/contrib/115132894728661074175/reviews",
+          "author_name": "Marta Battles",
+          "author_url": "https://www.google.com/maps/contrib/108011539253360679522/reviews",
           "language": "en",
-          "profile_photo_url": "https://lh5.googleusercontent.com/-_dmnyUUcles/AAAAAAAAAAI/AAAAAAAAzkc/MSmEPkmqHHQ/s128-c0x00000000-cc-rp-mo-ba5/photo.jpg",
-          "rating": 4,
-          "relative_time_description": "a week ago",
-          "text": "Right in the center of the city. Huge mall with lots of varieties. Good for your dose of daily shopping and for your shopping sprees. You can enjoy the food court as well. Located perfectly on market street which allows you to continue enjoying the coty after you are all done. Parking is a bit of a hassle if you are not willing to pay a lot. Recommended",
-          "time": 1553183803
-        },
-        {
-          "author_name": "Akilah C",
-          "author_url": "https://www.google.com/maps/contrib/106527930471056309360/reviews",
-          "language": "en",
-          "profile_photo_url": "https://lh5.googleusercontent.com/-wsR2gKGx1dY/AAAAAAAAAAI/AAAAAAAAE-s/0ySUDcn88IA/s128-c0x00000000-cc-rp-mo/photo.jpg",
+          "profile_photo_url": "https://lh4.googleusercontent.com/-DY2zLfHV-38/AAAAAAAAAAI/AAAAAAAAAAc/83nBTALiPqA/s128-c0x00000000-cc-rp-mo/photo.jpg",
           "rating": 4,
           "relative_time_description": "a month ago",
-          "text": "Love a good Westfield and this one continues to get better. Except for the removal of Bristol farms. It should just have been condensed and better advertised. Now the only grocery is target. Event facilities are superb.",
-          "time": 1550989659
+          "text": "This plaza is fun and entertain. It looks exactly like Japan and very cultural! There are many restaurants and bakeries in here. I absolutely love their bakery! It taste very unique! We actually came here twice during our stay in CA. We will definitely come back here some day!",
+          "time": 1549995208
+        },
+        {
+          "author_name": "Salar Yamini",
+          "author_url": "https://www.google.com/maps/contrib/108852262162278460705/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh5.googleusercontent.com/-kxVggmsuDcc/AAAAAAAAAAI/AAAAAAAAK64/NPdLnIwB44Y/s128-c0x00000000-cc-rp-mo-ba3/photo.jpg",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Parking is decent but I'm very happy my T-Mobile service works great underground. The food court is one of the better ones and so is the shopping experience. But make sure you remember where you are when you exit the elevator/escalator or else you will get lost when going back to your car.",
+          "time": 1550716993
+        },
+        {
+          "author_name": "Mario Garcia-Gillespie",
+          "author_url": "https://www.google.com/maps/contrib/117736583350191921146/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/-omM6Lq811nA/AAAAAAAAAAI/AAAAAAAAPaQ/6f5l97CqLa8/s128-c0x00000000-cc-rp-mo-ba5/photo.jpg",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "This mall is amazing. It is nice, giant and has options of food and shopping galore. The parking lot has lights showing you open spots and it is cheap with some stores like Gelsons offering free 2 hour parking. It is a very busy mall so don't expect to find a parking right away on the weekends. This definitely a must visit mall with a great surrounding area.",
+          "time": 1552573066
+        },
+        {
+          "author_name": "Corey Torres",
+          "author_url": "https://www.google.com/maps/contrib/100163385729683234643/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh5.googleusercontent.com/-AubA9xJUaJo/AAAAAAAAAAI/AAAAAAAACG4/d8epzlZURL4/s128-c0x00000000-cc-rp-mo-ba4/photo.jpg",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Been coming here since it was the Fox Hills Mall, in short I have a been a patron of this location for 19 years. The crowds are trendy like any other mall but the shops do there best to withstand the retail apocalypse. To be honest I shop here every blue moon but the restaurants are the real reason I come here. Five Guys, and food court are real gems and the most on point staff. Cheers!",
+          "time": 1550280995
         }
       ],
       "scope": "GOOGLE",
@@ -393,11 +393,11 @@
         "food",
         "establishment"
       ],
-      "url": "https://maps.google.com/?cid=1887360432930790761",
-      "user_ratings_total": 11524,
+      "url": "https://maps.google.com/?cid=11318017235359352243",
+      "user_ratings_total": 5475,
       "utc_offset": -420,
-      "vicinity": "865 Market Street, San Francisco",
-      "website": "http://www.westfield.com/sanfrancisco/",
+      "vicinity": "10250 Santa Monica Boulevard, Los Angeles",
+      "website": "http://www.westfield.com/centurycity/",
       "html_attributions": null
     }
   }
