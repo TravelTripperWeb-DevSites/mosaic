@@ -1,25 +1,61 @@
-.offer-listing__image {
-  border-bottom: 8px solid $secondary;
-  line-height: 0;
-}
+.offers {
 
-.special-offers {
-  .special-offers-listings {
-    .card-listing {
-      // margin-left: -3px;
-      //
-      // @include media-breakpoint-up(md) {
-      //   margin-left: -30px;
-      // }
+  &__wrap {
+    width: 100%;
+
+    &:nth-child(even) {
+      background: $gray-100;
     }
   }
 
-  &__controls {
-    padding: 0;
+  .offer-listing {
 
-    li {
-      display: inline-block;
-      list-style: none;
+    &__image {
+      line-height: 0;
+      border-bottom: 8px solid $secondary;
     }
+  }
+}
+
+.offer-details {
+  @extend .container;
+  max-width: 100%;
+
+  &__heading {
+    @extend .room-details__text__heading;
+  }
+
+  ul {
+    padding-left: 17px;
+  }
+
+}
+
+.special-offers {
+  text-align: center;
+
+  hr {
+    width: 100%;
+  }
+
+  &__controls {
+
+    span {
+      cursor: pointer;
+    }
+
+    .custom-control-items {
+      &__nav {
+        width: 50px;
+
+        b {
+          font-weight: normal;
+        }
+      }
+    }
+  }
+
+  .link--cta {
+    bottom: 0;
   }
 }

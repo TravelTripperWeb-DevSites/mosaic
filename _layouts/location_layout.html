@@ -39,6 +39,24 @@ layout: generic
   </div>
 </section>
 
+<div class="c-map">
+  <div class="c-map__headings">
+    <p class="h2">Top Attractions</p>
+    <p>Select a category & discover our nearest attractions on the map</p>
+  </div>
+  <div class="c-map__box">
+    <div class="c-map__box__tabs">
+      <ul>
+        <li>Attractions</li>
+        <li>Dining</li>
+        <li>Entertainment</li>
+        <li>Shopping</li>
+      </ul>
+    </div>
+    <div id="leafletmap" class="map" data-show-attractions="show"></div>
+  </div>
+</div>
+
 <section class="splash splash--bordered" style="background-image:url('//res.cloudinary.com/traveltripperweb/image/upload/v1553635760/jtkhfgyg0wefbbhdraxx.jpg');">
 	<div class="container">
 		<div class="splash__content">
@@ -59,3 +77,44 @@ layout: generic
 </section>
 
 {% include components/instagram %}
+
+
+<script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"></script>
+
+<script type="text/javascript">
+  var attractions = [];
+  attractions = [
+
+
+  [ 'Theater District', 40.75901100000001, -73.98447220000003, 'all','Theater District, New York, NY, USA','#']
+  ,
+
+  [ 'Grand Central Terminal', 40.752457, -73.97841, 'all','New York, NY 10017, USA','http://www.grandcentralterminal.com/']
+  ,
+
+  [ 'Tanner Smiths', 40.7643362, -73.98158990000002, 'Bars','204 W 55th St, New York, NY 10019, USA','http://www.tannersmiths.com/']
+  ,
+
+  [ 'The Three Monkeys', 40.7640969, -73.9830761, 'Bars','236 W 54th St, New York, NY 10019, USA','http://thethreemonkeysbar.com/']
+  ,
+
+  [ 'Carnegie Johns', 40.7648472, -73.98027460000003, 'Restaurants','7th Ave &amp; W 56th St, New York, NY 10011, USA','#']
+   ];
+</script>
+<script src="/assets/js/leaflet-plugin.js"></script>
+<script type="text/javascript">
+   var leaflet = LeafletMap({
+     target: document.getElementById('leafletmap'),
+     fitBounds: false,
+     hotelTitle: 'The Manhattan Club',
+     hotelAddress: '200 W 56th St.,New York,NY',
+     hotelLat: 40.7650395,
+     hotelLong: -73.9833072,
+     hotelMarker: '/assets/img/marker.png',
+     markerSize: [36, 48],
+     zoom: 13,
+     googleLink: true,
+     attractionsList: attractions
+   });
+   leaflet.init();
+</script>
