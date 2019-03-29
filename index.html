@@ -44,7 +44,9 @@ meta_tags:
 {% include components/special-offers.html %}
 
 <section class="bg--dark pb-4">
-  <h3 class="h2 text-center py-4 text-white">Rooms & Suites</h3>
+  {% regionblock rooms_carousel_heading, type:heading %}
+    <h3 class="h2 text-center py-4 text-white">Rooms & Suites</h3>
+  {% endregionblock %}
   {% assign rooms = site.data._models.rooms  | sort:"order" %}
   <div class="rooms-slider-container">
     {% for room in rooms %}
@@ -85,7 +87,9 @@ meta_tags:
         <i class="fa fa-arrow-right"></i>
       </span>
       <div class="cta-wrap">
-        <a href="/rooms/" class="link--cta">View All Rooms</a>
+        {% regionblock rooms_carousel_cta, type:text %}
+          <a href="/rooms/" class="link--cta">View All Rooms</a>
+        {% endregionblock %}
       </div>
     </div>
   </div>

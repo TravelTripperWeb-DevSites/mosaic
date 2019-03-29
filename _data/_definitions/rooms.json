@@ -31,6 +31,12 @@
     "display_field": "name",
     "model_name": "room_bed_types"
   },
+  "max_guests": {
+    "required": true,
+    "localizable": true,
+    "type": "integer",
+    "label": "Maximum Guests",
+  },
   "room_category": {
     "required": true,
     "type": "model",

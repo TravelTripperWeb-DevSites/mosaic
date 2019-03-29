@@ -117,5 +117,51 @@ readyDoc(function() {
 			controls: false
 		});
 	}
+	if (document.getElementsByClassName('room-features__list').length > 0) {
+		// Slider With Images
+		var slider = tns({
+			container: '.room-features__list',
+			mouseDrag: true,
+      nav: false,
+      items: 2,
+      prevButton: "#customNavItemsRoomFeatures .prev", // previous button
+      nextButton: "#customNavItemsRoomFeatures .next", // next button
+      navContainer: '#customNavItemsRoomFeatures .custom-control-items__nav',
+      "responsive": {
+        "768": {
+          items: 3
+        },
+        "992": {
+          items: 5
+        }
+      }
+		});
+	}
+
+  if (document.getElementsByClassName('filtered-galleries').length > 0) {
+    document.querySelector(".filtered-galleries #list").onclick = function() {
+      document.querySelector(".filtered-galleries .gallery-items").classList.remove("grid-view");
+    };
+    document.querySelector(".filtered-galleries #grid").onclick = function() {
+      document.querySelector(".filtered-galleries .gallery-items").classList.add("grid-view");
+    };
+    var filterItems = document.querySelectorAll(".filtered-galleries .gallery-nav li a");
+    document.querySelector(".filtered-galleries .gallery-nav .fa-chevron-down").onclick = function() {
+      for(var i=0;i<filterItems.length;i++) {
+        filterItems[i].style.display = "block";
+      }
+    }
+    if(window.innerWidth < 768) {
+      for(var i=0;i<filterItems.length;i++) {
+        filterItems[i].onclick = function(e) {
+          for(var j=0;j<document.querySelectorAll(".filtered-galleries .gallery-nav li a").length;j++) {
+            document.querySelectorAll(".filtered-galleries .gallery-nav li a")[j].style.display = "none";
+          }
+          e.target.style.display = "block";
+        }
+      }
+    }
+
+  }
 
 })
