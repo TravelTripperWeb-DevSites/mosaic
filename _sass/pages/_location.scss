@@ -15,12 +15,15 @@
   &__headings {
     padding: 64px 15px 30px;
     text-align: center;
+
     .h2 {
       padding-bottom: 11px;
     }
   }
+
   &__box {
     position: relative;
+
     &__tabs {
       position: absolute;
       top: 0;
@@ -31,16 +34,49 @@
       display: flex;
       justify-content: center;
       width: auto;
+
       ul {
         display: flex;
         min-height: 30px;
         margin: 0;
         padding: 0;
         background: $gray-100;
+
         li {
-          padding: 10px;
+          min-width: 144px;
+          padding: 12px 10px;
+          font-size: 12px;
           text-align: center;
+          text-transform: uppercase;
           list-style: none;
+          transition: all 0.3s ease-in-out;
+          cursor: pointer;
+
+          span {
+            margin: 0 auto;
+          }
+
+          &.active,
+          &:hover {
+            color: $white;
+            background-color: $black;
+
+            .attractions-icon {
+              background-image: url("/assets/img/attraction-white.png");
+            }
+
+            .entertain-icon {
+              background-image: url("/assets/img/entertain-white.png");
+            }
+
+            .dining-icon {
+              background-image: url("/assets/img/restaurant-white.png");
+            }
+
+            .shop-icon {
+              background-image: url("/assets/img/shopping-white.png");
+            }
+          }
         }
       }
     }
@@ -51,6 +87,91 @@
     height: 328px;
     @include media-breakpoint-up(md) {
       height: 504px;
+    }
+  }
+}
+//map icons
+.map-circle-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: $black;
+  border: 3px solid $black;
+  border-radius: 50% !important;
+
+  &.active {
+    z-index: 999 !important;
+    background-color: $white;
+  }
+}
+
+.icons {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px 24px;
+  transition: all 0.3s ease-in-out;
+
+  &.attractions-icon {
+    background-image: url("/assets/img/attraction-dark.png");
+
+    &.active,
+    &:hover {
+      background-image: url("/assets/img/attraction-white.png");
+    }
+  }
+
+  &.dining-icon {
+    background-image: url("/assets/img/restaurant-dark.png");
+
+    &.active,
+    &:hover {
+      background-image: url("/assets/img/restaurant-white.png");
+    }
+  }
+
+  &.entertain-icon {
+    background-size: 28px 28px;
+    background-image: url("/assets/img/entertain-dark.png");
+
+    &.active,
+    &:hover {
+      background-image: url("/assets/img/entertain-white.png");
+    }
+  }
+
+  &.shop-icon {
+    background-image: url("/assets/img/shopping-dark.png");
+
+    &.active,
+    &:hover {
+      background-image: url("/assets/img/shopping-white.png");
+    }
+  }
+}
+
+//leaflet poup
+.leaflet-popup-content-wrapper {
+  max-width: 260px;
+  border-radius: 0;
+  .leaflet-popup-content {
+    font-size: 12px;
+    color: $black;
+    text-align: center;
+    a {
+      color: $black;
+    }
+    .btnDirection {
+      padding: 5px 5px 1px;
+      font-size: 9px;
+      color:  $light-grey;
+      text-transform: uppercase;
+      border-bottom: 1px solid $light-grey;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 }

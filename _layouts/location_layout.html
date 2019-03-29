@@ -47,13 +47,25 @@ layout: generic
   <div class="c-map__box">
     <div class="c-map__box__tabs">
       <ul>
-        <li>Attractions</li>
-        <li>Dining</li>
-        <li>Entertainment</li>
-        <li>Shopping</li>
+        <li class="active">
+          <span class="icons attractions-icon active"></span>
+          Attractions
+        </li>
+        <li>
+          <span class="icons dining-icon"></span>
+          Dining
+        </li>
+        <li>
+          <span class="icons entertain-icon"></span>
+          Entertainment
+        </li>
+        <li>
+          <span class="icons shop-icon"></span>
+          Shopping
+        </li>
       </ul>
     </div>
-    <div id="leafletmap" class="map" data-show-attractions="show"></div>
+    <div id="leafletmap" class="map" data-attractions="show"></div>
   </div>
 </div>
 
@@ -111,9 +123,9 @@ layout: generic
      hotelLat: 40.7650395,
      hotelLong: -73.9833072,
      hotelMarker: '/assets/img/marker.png',
-     markerSize: [36, 48],
+     markerSize: [36, 36],
      zoom: 13,
-     googleLink: true,
+     getDirectionBtn: true, 
      attractionsList: attractions
    });
    leaflet.init();
