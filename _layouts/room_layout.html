@@ -40,28 +40,40 @@ layout: default
   <div class="container">
     <div class="room-features__heading-wrap">
       <hr>
-      <p class="room-features__heading">Room Features</p>
+      {% regionblock room_features_heading, type: header %}
+        <p class="room-features__heading">Room Features</p>
+      {% endregionblock %}
     </div>
     <div class="room-features__list row">
       <div class="col">
-        <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553856754/ioezyiic9uayvgdgh6qr.png" alt="Newly-Redesigned Finishes">
-        <p>Newly-Redesigned Finishes</p>
+        {% regionblock room_feature1, type: mixed %}
+          <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553856754/ioezyiic9uayvgdgh6qr.png" alt="Newly-Redesigned Finishes">
+          <p>Newly-Redesigned Finishes</p>
+        {% endregionblock %}
       </div>
       <div class="col">
-        <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553856637/anfzwbafjt6k3aaigpbi.png" alt="Luxurious 300-thread count linens">
-        <p>Luxurious 300-thread count linens</p>
+        {% regionblock room_feature2, type: mixed %}
+          <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553856637/anfzwbafjt6k3aaigpbi.png" alt="Luxurious 300-thread count linens">
+          <p>Luxurious 300-thread count linens</p>
+        {% endregionblock %}
       </div>
       <div class="col">
-        <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553856636/kjwwyg7jr1dvgqs2y5g3.png" alt="BVLGARI® Bath Products">
-        <p>BVLGARI® Bath Products</p>
+        {% regionblock room_feature3, type: mixed %}
+          <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553856636/kjwwyg7jr1dvgqs2y5g3.png" alt="BVLGARI® Bath Products">
+          <p>BVLGARI® Bath Products</p>
+        {% endregionblock %}
       </div>
       <div class="col">
-        <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553856636/zugdoscvg75m3fuv24xq.png" alt="Rainfall Showers">
-        <p>Rainfall Showers</p>
+        {% regionblock room_feature4, type: mixed %}
+          <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553856636/zugdoscvg75m3fuv24xq.png" alt="Rainfall Showers">
+          <p>Rainfall Showers</p>
+        {% endregionblock %}
       </div>
       <div class="col">
-        <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553856637/ytzudwxqjdipiwfvf1xl.png" alt="Nespresso Machines">
-        <p>Nespresso Machines</p>
+        {% regionblock room_feature5, type: mixed %}
+          <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553856637/ytzudwxqjdipiwfvf1xl.png" alt="Nespresso Machines">
+          <p>Nespresso Machines</p>
+        {% endregionblock %}
       </div>
     </div>
     <div class="container">
@@ -175,3 +187,5 @@ layout: default
   </div>
 </section>
 {% include components/special-offers.html %}
+
+{% include components/instagram %}
