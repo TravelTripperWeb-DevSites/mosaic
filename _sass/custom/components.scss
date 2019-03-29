@@ -7,8 +7,8 @@
   height: 100vh;
 
   .container-fluid {
-      text-align: left !important;
-      z-index: 1;
+    text-align: left !important;
+    z-index: 1;
   }
 
   .hero-content {
@@ -26,9 +26,9 @@
 
 hr {
   width: 104px;
-  border-bottom: 1px solid;
-  border-top: 0;
   margin: $spacer 0;
+  border-top: 0;
+  border-bottom: 1px solid;
 
   &.hr--secondary {
     color: $secondary;
@@ -47,13 +47,14 @@ hr {
   background-repeat: no-repeat;
 	background-position: top center;
 	background-size: cover;
-	padding: $spacer;
+	padding: 20px 15px;
   justify-content: center;
   display: flex;
   flex-direction: column;
 
 	@include media-breakpoint-up(md) {
 		min-height: 625px;
+    padding: 80px;
 	}
 
   &.splash--bordered {
@@ -140,10 +141,13 @@ hr {
 }
 
 .review-box {
-  max-width: 475px;
-  padding: 64px 80px;
+  padding: 40px 25px;
   background-color: rgba(41, 56, 74, .8);
   border-bottom: 8px solid $secondary;
+
+  @include media-breakpoint-up(md) {
+    padding: 64px 80px;
+  }
 
   .h4 {
     font-size: $base-font-size;
@@ -280,4 +284,67 @@ hr {
 }
 .tns-slide-active {
   opacity: 1;
+}
+
+.border-box-image {
+  z-index: 1;
+  max-height: 560px;
+}
+
+.bordered-box {
+  margin: -7px 15px 7px;
+  padding: 30px 25px;
+  border: solid 1px $secondary;
+
+  @include media-breakpoint-up(md) {
+    flex: 0 0 57%;
+    max-width: 57%;
+    margin: 0 0 0 -7%;
+    padding: 30px 50px 30px 100px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    flex: 0 0 56%;
+    max-width: 56%;
+    margin: 5% 0 0 -7%;
+    padding: 60px 80px 150px 150px;
+  }
+}
+
+.with-line {
+  margin-bottom: 20px;
+
+  &:after {
+    position: relative;
+    right: auto;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 50%;
+    height: 1px;
+    margin-top: 20px;
+    content: '';
+    background: $secondary;
+
+    @include media-breakpoint-up(md) {
+      position: absolute;
+      right: 0;
+      bottom: -72px;
+      left: auto;
+      width: 1px;
+      height: 220px;
+      margin-top: 0;
+    }
+
+    @include media-breakpoint-up(xl) {
+      height: 190px;
+    }
+  }
+}
+
+.scroll-down-icon {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
