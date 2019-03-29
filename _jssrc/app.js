@@ -5,11 +5,12 @@ function readyDoc(fn) {
 }
 
 readyDoc(function() {
-	if (document.getElementById("close_offer_btn")) {
-		document.getElementById("close_offer_btn").onclick = function() {
+	
+	if(document.getElementById("close_offer_btn")) {
+		document.getElementById("close_offer_btn").addEventListener('click',function() {
 			var offerBar = document.getElementById("hero-offer");
 			offerBar.style.display = 'none';
-		}
+		})
 	}
 
 

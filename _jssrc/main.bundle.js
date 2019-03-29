@@ -7,11 +7,12 @@ function readyDoc(fn) {
 }
 
 readyDoc(function () {
+
 	if (document.getElementById("close_offer_btn")) {
-		document.getElementById("close_offer_btn").onclick = function () {
+		document.getElementById("close_offer_btn").addEventListener('click', function () {
 			var offerBar = document.getElementById("hero-offer");
 			offerBar.style.display = 'none';
-		};
+		});
 	}
 
 	if (document.getElementsByClassName('review-box__wrap').length > 0) {
