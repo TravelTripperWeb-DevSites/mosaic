@@ -5,10 +5,10 @@ layout: default
 {% region hero, type:hero %}
 
 {% assign offers = site.data._models.offers | sort: "order" %}
-<section class="offers-listing">
+<section class="offers">
   {% for offer in offers %}
-  <div class="offers-listing__wrap">
-    <div class="container py-4">
+  <div class="offers__wrap">
+    <div class="container py-4 py-md-5">
       <div class="row">
         <div class="offer-listing align-items-center d-lg-flex">
           <div class="col-lg-6">
@@ -16,7 +16,7 @@ layout: default
               <img class="objectfit" src="{{ offer.image.url_large }}" alt="{{ offer.image.alt }}">
             </div>
           </div>
-          <div class="col-lg-6 p-4">
+          <div class="col-lg-6 pt-4 pr-4 pl-4 pb-0 pb-md-4">
             <div>
               <h3 class="h3">{{ offer.name }}</h3>
               <hr class="hr">

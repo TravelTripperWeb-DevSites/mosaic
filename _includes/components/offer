@@ -1,0 +1,13 @@
+<div class="ttweb-component ttweb-offer">
+  <div class="ttweb-offer__name">
+    <a href="{{ offer.id | permalink: model_dir: 'offers' }}">{{ offer.name }}</a>
+  </div>
+  <div class="ttweb-offer__description">
+    {{ offer.description }}
+  </div>
+  <div class="ttweb-offer__image">
+    <div class="image-frame--cover">
+      {% include components/image image=offer.image max_width=600 %}
+    <//div>
+  </div>
+</div>

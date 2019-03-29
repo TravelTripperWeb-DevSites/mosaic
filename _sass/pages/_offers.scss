@@ -1,4 +1,4 @@
-.offers-listing {
+.offers {
 
   &__wrap {
     width: 100%;
@@ -8,9 +8,11 @@
     }
   }
 
-  &__image {
-    line-height: 0;
-    border-bottom: 8px solid $secondary;
+  .offer-listing {
+    &__image {
+      line-height: 0;
+      border-bottom: 8px solid $secondary;
+    }
   }
 }
 
