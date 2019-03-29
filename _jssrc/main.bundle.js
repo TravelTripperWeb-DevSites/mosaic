@@ -79,7 +79,7 @@ readyDoc(function () {
 
 	if (document.getElementsByClassName('special-offers').length > 0) {
 		// Slider With Images
-		var slider = tns({
+		var sliderz = tns({
 			container: '.special-offers-listings__wrap',
 			items: 1.1,
 			gutter: 15,
@@ -96,5 +96,17 @@ readyDoc(function () {
 				}
 			}
 		});
+
+		var controls = document.querySelectorAll('#customNavItemsOffers span');
+		for (var i = 0; i < controls.length; i++) {
+			controls[i].onclick = function () {
+				// get slider info
+				var info = sliderz.getInfo(),
+				    indexCurrent = info.index;
+				console.log(info);
+				indexCurrent = info.slideItems[indexCurrent].attributes[1].nodeValue;
+				document.getElementById('current-slide').innerHTML = indexCurrent;
+			};
+		}
 	}
 });

@@ -4,57 +4,35 @@ layout: default
 
 {% region hero, type:hero %}
 
+{% assign offers = site.data._models.offers | sort: "order" %}
 <section class="offers-listing">
-  <section>
+  {% for offer in offers %}
+  <div class="offers-listing__wrap">
     <div class="container py-4">
       <div class="row">
         <div class="offer-listing align-items-center d-lg-flex">
           <div class="col-lg-6">
             <div class="offer-listing__image">
-              <img class="objectfit" src="//res.cloudinary.com/traveltripperweb/image/upload/v1552671665/sd0mcuum0bpkjqenvk9v.jpg">
+              <img class="objectfit" src="{{ offer.image.url_large }}" alt="{{ offer.image.alt }}">
             </div>
           </div>
           <div class="col-lg-6 p-4">
             <div>
-              <h3 class="h3">Sunshine in the Winter</h3>
+              <h3 class="h3">{{ offer.name }}</h3>
               <hr class="hr">
-              <h4 class="h4 mb-3">save up to 20%</h4>
-              <p>Leave the cold behind with Mosaic Hotel and enjoy additional savings!</p>
+              <h4 class="h4 mb-3">{{ offer.tagline }}</h4>
+              <p>{{ offer.short_description }}</p>
               <div class="cta-wrap">
-                  <a class="link--cta mr-4" href="#">View Offer</a>
-                  <a class="btn btn--tertiary" href="#">Book Offer</a>
+                <a class="link--cta mr-4" href="/offers/{{ offer.url_friendly_name }}">View Offer</a>
+                <a class="btn btn--tertiary" href="{{ offer.booking_url }}">Book Offer</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <section class="bg--light">
-    <div class="container py-4">
-      <div class="row">
-        <div class="offer-listing align-items-center d-lg-flex">
-          <div class="col-lg-6">
-            <div class="offer-listing__image">
-              <img class="objectfit" src="//res.cloudinary.com/traveltripperweb/image/upload/v1552671665/sd0mcuum0bpkjqenvk9v.jpg">
-            </div>
-          </div>
-          <div class="col-lg-6 p-4">
-            <div>
-              <h3 class="h3">Sunshine in the Winter</h3>
-              <hr class="hr">
-              <h4 class="h4 mb-3">save up to 20%</h4>
-              <p>Leave the cold behind with Mosaic Hotel and enjoy additional savings!</p>
-              <div class="cta-wrap">
-                  <a class="link--cta mr-4" href="#">View Offer</a>
-                  <a class="btn btn--tertiary" href="#">Book Offer</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
+  {% endfor %}
 </section>
 
 <section class="splash splash--bordered" style="background-image:url('//res.cloudinary.com/traveltripperweb/image/upload/v1553288319/up0bc07d1vmeuyyt7r03.jpg');">
