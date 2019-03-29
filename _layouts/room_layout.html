@@ -2,12 +2,12 @@
 layout: default
 ---
 {% assign room = page.data %}
-<section class="room-details-banner">
-  <img class="room-details-banner__image objectfit" src="{{room.images[0].url}}" alt="{{room.name}}">
-  <div class="room-details-banner__text container-fluid container-lg">
+<section class="details-banner">
+  <img class="details-banner__image objectfit" src="{{room.images[0].url}}" alt="{{room.name}}">
+  <div class="details-banner__text container-fluid container-lg">
     <h1 class="h1">{{room.name}}</h1>
     <hr class="hr--light">
-    <p class="room-details-banner__text__price">tonight’s rate $275</p>
+    <p class="details-banner__text__price">tonight’s rate $275</p>
     <a class="btn btn--secondary" href="#" target="_blank">Book Room</a>
   </div>
 </section>
