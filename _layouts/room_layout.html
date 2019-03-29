@@ -8,7 +8,7 @@ layout: default
     <h1 class="h1">{{room.name}}</h1>
     <hr class="hr--light">
     <p class="details-banner__text__price">tonight’s rate $275</p>
-    <a class="btn btn--secondary" href="#" target="_blank">Book Room</a>
+    <a class="btn btn--secondary" href="{{room.booking_url}}" target="_blank">Book Room</a>
   </div>
 </section>
 <section class="container room-details">
@@ -17,11 +17,11 @@ layout: default
       <p class="room-details__text__heading">Room Details</p>
       <hr>
       <div class="room-details__text__info">
-        <span><img src="//res.cloudinary.com/traveltripperweb/raw/upload/v1553852422/msiw2bdx4d3foxczruzo.svg" alt="Bed Type"><b>2 Kings</b></span>
-        <span><img src="//res.cloudinary.com/traveltripperweb/raw/upload/v1553852415/sfvamzzruds0oo3xupyj.svg" alt="Max Guests"> <b>4 Max</b> </span>
+        <span><img src="//res.cloudinary.com/traveltripperweb/raw/upload/v1553852422/msiw2bdx4d3foxczruzo.svg" alt="Bed Type"><b>{{room.bed_types.name}}</b></span>
+        <span><img src="//res.cloudinary.com/traveltripperweb/raw/upload/v1553852415/sfvamzzruds0oo3xupyj.svg" alt="Max Guests"> <b>{{room.max_guests}} Max</b> </span>
       </div>
       <div class="room-details__text__description">
-        <p>Labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+        {{room.description}}
       </div>
     </div>
     <div class="room-details__images">
@@ -64,5 +64,114 @@ layout: default
         <p>Nespresso Machines</p>
       </div>
     </div>
+    <div class="container">
+      <div class="custom-control-items" id="customNavItemsRoomFeatures">
+        <span class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
+          <i class="fa fa-arrow-left"></i>
+        </span>
+        <div class="custom-control-items__nav">
+          <button data-nav="0" tabindex="0" aria-selected="true" aria-controls="tns1-item0" type="button" class="tns-nav-active"></button>
+          <button data-nav="1" tabindex="0" aria-selected="true" aria-controls="tns1-item1" type="button" class=""></button>
+          <button data-nav="2" tabindex="0" aria-selected="true" aria-controls="tns1-item2" type="button" class=""></button>
+          <button data-nav="3" tabindex="0" aria-selected="true" aria-controls="tns1-item3" type="button" class=""></button>
+          <button data-nav="4" tabindex="0" aria-selected="true" aria-controls="tns1-item4" type="button" class=""></button>
+        </div>
+        <span class="next" data-controls="next" aria-controls="customize" tabindex="-1">
+          <i class="fa fa-arrow-right"></i>
+        </span>
+      </div>
+    </div>
+    <div class="room-features__amenities">
+      <p class="room-features__amenities__heading">Room Amenities:</p>
+      <ul class="row room-features__amenities__list">
+        {% for amenity in room.amenities_list %}
+          <li class="col-sm-6">{{amenity}}</li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 </section>
+
+<section class="splash" style="background-image:url('//res.cloudinary.com/traveltripperweb/image/upload/v1553862137/nr5apawcxmoovfpsfbij.jpg');">
+	<div class="container">
+    <div class="row">
+  		<div class="review-box text-white col-xl-5">
+        <p class="h4 mb-3">Guest Reviews</p>
+        <hr class="hr--secondary">
+        {% assign reviewz = site.data._models.reviews  | sort:"order" %}
+        <div class="review-box__wrap">
+          {% for review in reviewz %}
+          <div class="review-box__item">
+            <blockquote class="blockquote">{{ review.text }}</blockquote>
+            <p class="h4 small">{{ review.reviewer_name }}{% if review.review_date and review.review_date != '' %}, {{ review.review_date | date: "%-d %B %Y" }}{% endif %}</p>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="review-box__controls" id="reviews-controls">
+          <span class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
+            <i class="fa fa-arrow-left"></i>
+          </span>
+          <div class="custom-control-items__nav">
+            {% for review in reviewz %}
+              <button data-nav="{{forloop.index0}}" tabindex="0" aria-selected="true" aria-controls="tns1-item{{forloop.index0}}" type="button" class="{% if forloop.index == 1 %}tns-nav-active{% endif %}"></button>
+            {% endfor %}
+          </div>
+          <span class="next" data-controls="next" aria-controls="customize" tabindex="-1">
+            <i class="fa fa-arrow-right"></i>
+          </span>
+        </div>
+  		</div>
+    </div>
+	</div>
+</section>
+
+<section class="bg--dark pb-4">
+  <h3 class="h2 text-center py-4 text-white">More Rooms</h3>
+  {% assign rooms = site.data._models.rooms  | sort:"order" %}
+  <div class="rooms-slider-container">
+    {% for room in rooms %}
+      {% if page.data.url_friendly_name != room.url_friendly_name %}
+        <div class="rooms-slider-container__item">
+          <div class="row no-gutters room-listing align-items-center">
+            <div class="col-md-6 p-0">
+              <div class="room-listing__image">
+                <img class="objectfit" src="{{room.images[0].url}}" alt="{{room.room_category.name}}">
+              </div>
+            </div>
+            <div class="col-md-6 p-0">
+              <div class="room-listing__text">
+                <h3 class="h3 text-secondary">{{room.name}}</h3>
+                <hr class="hr--secondary" />
+                <h4 class="h4 text-white mb-3">tonights rate <span class="text-secondary">$275</h4>
+                  <p class="text-white">{{room.short_description}}</p>
+                  <div class="cta-wrap">
+                    <a class="link--cta text-white mr-2" href="/rooms/{{room.url_friendly_name}}">View Room</a>
+                    <a class="btn btn--secondary" href="{{room.booking_url}}" target="_blank">Book Room</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="container rooms-slider-controls-wrap">
+    <div class="custom-control-items" id="customNavItemsRooms">
+      <span class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
+        <i class="fa fa-arrow-left"></i>
+      </span>
+      <div class="custom-control-items__nav">
+        {% for room in rooms %}
+        <button data-nav="{{forloop.index0}}" tabindex="0" aria-selected="true" aria-controls="tns1-item{{forloop.index0}}" type="button" class="{% if forloop.index == 1 %}tns-nav-active{% endif %}"></button>
+        {% endfor %}
+      </div>
+      <span class="next" data-controls="next" aria-controls="customize" tabindex="-1">
+        <i class="fa fa-arrow-right"></i>
+      </span>
+      <div class="cta-wrap">
+        <a href="/rooms/" class="link--cta">View All Rooms</a>
+      </div>
+    </div>
+  </div>
+</section>
+{% include components/special-offers.html %}
