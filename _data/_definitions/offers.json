@@ -1,27 +1,34 @@
 {
   "name": {
-    "required": true,
-    "localizable": true
+    "required": true
+  },
+  "tagline": {
+    "required": true
   },
   "url_friendly_name": {
+    "required": true,
     "label": "URL Friendly Name",
-    "type": "url_slug",
-    "localizable": true
+    "type": "url_slug"
+  },
+  "booking_url": {
+    "required": true,
+    "label": "URL Friendly Name"
   },
   "short_description": {
-    "localizable": true,
+    "required": true,
     "type": "text"
   },
   "description": {
-    "localizable": true,
+    "required": true,
+    "type": "richtext"
+  },
+  "terms": {
+    "required": true,
     "type": "richtext"
   },
   "image": {
+    "required": true,
     "type": "image"
-  },
-  "reztrip_offer_id": {
-    "Label": "Reztrip ID",
-    "instructions": "The reztrip ID for this offer"
   },
   "order": {
     "type": "integer",
