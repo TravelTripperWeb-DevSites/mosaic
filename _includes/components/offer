@@ -27,7 +27,12 @@
 
 {% include components/special-offers.html %}
 
-<section class="splash splash--bordered" style="background-image:url('//res.cloudinary.com/traveltripperweb/image/upload/v1552920050/pbnets1kdany3sb1wjzo.jpg');">
+<section class="splash splash--bordered">
+  <div class="object-fit w-100 h-100">
+    {% regionblock splash_image, type:image %}
+    <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1552920050/pbnets1kdany3sb1wjzo.jpg" alt="Offers">
+    {% endregionblock %}
+  </div>
 	<div class="container">
 		<div class="splash__content">
       <div tabindex="0">
