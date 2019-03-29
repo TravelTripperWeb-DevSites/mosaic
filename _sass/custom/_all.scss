@@ -5,6 +5,7 @@
 @import "background";
 @import "footer";
 @import "greedy-nav";
+@import "../mixins";
 @import "../pages/home";
 @import "../pages/about";
 @import "../pages/shared";
@@ -13,3 +14,4 @@
 @import "../pages/rooms";
 @import "../pages/events";
 @import "../pages/dining";
+@import "../pages/gallery";

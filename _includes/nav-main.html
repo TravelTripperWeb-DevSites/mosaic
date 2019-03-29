@@ -2,7 +2,7 @@
   note the nav.is-fixed-top must immediately precede div.main for div.main top-margin to work property
 {% endcomment %}
 
-<nav class="navbar greedy is-fixed-top nav--main" id="js-navbar--main">
+<nav class="navbar is-fixed-top nav--main {% if page.url == '/gallery/' %} sticky-fixed {% endif %}" id="js-navbar--main">
   <div class="container-fluid p-0 flex-nowrap">
     <a class="nav__link navbar-brand" href="/">
       <span class="nav__logo"
@@ -33,20 +33,8 @@
   </a>
   <ul class="nav--device greedy__hidden-links" navMenu>
   </ul>
-  <!-- <button class="greedy-nav--menu">Menu</button> -->
   <ul class='hidden-links d-none'></ul>
   <div>
      <a href="https://{{site.data.hotel_settings._portal_id}}.reztrip.com/" role="button" class="btn btn--primary" show-booking-widget>{% t 'book_now' %}</a>
   </div>
-  <!-- <a role="button" aria-label="menu" aria-expanded="false" data-target="navMenu" class="navbar__burger d-xl-none">
-    <span aria-hidden="true"></span>
-    <span aria-hidden="true"></span>
-    <span aria-hidden="true"></span>
-  </a>
-  <ul class="nav--device" navMenu>
-    {% assign items = site.data._menus.main.items %}
-    {% include nav/nav-item-list.html items=items %}
-    {% include nav/language-nav.html %}
-  </ul> -->
-
 </nav>

@@ -39,6 +39,35 @@ layout: generic
   </div>
 </section>
 
+<div class="c-map">
+  <div class="c-map__headings">
+      {% region location_map_detail, type:html %} 
+  </div>
+  <div class="c-map__box">
+    <div class="c-map__box__tabs">
+      <ul>
+        <li data-category="attraction" class="attractions-filter">
+          <span class="icons attractions-icon"></span>
+          Attractions
+        </li>
+        <li data-category="dining" class="attractions-filter" >
+          <span class="icons dining-icon"></span>
+          Dining
+        </li>
+        <li data-category="entertainment" class="attractions-filter">
+          <span class="icons entertain-icon"></span>
+          Entertainment
+        </li>
+        <li data-category="shopping" class="attractions-filter">
+          <span class="icons shop-icon"></span>
+          Shopping
+        </li>
+      </ul>
+    </div>
+    <div id="leafletmap" class="map" data-attractions="show"></div>
+  </div>
+</div>
+
 <section class="splash splash--bordered" style="background-image:url('//res.cloudinary.com/traveltripperweb/image/upload/v1553635760/jtkhfgyg0wefbbhdraxx.jpg');">
 	<div class="container">
 		<div class="splash__content">
@@ -59,3 +88,29 @@ layout: generic
 </section>
 
 {% include components/instagram %}
+
+
+<script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"></script>
+
+<script type="text/javascript">
+{% assign mapitems = site.data._models.attractions | sort: 'order' %}
+  var attractions = [];
+  attractions = [
+   {% for mapitem in mapitems %}[ '{{ mapitem.name | escape | replace :'&#39;',''}}', {{ mapitem.location.latitude }}, {{ mapitem.location.longitude }}, '{{ mapitem.category }}','{{ mapitem.location.address }}','{{ mapitem.location.google_place.website }}','{{ mapitem.image.url_thumb }}'] {% unless forloop.last %},{% endunless %}{% endfor %} ];
+</script>
+<script src="/assets/js/leaflet-plugin.js"></script>
+<script type="text/javascript">
+   var leaflet = LeafletMap({
+     target: document.getElementById('leafletmap'),
+     hotelTitle: '{{ site.data.hotel_settings.name }}',
+     hotelAddress: '{{ site.data.hotel_settings.address.street1 }}, {{ site.data.hotel_settings.address.city }}, {{ site.data.hotel_settings.address.state }}',
+     hotelLat: {{ site.data.hotel_settings.latitude }},
+     hotelLong: {{ site.data.hotel_settings.longitude }},
+     hotelMarker: '/assets/img/marker.png',
+     markerSize: [36, 36],
+     zoom: 13,
+     getDirectionBtn: true,
+     attractionsList: attractions
+   });
+   leaflet.init();
+</script>

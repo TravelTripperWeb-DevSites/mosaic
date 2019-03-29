@@ -60,6 +60,10 @@ hr {
   &.splash--bordered {
     border-bottom: 8px solid $secondary;
   }
+
+  &__content {
+    max-width: 550px;
+  }
 }
 
 .instagram__listings {
@@ -338,6 +342,11 @@ hr {
 
     @include media-breakpoint-up(xl) {
       height: 190px;
+    }
+  }
+  &.black {
+    &:after {
+      background: $black;
     }
   }
 }
