@@ -1,0 +1,25 @@
+[
+  {
+    "advanced_options": {
+    },
+    "galleries": [
+      {
+        "label": "Rooms & Suites",
+        "gallery": "rooms_suites"
+      },
+      {
+        "label": "The Hotel",
+        "gallery": "the_hotel"
+      },
+      {
+        "label": "Location",
+        "gallery": "location"
+      },
+      {
+        "label": "Video",
+        "gallery": "video"
+      }
+    ],
+    "_template": "galleries"
+  }
+]

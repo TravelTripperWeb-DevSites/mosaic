@@ -1,0 +1,98 @@
+{
+  "order": 5,
+  "name_localized": {
+    "en": "Executive Suite With Pool View"
+  },
+  "url_friendly_name_localized": {
+    "en": "executive-suite-with-pool-view"
+  },
+  "short_description_localized": {
+    "en": "900 sq ft suite with private balcony overlooking pool. Living room and dining room w/ wet bar."
+  },
+  "description_localized": {
+    "en": "<p>900 sq ft suite with private balcony overlooking pool. Living room and dining room w/ wet bar.</p>\n<p>The Executive Suite offers the ultimate in Beverly Hills luxury with a king bedroom and separate living room and dining areas with a full wet bar. Guests can enjoy the 75-foot private balcony overlooking the pool and their own private entrance. This 900 sq foot suite can also double as a meeting room.</p>"
+  },
+  "amenities_list": [
+    "Complimentary high speed Internet access",
+    "50″ Flat Panel HD LCD televisions in the suites",
+    "Bamboo terry and plush spa collection robes",
+    "Goose down blankets",
+    "Calacatta marble vanities",
+    "Bedside USB charging stations",
+    "Electric “do not disturb” signs",
+    "Highly personalized in-room connectivity and entertainment options"
+  ],
+  "bed_types": "room_bed_types2",
+  "room_category": "room_categories4",
+  "images": [
+    {
+      "name": "EXECUTIVE SUITE WITH POOL VIEW 1",
+      "content_type": "image/jpeg",
+      "date_added": "2019-03-28-084220",
+      "url_thumb": "//res.cloudinary.com/traveltripperweb/image/upload/c_fill,g_faces,h_140,w_140/v1553776940/z3x6pnm0rmsumqfryihe.jpg",
+      "url_xsmall": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_300,w_300/v1553776940/z3x6pnm0rmsumqfryihe.jpg",
+      "url_small": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_768,w_768/v1553776940/z3x6pnm0rmsumqfryihe.jpg",
+      "url_medium": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_992,w_992/v1553776940/z3x6pnm0rmsumqfryihe.jpg",
+      "url_large": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_1200,w_1200/v1553776940/z3x6pnm0rmsumqfryihe.jpg",
+      "url_xlarge": "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_1920,w_1920/v1553776940/z3x6pnm0rmsumqfryihe.jpg",
+      "width": 1400,
+      "height": 789,
+      "format": "jpg",
+      "url": "//res.cloudinary.com/traveltripperweb/image/upload/v1553776940/z3x6pnm0rmsumqfryihe.jpg",
+      "resource_type": "image",
+      "size": 195485,
+      "path": "//res.cloudinary.com/traveltripperweb/image/upload/v1553776940/z3x6pnm0rmsumqfryihe.jpg",
+      "file_size": null,
+      "alt": "EXECUTIVE SUITE WITH POOL VIEW 1",
+      "caption": "",
+      "description": ""
+    },
+    {
+      "name": "EXECUTIVE SUITE WITH POOL VIEW 2",
+      "content_type": "image/jpeg",
+      "date_added": "2019-03-28-084236",
+      "url_thumb": "//res.cloudinary.com/traveltripperweb/image/upload/c_fill,g_faces,h_140,w_140/v1553776956/xpsyl2dz3bztzmy3ofjs.jpg",
+      "url_xsmall": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_300,w_300/v1553776956/xpsyl2dz3bztzmy3ofjs.jpg",
+      "url_small": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_768,w_768/v1553776956/xpsyl2dz3bztzmy3ofjs.jpg",
+      "url_medium": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_992,w_992/v1553776956/xpsyl2dz3bztzmy3ofjs.jpg",
+      "url_large": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_1200,w_1200/v1553776956/xpsyl2dz3bztzmy3ofjs.jpg",
+      "url_xlarge": "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_1920,w_1920/v1553776956/xpsyl2dz3bztzmy3ofjs.jpg",
+      "width": 1400,
+      "height": 932,
+      "format": "jpg",
+      "url": "//res.cloudinary.com/traveltripperweb/image/upload/v1553776956/xpsyl2dz3bztzmy3ofjs.jpg",
+      "resource_type": "image",
+      "size": 164709,
+      "path": "//res.cloudinary.com/traveltripperweb/image/upload/v1553776956/xpsyl2dz3bztzmy3ofjs.jpg",
+      "file_size": null,
+      "alt": "EXECUTIVE SUITE WITH POOL VIEW 2",
+      "caption": "",
+      "description": ""
+    },
+    {
+      "name": "EXECUTIVE SUITE WITH POOL VIEW 3",
+      "content_type": "image/jpeg",
+      "date_added": "2019-03-28-084433",
+      "url_thumb": "//res.cloudinary.com/traveltripperweb/image/upload/c_fill,g_faces,h_140,w_140/v1553777073/lpps3xpxldsr0d5otttf.jpg",
+      "url_xsmall": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_300,w_300/v1553777073/lpps3xpxldsr0d5otttf.jpg",
+      "url_small": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_768,w_768/v1553777073/lpps3xpxldsr0d5otttf.jpg",
+      "url_medium": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_992,w_992/v1553777073/lpps3xpxldsr0d5otttf.jpg",
+      "url_large": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_1200,w_1200/v1553777073/lpps3xpxldsr0d5otttf.jpg",
+      "url_xlarge": "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_1920,w_1920/v1553777073/lpps3xpxldsr0d5otttf.jpg",
+      "width": 1400,
+      "height": 933,
+      "format": "jpg",
+      "url": "//res.cloudinary.com/traveltripperweb/image/upload/v1553777073/lpps3xpxldsr0d5otttf.jpg",
+      "resource_type": "image",
+      "size": 146146,
+      "path": "//res.cloudinary.com/traveltripperweb/image/upload/v1553777073/lpps3xpxldsr0d5otttf.jpg",
+      "file_size": null,
+      "alt": "EXECUTIVE SUITE WITH POOL VIEW 3",
+      "caption": "",
+      "description": ""
+    }
+  ],
+  "booking_url_localized": {
+    "en": "#"
+  }
+}
