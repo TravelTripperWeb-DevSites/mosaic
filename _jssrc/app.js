@@ -108,4 +108,14 @@ readyDoc(function() {
 			};
 		}
 	}
+
+	if (document.getElementsByClassName('room-details__images__carousel').length > 0) {
+		// Slider With Images
+		var slider = tns({
+			container: '.room-details__images__carousel',
+			mouseDrag: true,
+			controls: false
+		});
+	}
+
 })
