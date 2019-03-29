@@ -8,7 +8,7 @@ layout: default
     <h1 class="h1">{{room.name}}</h1>
     <hr class="hr--light">
     <p class="details-banner__text__price">tonight’s rate $275</p>
-    <a class="btn btn--secondary" href="#" target="_blank">Book Room</a>
+    <a class="btn btn--secondary" href="{{room.booking_url}}" target="_blank">Book Room</a>
   </div>
 </section>
 <section class="container room-details">
@@ -17,11 +17,11 @@ layout: default
       <p class="room-details__text__heading">Room Details</p>
       <hr>
       <div class="room-details__text__info">
-        <span><img src="//res.cloudinary.com/traveltripperweb/raw/upload/v1553852422/msiw2bdx4d3foxczruzo.svg" alt="Bed Type"><b>2 Kings</b></span>
-        <span><img src="//res.cloudinary.com/traveltripperweb/raw/upload/v1553852415/sfvamzzruds0oo3xupyj.svg" alt="Max Guests"> <b>4 Max</b> </span>
+        <span><img src="//res.cloudinary.com/traveltripperweb/raw/upload/v1553852422/msiw2bdx4d3foxczruzo.svg" alt="Bed Type"><b>{{room.bed_types.name}}</b></span>
+        <span><img src="//res.cloudinary.com/traveltripperweb/raw/upload/v1553852415/sfvamzzruds0oo3xupyj.svg" alt="Max Guests"> <b>{{room.max_guests}} Max</b> </span>
       </div>
       <div class="room-details__text__description">
-        <p>Labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+        {{room.description}}
       </div>
     </div>
     <div class="room-details__images">
