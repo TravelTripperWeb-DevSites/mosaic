@@ -12,7 +12,7 @@
   },
   "booking_url": {
     "required": true,
-    "label": "URL Friendly Name"
+    "label": "Booking URL"
   },
   "short_description": {
     "required": true,
