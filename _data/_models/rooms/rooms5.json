@@ -23,6 +23,7 @@
     "Highly personalized in-room connectivity and entertainment options"
   ],
   "bed_types": "room_bed_types2",
+  "max_guests": 4,
   "room_category": "room_categories4",
   "images": [
     {

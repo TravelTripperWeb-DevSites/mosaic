@@ -1,13 +1,42 @@
-<div class="ttweb-component ttweb-offer">
-  <div class="ttweb-offer__name">
-    <a href="{{ offer.id | permalink: model_dir: 'offers' }}">{{ offer.name }}</a>
+<section class="details-banner mb-0">
+  <img class="details-banner__image objectfit" src="{{ offer.image.url_large }}" alt="{{ offer.name }}">
+  <div class="details-banner__text container-fluid container-lg">
+    <h1 class="h1">{{ offer.name }}</h1>
+    <hr class="hr--light">
+    <p class="details-banner__text__price">{{ offer.tagline }}</p>
+    <a class="btn btn--secondary" href="{{ offer.booking_url }}" target="_blank">Book Offer</a>
   </div>
-  <div class="ttweb-offer__description">
-    {{ offer.description }}
+</section>
+
+<section class="offer-details mb-4 mb-md-5">
+  <div class="row">
+    <div class="col-md-5 py-4 px-3 p-md-5">
+      <div class="pl-0 pl-xl-5">
+        <p class="offer-details__heading">Offer Details</p>
+        <hr>
+        {{ offer.description }}
+        </p>
+      </div>
+    </div>
+    <div class="col-md-7 bg--light py-4 px-3 p-md-5 m-2 m-md-0">
+      <p class="offer-details__heading">Terms & Conditions</p>
+      {{ offer.terms }}
+    </div>
   </div>
-  <div class="ttweb-offer__image">
-    <div class="image-frame--cover">
-      {% include components/image image=offer.image max_width=600 %}
-    <//div>
-  </div>
-</div>
+</section>
+
+{% include components/special-offers.html %}
+
+<section class="splash splash--bordered" style="background-image:url('//res.cloudinary.com/traveltripperweb/image/upload/v1553867305/yczeho3g16sudxwr4dh2.jpg')">
+	<div class="container">
+		<div class="splash__content">
+      <div tabindex="0">
+        <h4 class="h4 mb-3">Our Location</h4>
+      </div>
+      <div tabindex="0">
+        <h2 class="h1 mb-3">Pacific Proximity at its Best</h2>
+      </div>
+      <a href="/location/" role="button" class="link--cta">Discover More</a>
+		</div>
+	</div>
+</section>
