@@ -1,15 +1,15 @@
 ---
-latitude: '52.070375'
-longitude: "-9.574189"
+latitude: 34.0661256
+longitude: -118.4112431
 map_zoom: 12
-name: Demo Hotel
+name: Mosaic Hotel
 email: support@traveltripper.com
 phone_number: 123-123-1234
 address:
-  street1: Lexington Ave
-  state: NY
-  city: New York
-  zip_code: 
+  street1: 125 S Spalding Drive
+  state: CA
+  city: Beverly Hills
+  zip_code: 90212
 default_currency: USD
 default_timezone: America/New_York
 _hotel_id: HODE
@@ -61,5 +61,5 @@ logo:
   resource_type: image
   size: 18372
   path: "//res.cloudinary.com/traveltripperweb/image/upload/v1551973033/mdqklsrfuatzn3guxbec.png"
-  file_size: 
+  file_size:
   alt: Logo WhiteMosaic@2x

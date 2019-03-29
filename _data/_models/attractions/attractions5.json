@@ -1,0 +1,403 @@
+{
+  "order": 4,
+  "name_localized": {
+    "en": "Petersen Automotive Museum"
+  },
+  "sub_title_localized": {
+    "en": "Petersen Automotive Museum"
+  },
+  "category": "attraction",
+  "seo_title_localized": {
+    "en": "Petersen Automotive Museum"
+  },
+  "seo_description_localized": {
+    "en": "Petersen Automotive Museum"
+  },
+  "description_localized": {
+    "en": "<p>Petersen Automotive Museum offers fun, interactive exhibits that present the history of the automobile, along with full-scale reproductions of scenes and buildings that mark important milestones in the development of the motorcar in Los Angeles. Multiple galleries house changing exhibitions of various types of vehicles and automotive memorabilia.</p>"
+  },
+  "image": {
+    "name": "Petersen_Automotive_Museum",
+    "content_type": "image/jpeg",
+    "date_added": "2019-03-29-055643",
+    "url_thumb": "//res.cloudinary.com/traveltripperweb/image/upload/c_fill,g_faces,h_140,w_140/v1553853403/xodofe5eadpgbo27wxuc.jpg",
+    "url_xsmall": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_300,w_300/v1553853403/xodofe5eadpgbo27wxuc.jpg",
+    "url_small": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_768,w_768/v1553853403/xodofe5eadpgbo27wxuc.jpg",
+    "url_medium": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_992,w_992/v1553853403/xodofe5eadpgbo27wxuc.jpg",
+    "url_large": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_1200,w_1200/v1553853403/xodofe5eadpgbo27wxuc.jpg",
+    "url_xlarge": "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_1920,w_1920/v1553853403/xodofe5eadpgbo27wxuc.jpg",
+    "width": 3723,
+    "height": 1800,
+    "format": "jpg",
+    "url": "//res.cloudinary.com/traveltripperweb/image/upload/v1553853403/xodofe5eadpgbo27wxuc.jpg",
+    "resource_type": "image",
+    "size": 3398427,
+    "path": "//res.cloudinary.com/traveltripperweb/image/upload/v1553853403/xodofe5eadpgbo27wxuc.jpg",
+    "file_size": null,
+    "alt": "Petersen_Automotive_Museum",
+    "caption": "",
+    "description": ""
+  },
+  "location": {
+    "name": "Petersen Automotive Museum",
+    "address": "6060 Wilshire Blvd, Los Angeles, CA 90036, USA",
+    "phone": "(323) 930-2277",
+    "place_id": "ChIJaRbaXjy5woARERNJSyktTog",
+    "reference": "ChIJaRbaXjy5woARERNJSyktTog",
+    "latitude": 34.062348,
+    "longitude": -118.36113360000002,
+    "google_place": {
+      "address_components": [
+        {
+          "long_name": "6060",
+          "short_name": "6060",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Wilshire Boulevard",
+          "short_name": "Wilshire Blvd",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Central LA",
+          "short_name": "Central LA",
+          "types": [
+            "neighborhood",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Los Angeles",
+          "short_name": "Los Angeles",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Los Angeles County",
+          "short_name": "Los Angeles County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "California",
+          "short_name": "CA",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "90036",
+          "short_name": "90036",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "adr_address": "<span class=\"street-address\">6060 Wilshire Blvd</span>, <span class=\"locality\">Los Angeles</span>, <span class=\"region\">CA</span> <span class=\"postal-code\">90036</span>, <span class=\"country-name\">USA</span>",
+      "formatted_address": "6060 Wilshire Blvd, Los Angeles, CA 90036, USA",
+      "formatted_phone_number": "(323) 930-2277",
+      "geometry": {
+        "location": {
+          "lat": 34.062348,
+          "lng": -118.36113360000002
+        },
+        "viewport": {
+          "south": 34.0611743697085,
+          "west": -118.36282698029152,
+          "north": 34.0638723302915,
+          "east": -118.3601290197085
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png",
+      "id": "72776f23f86d5a44462d3d4f2493bf2c06b3629c",
+      "international_phone_number": "+1 323-930-2277",
+      "name": "Petersen Automotive Museum",
+      "opening_hours": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1800",
+              "hours": 18,
+              "minutes": 0,
+              "nextDate": 1554080400000
+            },
+            "open": {
+              "day": 0,
+              "time": "1000",
+              "hours": 10,
+              "minutes": 0,
+              "nextDate": 1554051600000
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1800",
+              "hours": 18,
+              "minutes": 0,
+              "nextDate": 1554166800000
+            },
+            "open": {
+              "day": 1,
+              "time": "1000",
+              "hours": 10,
+              "minutes": 0,
+              "nextDate": 1554138000000
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1800",
+              "hours": 18,
+              "minutes": 0,
+              "nextDate": 1554253200000
+            },
+            "open": {
+              "day": 2,
+              "time": "1000",
+              "hours": 10,
+              "minutes": 0,
+              "nextDate": 1554224400000
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1800",
+              "hours": 18,
+              "minutes": 0,
+              "nextDate": 1554339600000
+            },
+            "open": {
+              "day": 3,
+              "time": "1000",
+              "hours": 10,
+              "minutes": 0,
+              "nextDate": 1554310800000
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1800",
+              "hours": 18,
+              "minutes": 0,
+              "nextDate": 1554426000000
+            },
+            "open": {
+              "day": 4,
+              "time": "1000",
+              "hours": 10,
+              "minutes": 0,
+              "nextDate": 1554397200000
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1800",
+              "hours": 18,
+              "minutes": 0,
+              "nextDate": 1553907600000
+            },
+            "open": {
+              "day": 5,
+              "time": "1000",
+              "hours": 10,
+              "minutes": 0,
+              "nextDate": 1553878800000
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1800",
+              "hours": 18,
+              "minutes": 0,
+              "nextDate": 1553994000000
+            },
+            "open": {
+              "day": 6,
+              "time": "1000",
+              "hours": 10,
+              "minutes": 0,
+              "nextDate": 1553965200000
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 am – 6:00 pm",
+          "Tuesday: 10:00 am – 6:00 pm",
+          "Wednesday: 10:00 am – 6:00 pm",
+          "Thursday: 10:00 am – 6:00 pm",
+          "Friday: 10:00 am – 6:00 pm",
+          "Saturday: 10:00 am – 6:00 pm",
+          "Sunday: 10:00 am – 6:00 pm"
+        ]
+      },
+      "photos": [
+        {
+          "height": 3265,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108124403589290460098/photos\">Thomas Herrmann</a>"
+          ],
+          "width": 4898
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105534722862046516541/photos\">Victoria Chan-Ross</a>"
+          ],
+          "width": 4032
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113700177253253274993/photos\">Allen E.</a>"
+          ],
+          "width": 4032
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113700177253253274993/photos\">Allen E.</a>"
+          ],
+          "width": 4032
+        },
+        {
+          "height": 1920,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107396406500299394425/photos\">That Guy JP</a>"
+          ],
+          "width": 2560
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100142482892682070273/photos\">Matt Gallant</a>"
+          ],
+          "width": 4032
+        },
+        {
+          "height": 3265,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101929088943561857146/photos\">楊石生</a>"
+          ],
+          "width": 4898
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101191003794616646523/photos\">Cait Wills</a>"
+          ],
+          "width": 3024
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100846379297251590329/photos\">Max Hotkowski</a>"
+          ],
+          "width": 4032
+        },
+        {
+          "height": 4608,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102778270800980211135/photos\">Laura P. Gomez</a>"
+          ],
+          "width": 3456
+        }
+      ],
+      "place_id": "ChIJaRbaXjy5woARERNJSyktTog",
+      "plus_code": {
+        "compound_code": "3J6Q+WG Los Angeles, California, United States",
+        "global_code": "85633J6Q+WG"
+      },
+      "rating": 4.7,
+      "reference": "ChIJaRbaXjy5woARERNJSyktTog",
+      "reviews": [
+        {
+          "author_name": "Pearl M",
+          "author_url": "https://www.google.com/maps/contrib/102453476107862815117/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh4.googleusercontent.com/-YgF11TcAu6o/AAAAAAAAAAI/AAAAAAAAAEg/gptpDSr1TeQ/s128-c0x00000000-cc-rp-mo-ba4/photo.jpg",
+          "rating": 5,
+          "relative_time_description": "a week ago",
+          "text": "Very interesting museum. I did enjoy the history of vehicles as provided in a tour by staff member.  I did not get to see the whole museum in one visit however I will return for more! I do recommend this local museum.",
+          "time": 1552721191
+        },
+        {
+          "author_name": "V. D.",
+          "author_url": "https://www.google.com/maps/contrib/117372181211117429245/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh6.googleusercontent.com/-TobMczKv1to/AAAAAAAAAAI/AAAAAAAAAEI/F86ox3MAMX0/s128-c0x00000000-cc-rp-mo-ba4/photo.jpg",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "Absolutely amazing car museum. Regardless if you like old or current, European or American, all can be found here. Stuff you'll likely never get another chance to see as they have many one offs. I highly recommend the extended vault tour if you're into cars. Heck even of you're not there are some interesting stories to be heard that are worth it. The staff is really friendly, there is easy parking and it's very clean. I attached my favorite!",
+          "time": 1552433160
+        },
+        {
+          "author_name": "Nick Mikula",
+          "author_url": "https://www.google.com/maps/contrib/114186411672200580491/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh5.googleusercontent.com/-NXMrNx2I2Lw/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcKRxvbxxJlpR-Yn6Iu5id0XA-3fA/s128-c0x00000000-cc-rp-mo-ba2/photo.jpg",
+          "rating": 5,
+          "relative_time_description": "in the last week",
+          "text": "This place had a great assortment of cool cars from the beginning up to present day. A mix of production cars, concepts, race cars, and movie cars. I did not do the vault tour. I am the type that actually reads things at museums, so it took a couple hrs just to get thru the normal part. If you are a car lover and are considering stopping, I think its definitely worth a visit.",
+          "time": 1553282775
+        },
+        {
+          "author_name": "Hector Contreras",
+          "author_url": "https://www.google.com/maps/contrib/102982317396085113050/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/-DHTlWWebPLw/AAAAAAAAAAI/AAAAAAAAO7o/HdXEaZpPcjM/s128-c0x00000000-cc-rp-mo-ba3/photo.jpg",
+          "rating": 3,
+          "relative_time_description": "in the last week",
+          "text": "We finally decided to get the Vault tour after all of this years. \nJeff our tour guide was a kinda rude to my daughter. Asking her before the tour if she could stay quiet, and that the tour was long and that she better embrace it and will not be fun at all for her. \nAlso Jeff our tour guide was kinda racist to his coworker saying things like \"of course you like Asian cars you are Asian\" \n\nHe had tons of knowledge and fun facts about the cars, but he really made us feel uncomfortable and not welcome based on what he told my little daughter at the beginning. \n\nSad experience, would love to do it again but definitely not with this guy Jeff.",
+          "time": 1553731851
+        },
+        {
+          "author_name": "Greg Davis",
+          "author_url": "https://www.google.com/maps/contrib/100109065428726191925/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh4.googleusercontent.com/-nWA7st2u8pY/AAAAAAAAAAI/AAAAAAAAAFI/UmylRcg3WSM/s128-c0x00000000-cc-rp-mo/photo.jpg",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "Took my 88 year old Dad and 68 year old Brother in time to grab the 1:45 Vault tour in the basement. Too many unbelievable cars to see in 75 minutes, wished we spent the extra $7 to take the 120 minute extended tour. We have visited once before and almost all cars were rearranged or replaced with something just as cool. We spent almost 5 hours on all 4 floors and the old farts (me included, I'm 70) were dragging my the end. Will Definitely take that adventure again.",
+          "time": 1551889992
+        }
+      ],
+      "scope": "GOOGLE",
+      "types": [
+        "museum",
+        "point_of_interest",
+        "establishment"
+      ],
+      "url": "https://maps.google.com/?cid=9821837492721619729",
+      "user_ratings_total": 4061,
+      "utc_offset": -420,
+      "vicinity": "6060 Wilshire Boulevard, Los Angeles",
+      "website": "http://petersen.org/",
+      "html_attributions": null
+    }
+  }
+}
