@@ -104,4 +104,24 @@ readyDoc(function () {
 			controls: false
 		});
 	}
+	if (document.getElementsByClassName('room-features__list').length > 0) {
+		// Slider With Images
+		var slider = tns({
+			container: '.room-features__list',
+			mouseDrag: true,
+			nav: false,
+			items: 2,
+			prevButton: "#customNavItemsRoomFeatures .prev", // previous button
+			nextButton: "#customNavItemsRoomFeatures .next", // next button
+			navContainer: '#customNavItemsRoomFeatures .custom-control-items__nav',
+			"responsive": {
+				"768": {
+					items: 3
+				},
+				"992": {
+					items: 5
+				}
+			}
+		});
+	}
 });
