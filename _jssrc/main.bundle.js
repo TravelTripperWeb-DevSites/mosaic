@@ -7,11 +7,12 @@ function readyDoc(fn) {
 }
 
 readyDoc(function () {
+
 	if (document.getElementById("close_offer_btn")) {
-		document.getElementById("close_offer_btn").onclick = function () {
+		document.getElementById("close_offer_btn").addEventListener('click', function () {
 			var offerBar = document.getElementById("hero-offer");
 			offerBar.style.display = 'none';
-		};
+		});
 	}
 
 	if (document.getElementsByClassName('review-box__wrap').length > 0) {
@@ -78,7 +79,7 @@ readyDoc(function () {
 
 	if (document.getElementsByClassName('special-offers').length > 0) {
 		// Slider With Images
-		var slider = tns({
+		var sliderz = tns({
 			container: '.special-offers-listings__wrap',
 			items: 1.1,
 			gutter: 15,
@@ -94,6 +95,27 @@ readyDoc(function () {
 					gutter: 80
 				}
 			}
+		});
+
+		var controls = document.querySelectorAll('#customNavItemsOffers span');
+		for (var i = 0; i < controls.length; i++) {
+			controls[i].onclick = function () {
+				// get slider info
+				var info = sliderz.getInfo(),
+				    indexCurrent = info.index;
+				console.log(info);
+				indexCurrent = info.slideItems[indexCurrent].attributes[1].nodeValue;
+				document.getElementById('current-slide').innerHTML = indexCurrent;
+			};
+		}
+	}
+
+	if (document.getElementsByClassName('room-details__images__carousel').length > 0) {
+		// Slider With Images
+		var slider = tns({
+			container: '.room-details__images__carousel',
+			mouseDrag: true,
+			controls: false
 		});
 	}
 });

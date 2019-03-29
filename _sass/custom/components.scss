@@ -340,6 +340,11 @@ hr {
       height: 190px;
     }
   }
+  &.black {
+    &:after {
+      background: $black;
+    }
+  }
 }
 
 .scroll-down-icon {
