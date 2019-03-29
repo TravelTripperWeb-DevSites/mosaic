@@ -1,0 +1,14 @@
+.greedy-nav__links {
+  flex: 1;
+}
+
+.greedy__hidden-links {
+  width: 100%;
+  left: 0;
+
+  @include media-breakpoint-up(md) {
+    left: auto;
+    right: 175px;
+    width: auto;
+  }
+}
