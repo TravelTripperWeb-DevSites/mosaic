@@ -52,18 +52,18 @@ meta_tags:
         <div class="row no-gutters room-listing align-items-center">
           <div class="col-md-6 p-0">
             <div class="room-listing__image">
-              <img class="objectfit" src="//res.cloudinary.com/traveltripperweb/image/upload/v1552671665/sd0mcuum0bpkjqenvk9v.jpg">
+              <img class="objectfit" src="{{room.images[0].url}}" alt="{{room.room_category.name}}">
             </div>
           </div>
           <div class="col-md-6 p-0">
             <div class="room-listing__text">
-              <h3 class="h3 text-secondary">Luxury King Room</h3>
+              <h3 class="h3 text-secondary">{{room.name}}</h3>
               <hr class="hr--secondary" />
               <h4 class="h4 text-white mb-3">tonights rate <span class="text-secondary">$275</h4>
-                <p class="text-white">Mosaic Hotel's 49 newly-redesigned contemporary guestrooms offer distinctive low-slung clean-lined chairs, luxurious linens and state-of-the-art technology.</p>
+                <p class="text-white">{{room.short_description}}</p>
                 <div class="cta-wrap">
-                  <a class="link--cta text-white mr-2" href="#">View Room</a>
-                  <a class="btn btn--secondary">Book Room</a>
+                  <a class="link--cta text-white mr-2" href="/rooms/{{room.url_friendly_name}}">View Room</a>
+                  <a class="btn btn--secondary" href="{{room.booking_url}}" target="_blank">Book Room</a>
                 </div>
               </div>
             </div>

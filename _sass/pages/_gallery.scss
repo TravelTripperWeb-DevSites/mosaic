@@ -23,16 +23,22 @@
     padding-left: 15px;
   }
   .gallery-nav {
+    position: relative;
     width: auto;
     margin: 0 12px 52px;
+    padding: 0;
     background-color: $gray-100;
     @include media-breakpoint-down(sm) {
       display: inline-block;
       width: 60%;
       margin: 0 0 30px;
+      padding: 12px 0;
     }
     li {
       padding: 12px;
+      @include media-breakpoint-down(sm) {
+        padding: 0;
+      }
       a {
         display: block;
         padding: 0 4px;
@@ -40,6 +46,29 @@
         line-height: 22px;
         color: $black;
         text-decoration: none;
+
+        @include media-breakpoint-down(sm) {
+          display: none;
+          &.active, &:hover {
+            display: block;
+            border-bottom: 0;
+          }
+        }
+
+      }
+    }
+    .fa-chevron-down {
+      position: absolute;
+      top: 26px;
+      right: 10px;
+      display: inline-block;
+      width: 50px;
+      height: 28px;
+      font-size: 22px;
+      text-align: center;
+      cursor: pointer;
+      @include media-breakpoint-up(md) {
+        display: none;
       }
     }
   }

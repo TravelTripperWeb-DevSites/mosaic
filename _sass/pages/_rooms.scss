@@ -1,12 +1,183 @@
 // Rooms & Room Details Page Elements
 // ==========================================================================
 .room-list {
-  .room-listing:nth-child(even){
+  .room-listing {
+    .h3 {
+      color: $dark-text;
+    }
+    &__price {
+      font-family: $family-primary;
+      font-size: $base-font-size;
+      font-weight: 500;
+      line-height: 24px;
+      color: $black;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+  .room-listing:nth-child(even) {
     background-color: $light;
   }
 }
 
 .room-listing__image {
-  border-bottom: 8px solid #d5d2a8;
   line-height: 0;
+  border-bottom: 8px solid $secondary;
+}
+
+.details-banner {
+  position: relative;
+  height: 425px;
+  margin-bottom: 32px;
+  @include media-breakpoint-up(md) {
+    height: 640px;
+    margin-bottom: 64px;
+  }
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    background-color: rgba($black, .4);
+  }
+  &__text {
+    @include vertical-center;
+    right: 0;
+    left: 0;
+    z-index: 9;
+    margin: auto;
+    color: $white;
+    &__price {
+      margin-bottom: 5px 0 40px;
+      font-family: $family-primary;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+      color: $white;
+      text-transform: uppercase;
+      letter-spacing: 1.25px;
+    }
+  }
+}
+
+.room-details {
+  margin-bottom: 32px;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 64px;
+  }
+  &__text {
+    @include make-col-ready();
+    @include media-breakpoint-up(lg) {
+      @include make-col(5);
+      padding-right: 80px;
+    }
+    &__heading {
+      font-size: $base-font-size;
+      font-weight: 300;
+      line-height: 24px;
+      color: $black;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    &__info {
+      margin-bottom: 25px;
+      span {
+        display: inline-block;
+        width: 145px;
+        b {
+          position: relative;
+          top: -5px;
+          left: 10px;
+          font-size: $base-font-size;
+          font-weight: 400;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+  &__images {
+    @include make-col-ready();
+    @include media-breakpoint-up(lg) {
+      @include make-col(7);
+    }
+    padding-right: 12px;
+    padding-left: 12px;
+    &__carousel {
+      width: 100%;
+    }
+  }
+}
+.room-features {
+  padding: 64px 0;
+  text-align: center;
+  background-color: $gray-100;
+  &__heading-wrap {
+    hr {
+      width: 100%;
+      margin: 0;
+    }
+  }
+  &__heading {
+    position: relative;
+    top: -21px;
+    display: inline-block;
+    padding: 0 25px;
+    font-family: $family-secondary;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: $dark-text;
+    letter-spacing: 1px;
+    background-color: $gray-100;
+  }
+  &__list {
+    margin-bottom: 20px;
+    img {
+      margin-bottom: 14px;
+    }
+    p {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: $base-font-size;
+      text-transform: uppercase;
+    }
+  }
+  &__amenities {
+    text-align: left;
+    &__heading {
+      margin-bottom: 15px;
+      font-weight: 300;
+      line-height: 24px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    &__list {
+      padding-left: 30px;
+      li {
+        padding-left: 0;
+        font-size: $base-font-size;
+        font-weight: 300;
+        line-height: 24px;
+      }
+    }
+  }
+  .custom-control-items {
+    margin-bottom: 45px;
+    @include media-breakpoint-up(lg) {
+      display: none;
+    }
+    .prev, .next {
+      color: $light-grey;
+    }
+    &__nav {
+      button {
+        background-color: rgba($light-grey, .45);
+        &.tns-nav-active {
+          background-color: $light-grey;
+        }
+      }
+    }
+  }
 }
