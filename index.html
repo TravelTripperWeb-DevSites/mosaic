@@ -77,14 +77,14 @@ meta_tags:
   <section class="row py-4">
     <div class="col-md-4 d-flex justify-content-md-center">
       <div class="d-inline-block text-md-right pb-md-0 pb-3">
-        {% regionblock restaurant_headings type:html %}
+        {% regionblock restaurant_headings, type:html %}
           <h5 class="h4">Eat & Drink</h5>
           <h4 class="h2">Restaurant</h4>
         {% endregionblock %}
       </div>
     </div>
     <div class="col-md-8 pr-md-5">
-      {% regionblock restaurant_text type:html %}
+      {% regionblock restaurant_text, type:html %}
         <p>Mosaic Hotel Beverly Hills’ Dining Room, with its fresh California cuisine, offers intimate indoor seating or in our outdoor privately heated cabanas.</p>
         <a href='/restaurant' class="link--cta">Learn More</a>
       {% endregionblock %}
