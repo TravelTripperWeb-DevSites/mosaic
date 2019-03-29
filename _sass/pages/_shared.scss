@@ -1,5 +1,12 @@
 // Shared Page Elements
 // ==========================================================================
+.tns-outer {
+  .tns-nav {
+    button {
+      border: 0;
+    }
+  }
+}
 .rooms-slider-container {
   margin-bottom: 46px;
   &__item {

@@ -1,0 +1,68 @@
+---
+layout: default
+---
+{% assign room = page.data %}
+<section class="room-details-banner">
+  <img class="room-details-banner__image objectfit" src="{{room.images[0].url}}" alt="{{room.name}}">
+  <div class="room-details-banner__text container-fluid container-lg">
+    <h1 class="h1">{{room.name}}</h1>
+    <hr class="hr--light">
+    <p class="room-details-banner__text__price">tonight’s rate $275</p>
+    <a class="btn btn--secondary" href="#" target="_blank">Book Room</a>
+  </div>
+</section>
+<section class="container room-details">
+  <div class="row">
+    <div class="room-details__text">
+      <p class="room-details__text__heading">Room Details</p>
+      <hr>
+      <div class="room-details__text__info">
+        <span><img src="//res.cloudinary.com/traveltripperweb/raw/upload/v1553852422/msiw2bdx4d3foxczruzo.svg" alt="Bed Type"><b>2 Kings</b></span>
+        <span><img src="//res.cloudinary.com/traveltripperweb/raw/upload/v1553852415/sfvamzzruds0oo3xupyj.svg" alt="Max Guests"> <b>4 Max</b> </span>
+      </div>
+      <div class="room-details__text__description">
+        <p>Labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+      </div>
+    </div>
+    <div class="room-details__images">
+      <div class="room-details__images__carousel">
+        {% for roomImage in room.images %}
+          <div class="room-details__images__carousel__item">
+            <img class="objectfit" src="{{roomImage.url}}" alt="{{roomImage.alt}}">
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="room-features">
+  <div class="container">
+    <div class="room-features__heading-wrap">
+      <hr>
+      <p class="room-features__heading">Room Features</p>
+    </div>
+    <div class="room-features__list row">
+      <div class="col">
+        <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553856754/ioezyiic9uayvgdgh6qr.png" alt="Newly-Redesigned Finishes">
+        <p>Newly-Redesigned Finishes</p>
+      </div>
+      <div class="col">
+        <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553856637/anfzwbafjt6k3aaigpbi.png" alt="Luxurious 300-thread count linens">
+        <p>Luxurious 300-thread count linens</p>
+      </div>
+      <div class="col">
+        <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553856636/kjwwyg7jr1dvgqs2y5g3.png" alt="BVLGARI® Bath Products">
+        <p>BVLGARI® Bath Products</p>
+      </div>
+      <div class="col">
+        <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553856636/zugdoscvg75m3fuv24xq.png" alt="Rainfall Showers">
+        <p>Rainfall Showers</p>
+      </div>
+      <div class="col">
+        <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553856637/ytzudwxqjdipiwfvf1xl.png" alt="Nespresso Machines">
+        <p>Nespresso Machines</p>
+      </div>
+    </div>
+  </div>
+</section>
