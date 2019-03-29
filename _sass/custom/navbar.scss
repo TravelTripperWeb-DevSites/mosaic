@@ -1,4 +1,5 @@
 .navbar {
+  padding: $navbar-padding-y ($spacer / 2);
   .nav__link {
     font-weight: 700;
     letter-spacing: 1px;
@@ -15,6 +16,8 @@
     }
 
     &.navbar-brand {
+      margin: 0;
+
       &:hover {
         border-bottom: none;
         margin-bottom: 0;
@@ -24,9 +27,9 @@
   }
 
   .nav {
-    @include media-breakpoint-up(xl) {
-      display: flex !important;
-    }
+    // @include media-breakpoint-up(xl) {
+    //   display: flex !important;
+    // }
   }
 
   .nav__logo--sticky {
@@ -81,8 +84,16 @@
   &.nav--active {
     background-color: transparent;
 
+    .nav__link {
+      color: $white;
+    }
+
     &.sticky, &.sticky-fixed {
       background-color: $navbar-sticky-background;
+
+      .nav__link {
+        color: $black;
+      }
     }
   }
 }
@@ -130,9 +141,9 @@
   &.is-active {
     display: block !important;
 
-    @include media-breakpoint-up(xl) {
-      display: none !important;
-    }
+    // @include media-breakpoint-up(xl) {
+    //   display: none !important;
+    // }
   }
 }
 
