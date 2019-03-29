@@ -1,0 +1,404 @@
+{
+  "order": 1,
+  "name_localized": {
+    "en": "Westfield Century City"
+  },
+  "sub_title_localized": {
+    "en": "Westfield Century City"
+  },
+  "category": "shopping",
+  "description_localized": {
+    "en": "<p>Westfield Century City is an iconic global shopping destination and commercial district anchored by Bloomingdale&rsquo;s, Macy&rsquo;s, and a 15-screen AMC multiplex.</p>"
+  },
+  "image": {
+    "name": "Westfield_San_Francisco_Centre_interior_view",
+    "content_type": "image/jpeg",
+    "date_added": "2019-03-29-053210",
+    "url_thumb": "//res.cloudinary.com/traveltripperweb/image/upload/c_fill,g_faces,h_140,w_140/v1553851930/yabwgcqp73mm1ednwmnr.jpg",
+    "url_xsmall": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_300,w_300/v1553851930/yabwgcqp73mm1ednwmnr.jpg",
+    "url_small": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_768,w_768/v1553851930/yabwgcqp73mm1ednwmnr.jpg",
+    "url_medium": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_992,w_992/v1553851930/yabwgcqp73mm1ednwmnr.jpg",
+    "url_large": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_1200,w_1200/v1553851930/yabwgcqp73mm1ednwmnr.jpg",
+    "url_xlarge": "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_1920,w_1920/v1553851930/yabwgcqp73mm1ednwmnr.jpg",
+    "width": 1536,
+    "height": 1152,
+    "format": "jpg",
+    "url": "//res.cloudinary.com/traveltripperweb/image/upload/v1553851930/yabwgcqp73mm1ednwmnr.jpg",
+    "resource_type": "image",
+    "size": 493400,
+    "path": "//res.cloudinary.com/traveltripperweb/image/upload/v1553851930/yabwgcqp73mm1ednwmnr.jpg",
+    "file_size": null,
+    "alt": "Westfield_San_Francisco",
+    "caption": "",
+    "description": ""
+  },
+  "location": {
+    "name": "Westfield San Francisco Centre",
+    "address": "865 Market St, San Francisco, CA 94103, USA",
+    "phone": "(415) 512-6776",
+    "place_id": "ChIJ6zMe3oWAhYARaZ33Z1BAMRo",
+    "reference": "ChIJ6zMe3oWAhYARaZ33Z1BAMRo",
+    "latitude": 37.784142,
+    "longitude": -122.4068825,
+    "google_place": {
+      "address_components": [
+        {
+          "long_name": "865",
+          "short_name": "865",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Market Street",
+          "short_name": "Market St",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "SoMa",
+          "short_name": "SoMa",
+          "types": [
+            "neighborhood",
+            "political"
+          ]
+        },
+        {
+          "long_name": "San Francisco",
+          "short_name": "SF",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "San Francisco County",
+          "short_name": "San Francisco County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "California",
+          "short_name": "CA",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "94103",
+          "short_name": "94103",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "adr_address": "<span class=\"street-address\">865 Market St</span>, <span class=\"locality\">San Francisco</span>, <span class=\"region\">CA</span> <span class=\"postal-code\">94103</span>, <span class=\"country-name\">USA</span>",
+      "formatted_address": "865 Market St, San Francisco, CA 94103, USA",
+      "formatted_phone_number": "(415) 512-6776",
+      "geometry": {
+        "location": {
+          "lat": 37.784142,
+          "lng": -122.4068825
+        },
+        "viewport": {
+          "south": 37.7829083697085,
+          "west": -122.4085713802915,
+          "north": 37.78560633029149,
+          "east": -122.40587341970848
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+      "id": "25d4bf0577c1d6e6c1ad6372dca5c4efaa5d74da",
+      "international_phone_number": "+1 415-512-6776",
+      "name": "Westfield San Francisco Centre",
+      "opening_hours": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1900",
+              "hours": 19,
+              "minutes": 0,
+              "nextDate": 1554084000000
+            },
+            "open": {
+              "day": 0,
+              "time": "1100",
+              "hours": 11,
+              "minutes": 0,
+              "nextDate": 1554055200000
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "2030",
+              "hours": 20,
+              "minutes": 30,
+              "nextDate": 1554175800000
+            },
+            "open": {
+              "day": 1,
+              "time": "1000",
+              "hours": 10,
+              "minutes": 0,
+              "nextDate": 1554138000000
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2030",
+              "hours": 20,
+              "minutes": 30,
+              "nextDate": 1554262200000
+            },
+            "open": {
+              "day": 2,
+              "time": "1000",
+              "hours": 10,
+              "minutes": 0,
+              "nextDate": 1554224400000
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2030",
+              "hours": 20,
+              "minutes": 30,
+              "nextDate": 1554348600000
+            },
+            "open": {
+              "day": 3,
+              "time": "1000",
+              "hours": 10,
+              "minutes": 0,
+              "nextDate": 1554310800000
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2030",
+              "hours": 20,
+              "minutes": 30,
+              "nextDate": 1554435000000
+            },
+            "open": {
+              "day": 4,
+              "time": "1000",
+              "hours": 10,
+              "minutes": 0,
+              "nextDate": 1554397200000
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2030",
+              "hours": 20,
+              "minutes": 30,
+              "nextDate": 1553916600000
+            },
+            "open": {
+              "day": 5,
+              "time": "1000",
+              "hours": 10,
+              "minutes": 0,
+              "nextDate": 1553878800000
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "2030",
+              "hours": 20,
+              "minutes": 30,
+              "nextDate": 1554003000000
+            },
+            "open": {
+              "day": 6,
+              "time": "1000",
+              "hours": 10,
+              "minutes": 0,
+              "nextDate": 1553965200000
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 am – 8:30 pm",
+          "Tuesday: 10:00 am – 8:30 pm",
+          "Wednesday: 10:00 am – 8:30 pm",
+          "Thursday: 10:00 am – 8:30 pm",
+          "Friday: 10:00 am – 8:30 pm",
+          "Saturday: 10:00 am – 8:30 pm",
+          "Sunday: 11:00 am – 7:00 pm"
+        ]
+      },
+      "photos": [
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107467563025287704731/photos\">vinod palan</a>"
+          ],
+          "width": 3024
+        },
+        {
+          "height": 2736,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117148199602544876966/photos\">Shi-Ting Chu</a>"
+          ],
+          "width": 3648
+        },
+        {
+          "height": 2592,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103439367467363781610/photos\">Sandro Eid</a>"
+          ],
+          "width": 4608
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111606016709248269863/photos\">Gerry Armintia</a>"
+          ],
+          "width": 3024
+        },
+        {
+          "height": 2988,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112674475934698300992/photos\">Alvaro Escobedo</a>"
+          ],
+          "width": 5312
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/118364358732084327650/photos\">David Moore</a>"
+          ],
+          "width": 4032
+        },
+        {
+          "height": 4000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115991804913160158412/photos\">Jonghoon Park</a>"
+          ],
+          "width": 4000
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110268800892178767777/photos\">Jeremy Long</a>"
+          ],
+          "width": 4032
+        },
+        {
+          "height": 4656,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104343844886198131026/photos\">Twiners Liam</a>"
+          ],
+          "width": 3492
+        },
+        {
+          "height": 2268,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116630431812853890037/photos\">LaTonya Jackson</a>"
+          ],
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJ6zMe3oWAhYARaZ33Z1BAMRo",
+      "plus_code": {
+        "compound_code": "QHMV+M6 SoMa, San Francisco, CA, United States",
+        "global_code": "849VQHMV+M6"
+      },
+      "rating": 4.3,
+      "reference": "ChIJ6zMe3oWAhYARaZ33Z1BAMRo",
+      "reviews": [
+        {
+          "author_name": "Arthur AWI",
+          "author_url": "https://www.google.com/maps/contrib/115651246898785477042/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/-vxFLNEoGMbE/AAAAAAAAAAI/AAAAAAAAjKM/zoxQYimvCyU/s128-c0x00000000-cc-rp-mo-ba6/photo.jpg",
+          "rating": 5,
+          "relative_time_description": "a week ago",
+          "text": "I went to this place with friends for Lunch. Varieties of types of foods available. I tried the Thai seafood. It's delicious and quick service. After having lunch, we did the shopping. Good place for shopaholic... Check out the photos.",
+          "time": 1553027777
+        },
+        {
+          "author_name": "Calise Garrick",
+          "author_url": "https://www.google.com/maps/contrib/108087669400373286146/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/-sVM79_i3Opk/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3reRHLBbu4uchGc7mbZos-aazZO54g/s128-c0x00000000-cc-rp-mo-ba4/photo.jpg",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "I had an appointment at Burk William Spa. My massage therapist was J.R. for a deep tissue massage.  He was very polite and knowledgeable. J.R. explained his technique before he started. I definitely can feel the pressure in my muscles relax. I greatly appreciate  a great experience.",
+          "time": 1551242411
+        },
+        {
+          "author_name": "Kelsey Rei",
+          "author_url": "https://www.google.com/maps/contrib/117836203323035503836/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh6.googleusercontent.com/-9YxPlLspFUs/AAAAAAAAAAI/AAAAAAAAAMI/Rrk5WfCvVdk/s128-c0x00000000-cc-rp-mo/photo.jpg",
+          "rating": 5,
+          "relative_time_description": "in the last week",
+          "text": "Love this mall. Right off Powell Bart Station, so it's pretty easy to get to if you're not a SF local! Plenty of stores for everyone's need, and some snack places. Spacious and well kept, everyone in the stores were nice when I went. Clean bathrooms, too.",
+          "time": 1553542769
+        },
+        {
+          "author_name": "Mo Soliman",
+          "author_url": "https://www.google.com/maps/contrib/115132894728661074175/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh5.googleusercontent.com/-_dmnyUUcles/AAAAAAAAAAI/AAAAAAAAzkc/MSmEPkmqHHQ/s128-c0x00000000-cc-rp-mo-ba5/photo.jpg",
+          "rating": 4,
+          "relative_time_description": "a week ago",
+          "text": "Right in the center of the city. Huge mall with lots of varieties. Good for your dose of daily shopping and for your shopping sprees. You can enjoy the food court as well. Located perfectly on market street which allows you to continue enjoying the coty after you are all done. Parking is a bit of a hassle if you are not willing to pay a lot. Recommended",
+          "time": 1553183803
+        },
+        {
+          "author_name": "Akilah C",
+          "author_url": "https://www.google.com/maps/contrib/106527930471056309360/reviews",
+          "language": "en",
+          "profile_photo_url": "https://lh5.googleusercontent.com/-wsR2gKGx1dY/AAAAAAAAAAI/AAAAAAAAE-s/0ySUDcn88IA/s128-c0x00000000-cc-rp-mo/photo.jpg",
+          "rating": 4,
+          "relative_time_description": "a month ago",
+          "text": "Love a good Westfield and this one continues to get better. Except for the removal of Bristol farms. It should just have been condensed and better advertised. Now the only grocery is target. Event facilities are superb.",
+          "time": 1550989659
+        }
+      ],
+      "scope": "GOOGLE",
+      "types": [
+        "shopping_mall",
+        "shoe_store",
+        "movie_theater",
+        "department_store",
+        "clothing_store",
+        "store",
+        "restaurant",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "url": "https://maps.google.com/?cid=1887360432930790761",
+      "user_ratings_total": 11524,
+      "utc_offset": -420,
+      "vicinity": "865 Market Street, San Francisco",
+      "website": "http://www.westfield.com/sanfrancisco/",
+      "html_attributions": null
+    }
+  }
+}
