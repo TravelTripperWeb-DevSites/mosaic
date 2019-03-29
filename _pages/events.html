@@ -78,28 +78,50 @@ meta_tags:
 
 <section class="bg--light">
   <div class="container py-4">
-    <h4 class="h2 mb-4 text-center">Our Event Spaces</h4>
+    {% regionblock event_spaces_section_title, type:header %}
+      <h4 class="h2 mb-4 text-center">Our Event Spaces</h4>
+    {% endregionblock %}
     <div class="row">
       <div class="col-md-6 card-listing">
         <div class="card-listing__image">
-          <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553199072/hr6rwhfey1vh54qfra1r.jpg" class="objectfit">
+          {% regionblock event_spaces_section_image_one, type: image %}
+            <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553199072/hr6rwhfey1vh54qfra1r.jpg" class="objectfit">
+          {% endregionblock %}
         </div>
         <div class="text-center p-3 bg--white">
-          <h4 class="h4 mb-2">up to 50 guests</h4>
+          {% regionblock event_spaces_section_subtitle_one, type:header %}
+            <h4 class="h4 mb-2">up to 50 guests</h4>
+          {% endregionblock %}
+          {% regionblock event_spaces_section_title_one, type:header %}
           <h3 class="h3 mb-3">Outdoor Pool Area</h3>
+          {% endregionblock %}
+          {% regionblock event_spaces_section_content_one, type: html %}
           <p>Labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+          {% endregionblock %}
+          {% regionblock event_spaces_section_link_one, type: html %}
           <a href="#request" class="link--cta">reserve this space</a>
+          {% endregionblock %}
         </div>
       </div>
       <div class="col-md-6 card-listing">
         <div class="card-listing__image">
-          <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553199072/nvsq4xnuyth1wuebzcii.jpg" class="objectfit">
+          {% regionblock event_spaces_section_image_two, type: image %}
+            <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553199072/hr6rwhfey1vh54qfra1r.jpg" class="objectfit">
+          {% endregionblock %}
         </div>
         <div class="text-center p-3 bg--white">
-          <h4 class="h4 mb-2">up to 50 guests</h4>
+          {% regionblock event_spaces_section_subtitle_two, type:header %}
+            <h4 class="h4 mb-2">up to 50 guests</h4>
+          {% endregionblock %}
+          {% regionblock event_spaces_section_title_two, type:header %}
           <h3 class="h3 mb-3">Outdoor Pool Area</h3>
+          {% endregionblock %}
+          {% regionblock event_spaces_section_content_two, type: html %}
           <p>Labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+          {% endregionblock %}
+          {% regionblock event_spaces_section_link_two, type: html %}
           <a href="#request" class="link--cta">reserve this space</a>
+          {% endregionblock %}
         </div>
       </div>
     </div>
