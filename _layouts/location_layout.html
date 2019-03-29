@@ -41,8 +41,8 @@ layout: generic
 
 <div class="c-map">
   <div class="c-map__headings">
-    <p class="h2">Top Attractions</p>
-    <p>Select a category & discover our nearest attractions on the map</p>
+      {% region location_map_detail, type:html %}
+      
   </div>
   <div class="c-map__box">
     <div class="c-map__box__tabs">
@@ -102,7 +102,7 @@ layout: generic
 <script src="/assets/js/leaflet-plugin.js"></script>
 <script type="text/javascript">
    var leaflet = LeafletMap({
-     target: document.getElementById('leafletmap'), 
+     target: document.getElementById('leafletmap'),
      hotelTitle: '{{ site.data.hotel_settings.name }}',
      hotelAddress: '{{ site.data.hotel_settings.address.street1 }}, {{ site.data.hotel_settings.address.city }}, {{ site.data.hotel_settings.address.state }}',
      hotelLat: {{ site.data.hotel_settings.latitude }},
