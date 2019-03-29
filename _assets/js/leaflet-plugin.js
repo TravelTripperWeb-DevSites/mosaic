@@ -170,7 +170,7 @@ function leafletMap(options) {
         title: settings.hotelTitle,
         alt: 'Hotel Map Marker',
         icon: hotelIcon
-      }).bindPopup("<h4><a target='_blank' rel='nofollow' href='http://maps.google.com/?q="+settings.hotelTitle+"+"+settings.hotelAddress+"'>".concat(settings.hotelTitle, "</a></h4> ").concat(settings.hotelAddress)).addTo(map);
+      }).bindPopup("<div class=\"map-loc-detail\"><h4><a target='_blank' rel='nofollow' href='http://maps.google.com/?q="+settings.hotelTitle+"+"+settings.hotelAddress+"'>".concat(settings.hotelTitle, "</a></h4> ").concat(settings.hotelAddress)+"</div>").addTo(map);
 
       if (isAttractions) {
         loadAttractionMarkers(map, marker, settings);
@@ -211,7 +211,7 @@ function leafletMap(options) {
         if (options.googleLink) {
           infoText = "<a href=\"http://maps.google.com/maps?q=".concat(attractionsArray[i][0], "+").concat(attractionsArray[i][4], "\" target=\"_blank\"><h4>").concat(attractionsArray[i][0], "</h4>").concat(attractionsArray[i][4], "</a>");
         } else if (!options.websiteLink && options.getDirectionBtn) {
-          infoText = "<h4>".concat(attractionsArray[i][0], "</h4>").concat(attractionsArray[i][4], "<br>\n          <a class=\"btnDirection\" href=\"http://maps.google.com/maps?q=").concat(encodeURIComponent(attractionsArray[i][0]).replace(/ /g, '+'), "+").concat(encodeURIComponent(attractionsArray[i][4]).replace(/ /g, '+'), "\" target=\"_blank\">").concat(options.getDirectionBtnLabel, "</a>");
+          infoText = "<img src=\""+attractionsArray[i][6]+"\" alt=\""+attractionsArray[i][0]+"\"><div class=\"map-loc-detail\"><h4>".concat(attractionsArray[i][0], "</h4>").concat("\n<a class=\"btnDirection\" href=\"http://maps.google.com/maps?q=").concat(encodeURIComponent(attractionsArray[i][0]).replace(/ /g, '+'), "+").concat(encodeURIComponent(attractionsArray[i][4]).replace(/ /g, '+'), "\" target=\"_blank\">").concat(options.getDirectionBtnLabel, "</a></div>");
         } else if (options.websiteLink && !options.getDirectionBtn) {
           infoText = "<h4><a href=\"".concat(attractionsArray[i][5], "\">").concat(attractionsArray[i][0], "</a></h4>").concat(attractionsArray[i][4]);
         } else if (options.websiteLink && options.getDirectionBtn) {
@@ -313,7 +313,7 @@ function leafletMap(options) {
 
   var handleCategory = function handleCategory(e) {
     var selectedCategory = e.target.dataset.category;
-    var allcategory = document.querySelectorAll('.attractions-filter .nav-link');
+    var allcategory = document.querySelectorAll('.attractions-filter');
     allcategory.forEach(function(cat) {
       cat.classList.remove('active');
     });
