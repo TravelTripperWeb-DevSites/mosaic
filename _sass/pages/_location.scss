@@ -25,21 +25,27 @@
     position: relative;
 
     &__tabs {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: auto;
-      left: 0;
       z-index: 999;
       display: flex;
       justify-content: center;
       width: auto;
 
+      @include media-breakpoint-up(md) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: auto;
+        left: 0;
+      }
+
       ul {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         min-height: 30px;
-        margin: 0;
+        margin: 0 auto;
         padding: 0;
+        text-align: center;
         background: $gray-100;
 
         li {
@@ -153,6 +159,9 @@
   }
 }
 //leaflet poup
+.leaflet-tile {
+   filter: saturate(21) hue-rotate(30deg) grayscale(83%) contrast(99%);
+}
 .leaflet-popup-close-button {
   height: 18px !important;
   padding: 4px !important;
