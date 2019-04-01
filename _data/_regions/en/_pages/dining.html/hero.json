@@ -25,7 +25,8 @@
         "alt": "Mosaic-Restaurant",
         "caption": "",
         "description": ""
-      }
+      },
+      "mask_opacity": ".3"
     },
     "skip_h1": true,
     "_template": "hero",
