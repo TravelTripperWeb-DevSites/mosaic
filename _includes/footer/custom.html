@@ -1,3 +1,81 @@
-<div class="copyright m-2">
-  &copy; {{ "now" | date: "%Y" }}
-</div>
+<section class="footer-nav bg-light">
+  <ul class="nav d-none d-lg-flex align-items-center justify-content-center text-uppercase">
+    {% assign items = site.data._menus.main.items %}
+    {% include /nav/nav-item-list.html items=items %}
+  </ul>
+</section>
+<footer class="footer-main container py-lg-4 pb-3">
+  <div class="footer-main__wrap">
+    <div class="footer-main__newsletter pb-4">
+      <p>Get up to date news from Mosaic Hotel.<br>Receive exclusive offers & promotions</p>
+      <form class="form-inline" name="newsletterForm" id="newsletterForm">
+        <input type="hidden" id="formID" name="formID" value="FA7C30FE-62A0-44AF-8D27-D069FCBF9151">
+        <div class="form-group d-flex w-100 mb-2">
+          <input type="email" id= "emailAddress" name="emailAddress" class="form-control custom-input mr-2" placeholder="Enter Your Email Address" required>
+          <button type="submit" class="btn btn--submit"><i class="fas fa-arrow-right"></i></button>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="q4_agreeTo[]" id="input_4_0" value="Agree" required>
+            <label class="form-check-label small" for="q4_agreeTo[]">
+              I agree to the&nbsp;<a href="/terms/">Terms of Use</a>&nbsp;&&nbsp;<a href="/privacy/">Privacy Policy</a>
+            </label>
+        </div>
+      </form>
+    </div>
+    <div class="footer-main__social text-center pb-3 flex-shrink-0">
+      <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1552666394/w9f64ce7uplxsuxcbnvq.png">
+      <div class="footer-main__social-icons small">
+        <a href="#">
+          <span class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fab fa-facebook-f fa-stack-1x"></i>
+          </span>
+        </a>
+        <a href="#">
+          <span class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fab fa-instagram fa-stack-1x"></i>
+          </span>
+        </a>
+        <a href="#">
+          <span class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fab fa-tripadvisor fa-stack-1x"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+    <div class="footer-main__contact d-lg-flex justify-content-lg-end">
+      <ul class="fa-ul">
+        <li class="mb-2"><span class="fa-li"><i class="fas fa-map-marker-alt"></i></span>125 S Spalding Drive<br>Beverly Hills, CA 90212</li>
+        <li class="mb-2"><span class="fa-li"><i class="fas fa-mobile-alt"></i></span>(800) 463.4466<br>(310) 278.0303</li>
+        <li class="mb-2"><span class="fa-li"><i class="fas fa-envelope"></i></span><a href="mailto:info@mosaichotel.com">info@mosaichotel.com</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<section class="footer-extras bg--dark py-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg pb-3 text-center text-lg-left">
+        <ul class="text-white small list-unstyled">
+          <li class="mb-2">&copy; {{ "now" | date: "%Y" }} Mosaic Hotel.<br>
+          All Rights Reserved.</li>
+          <li class="mb-2"><a href="/privacy">PRIVACY POLICY</a></li>
+          <li class="mb-2"><a href="/ada">ACCESIBILITY</a></li>
+          <li><a href="/terms">TERMS & CONDITIONS</a></li>
+        </ul>
+      </div>
+      <div class="col-lg text-center mb-3 mb-lg-0">
+        <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553015577/sv3tknv1ypdogfpgabt7.png" width="170px">
+      </div>
+      <div class="col-lg text-center mb-3 mb-lg-0 iprefer-logos">
+        <a href="https://preferredhotels.com/property/mosaic-hotel-beverly-hills-1026" target="_blank"><img src="//res.cloudinary.com/traveltripperweb/image/upload/v1554111797/jml7j237vjjgmdbjkaot.png"></a>
+        <a href="https://preferredhotels.com/iprefer/enroll?hotel=LAXTM" target="_blank"><img src="//res.cloudinary.com/traveltripperweb/image/upload/v1554111797/scbmedh4ntmujltyreqs.png"></a>
+      </div>
+      <div class="col-lg text-center mb-3 mb-lg-0">
+        <a href="https://traveltripper.com" target="_blank"><img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553015583/hvm7swegwal45ljdbyuq.png" width="109px"></a>
+      </div>
+    </div>
+  </div>
+</section>

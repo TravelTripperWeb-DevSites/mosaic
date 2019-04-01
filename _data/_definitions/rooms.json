@@ -1,0 +1,60 @@
+{
+  "name": {
+    "required": true,
+    "localizable": true
+  },
+  "url_friendly_name": {
+    "required": true,
+    "label": "URL Friendly Name",
+    "type": "url_slug",
+    "localizable": true
+  },
+  "short_description": {
+    "required": true,
+    "localizable": true,
+    "type": "text"
+  },
+  "description": {
+    "required": true,
+    "localizable": true,
+    "type": "richtext"
+  },
+  "amenities_list": {
+    "required": true,
+    "type": "text",
+    "multiple": true,
+    "label": "Amenities"
+  },
+  "bed_types": {
+    "required": true,
+    "type": "model",
+    "display_field": "name",
+    "model_name": "room_bed_types"
+  },
+  "max_guests": {
+    "required": true,
+    "localizable": true,
+    "type": "integer",
+    "label": "Maximum Guests"
+  },
+  "room_category": {
+    "required": true,
+    "type": "model",
+    "display_field": "name",
+    "model_name": "room_categories"
+  },
+  "images": {
+    "required": true,
+    "type": "image",
+    "multiple": true
+  },
+  "booking_url": {
+    "required": true,
+    "label": "Booking Link",
+    "localizable": true
+  },
+  "order": {
+    "required": true,
+    "type": "order"
+  }
+}

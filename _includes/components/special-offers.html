@@ -1,0 +1,50 @@
+{% assign offers = site.data._models.offers %}
+<section class="bg--light py-2 py-md-5">
+  <div class="container">
+    <div class="special-offers row">
+      <div class="d-block d-md-none text-center mx-auto">
+        <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1552666394/w9f64ce7uplxsuxcbnvq.png" width="158px">
+      </div>
+      <hr class="d-block d-md-none">
+      <h3 class="d-block d-md-none h2 mb-3 text-center mx-auto">Special Offers</h3>
+      <div class="col-md-3 order-2 order-md-1">
+        <div class="d-none d-md-block text-center">
+          <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1552666394/w9f64ce7uplxsuxcbnvq.png" width="158px">
+        </div>
+        <hr class="d-none d-md-block">
+        <h3 class="d-none d-md-block h2 mb-3 text-center">Special<br>Offers</h3>
+        <div class="special-offers__controls" id="customNavItemsOffers">
+          <span class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
+            <i class="fa fa-arrow-left"></i>
+          </span>
+          <div class="custom-control-items__nav">
+            <p><b id="current-slide">1</b>/{{ offers.size }}</p>
+          </div>
+          <span class="next" data-controls="next" aria-controls="customize" tabindex="-1">
+            <i class="fa fa-arrow-right"></i>
+          </span>
+        </div>
+        <a class="link--cta" href="/offers/">View all Specials</a>
+      </div>
+      <div class="special-offers-listings col-md-9 order-1 order-md-2 pr-0 pr-md-2">
+        <div class="special-offers-listings__wrap">
+          {% for offer in offers %}
+          <div class="card-listing" data-slide="{{ forloop.index }}">
+            <div class="card-listing__image">
+              <img class="objectfit" src="{{ offer.image.url_large }}" alt="{{ offer.image.alt }}">
+            </div>
+            <div class="card-listing__content text-center p-3 bg--white">
+              <h4 class="h4 mb-2">{{ offer.tagline }}</h4>
+              <h3 class="h3 mb-3">{{ offer.name }}</h3>
+              <div class="cta-wrap">
+                <a href="/offers/{{ offer.url_friendly_name }}/" class="link--cta mr-2">View offer</a>
+                <a href="{{ offer.booking_url }}" class="btn btn--tertiary mt-md-2 mt-xl-0">Book Offer</a>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

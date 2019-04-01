@@ -1,2 +1,17 @@
 // Dining Page Elements
 // ==========================================================================
+.dining-callout__quote {
+  border-left: 8px solid $secondary;
+}
+
+.dining--callout__buttons a {
+  flex: 1 1 auto;
+
+  @include media-breakpoint-up(lg) {
+    margin-right: $spacer;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

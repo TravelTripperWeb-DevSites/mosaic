@@ -7,8 +7,8 @@
   height: 100vh;
 
   .container-fluid {
-      text-align: left !important;
-      z-index: 1;
+    text-align: left !important;
+    z-index: 1;
   }
 
   .hero-content {
@@ -20,13 +20,340 @@
   }
 }
 
+.hero--short {
+  height: 50vh;
+}
+
 hr {
   width: 104px;
-  border-bottom: 1px solid;
-  border-top: 0;
   margin: $spacer 0;
+  border-top: 0;
+  border-bottom: 1px solid;
+
+  &.hr--secondary {
+    color: $secondary;
+  }
 
   &.hr--light {
     color: $white;
   }
+
+  &.hr--full {
+    width: 100%;
+  }
+}
+
+.splash {
+  background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	padding: 20px 15px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+	@include media-breakpoint-up(md) {
+		min-height: 625px;
+    padding: 80px;
+	}
+
+  &.splash--bordered {
+    border-bottom: 8px solid $secondary;
+  }
+
+  &__content {
+    max-width: 550px;
+  }
+}
+
+.instagram__listings {
+  .instagram__listing {
+    line-height: 0;
+    max-width: 225px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// Custom overwrite for InstaFeed
+
+.c-instagram-feed {
+
+  .c-instagram-feed__profile-link {
+    @extend .h3;
+  }
+
+  .c-instagram-feed__tag-link {
+    @extend .h4;
+  }
+
+  .c-instagram-feed__list {
+    justify-content: center;
+  }
+
+  .photo-list {
+    display: flex;
+    justify-content: space-between;
+    height: 162px;
+    max-width: 720px;
+    width: 100%;
+
+    .photo {
+      width: 159px;
+      height: 162px;
+
+      &:nth-child(1n+5) {
+        display: none;
+      }
+    }
+  }
+}
+
+.form-control {
+  height: auto;
+  font-size: .75rem;
+}
+
+.form-control.custom-input {
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: 1px solid $black;
+  padding-left: 0;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.form-wrap {
+  max-width: 800px;
+}
+
+.custom-select {
+  -webkit-appearance: none;
+  padding-left: 1rem;
+}
+
+.custom-label {
+  font-family: $family-primary;
+  font-size: 12px;
+  line-height: $base-line-height;
+  text-transform: uppercase;
+}
+
+.review-box {
+  padding: 40px 25px;
+  background-color: rgba(41, 56, 74, .8);
+  border-bottom: 8px solid $secondary;
+
+  @include media-breakpoint-up(md) {
+    padding: 64px 80px;
+  }
+
+  .h4 {
+    font-size: $base-font-size;
+    font-weight: 400;
+  }
+
+  &__wrap {
+
+  }
+
+  &__item {
+    .h4 {
+      text-transform: none;
+    }
+  }
+
+  &__controls {
+    margin: 30px 0 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      list-style: none;
+    }
+  }
+}
+
+.blockquote {
+  margin-bottom: 30px;
+  font-family: $family-secondary;
+  font-size: 28px;
+  font-style: italic;
+  line-height: 40px;
+
+  &.border--left {
+    border-left: 8px solid $secondary;
+    padding-left: $spacer;
+  }
+}
+
+.card-listing {
+  margin-bottom: $spacer;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 0;
+  }
+}
+
+.card-listing__image {
+  line-height: 0;
+  height: 200px;
+
+  @include media-breakpoint-up(md) {
+    height: 275px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    height: 360px;
+  }
+}
+
+.table-borderless {
+  tr {
+    border-top: 1px solid $black;
+
+    &:last-child {
+      border-bottom: 1px solid $black;
+    }
+  }
+}
+
+.restaurant--callout__images {
+  img {
+    @extend .objectfit;
+  }
+}
+
+.nav--filter {
+  list-style-type: none;
+
+  @include media-breakpoint-up(lg) {
+    li {
+      margin-right: $spacer * 3;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.filter--option {
+  font-family: $family-primary;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 32px;
+  text-transform: uppercase;
+
+  &:hover,
+  &.active {
+    padding-bottom: 8px;
+    border-bottom: 1px solid $black;
+  }
+}
+
+.tns-outer {
+  .tns-nav {
+    button {
+      width: 6px;
+      height: 6px;
+      padding: 0;
+      background-color: $white;
+      border-color: $white;
+      opacity: .5;
+
+      &.tns-nav-active {
+        width: 12px;
+        height: 12px;
+        margin-top: -4px;
+        background-color: $white;
+        border-color: $white;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.tns-item {
+  opacity: .5;
+}
+.tns-slide-active {
+  opacity: 1;
+}
+
+.border-box-image {
+  z-index: 1;
+  max-height: 560px;
+}
+
+.bordered-box {
+  margin: -7px 15px 7px;
+  padding: 30px 25px;
+  border: solid 1px $secondary;
+
+  @include media-breakpoint-up(md) {
+    flex: 0 0 57%;
+    max-width: 57%;
+    margin: 0 0 0 -7%;
+    padding: 30px 50px 30px 100px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    flex: 0 0 56%;
+    max-width: 56%;
+    margin: 5% 0 0 -7%;
+    padding: 60px 80px 150px 150px;
+  }
+}
+
+.with-line {
+  margin-bottom: 20px;
+
+  &:after {
+    position: relative;
+    right: auto;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 50%;
+    height: 1px;
+    margin-top: 20px;
+    content: '';
+    background: $secondary;
+
+    @include media-breakpoint-up(md) {
+      position: absolute;
+      right: 0;
+      bottom: -72px;
+      left: auto;
+      width: 1px;
+      height: 220px;
+      margin-top: 0;
+    }
+
+    @include media-breakpoint-up(xl) {
+      height: 190px;
+    }
+  }
+  &.black {
+    &:after {
+      background: $black;
+    }
+  }
+}
+
+.scroll-down-icon {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

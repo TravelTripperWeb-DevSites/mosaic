@@ -1,5 +1,5 @@
 ---
-layout: generic
+layout: home
 title_localized:
   en: Home
 meta_description:
@@ -8,11 +8,206 @@ meta_tags:
   robots:
 ---
 
-<section class='container'>
-  <div class='row text-center'>
-    <div class='col '>
-      <h1 class="h3">Edit this file</h1>
-      <p>This content is written directly into the index.html home page. You should replace it with editable regions and/or standard components</p>
+<section class="bg--light bg--white">
+  <div class="container">
+    <div class="row py-2 py-md-5">
+      <div class="col-md-6 objectfit border-box-image">
+        {% regionblock home_intro_image, type: image %}
+        <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1552663289/fkl75c2jkeykeve7yvev.jpg" alt="Home Intro" class="objectfit">
+        {% endregionblock %}
+      </div>
+      <div class="col-md-6 bordered-box">
+        <div tabindex="0">
+          {% regionblock home_intro_tagline, type: header %}
+          <p class="h4">You've Arrived</p>
+          {% endregionblock %}
+        </div>
+        <hr/>
+        <div tabindex="0">
+          {% regionblock home_intro_title, type: header %}
+          <h2 class="h2 mb-3">Newly-redesigned contemporary luxury</h2>
+          {% endregionblock %}
+        </div>
+        <div tabindex="0">
+          {% regionblock home_intro_detail, type: text %}
+          <p>Mosaic Hotel's 49 newly-redesigned contemporary guestrooms offer distinctive low-slung clean-lined chairs, luxurious linens and state-of-the-art technology.</p>
+          {% endregionblock %}
+        </div>
+        {% regionblock home_intro_url, type: html %}
+        <a href="/" class="link--cta">Learn More</a>
+        {% endregionblock %}
+      </div>
     </div>
   </div>
 </section>
+
+{% include components/special-offers.html %}
+
+<section class="bg--dark pb-4">
+  {% regionblock rooms_carousel_heading, type:heading %}
+    <h3 class="h2 text-center py-4 text-white">Rooms & Suites</h3>
+  {% endregionblock %}
+  {% assign rooms = site.data._models.rooms  | sort:"order" %}
+  <div class="rooms-slider-container">
+    {% for room in rooms %}
+      <div class="rooms-slider-container__item">
+        <div class="row no-gutters room-listing align-items-center">
+          <div class="col-md-6 p-0">
+            <div class="room-listing__image">
+              <img class="objectfit" src="{{room.images[0].url}}" alt="{{room.room_category.name}}">
+            </div>
+          </div>
+          <div class="col-md-6 p-0">
+            <div class="room-listing__text">
+              <h3 class="h3 text-secondary">{{room.name}}</h3>
+              <hr class="hr--secondary" />
+              <h4 class="h4 text-white mb-3">tonights rate <span class="text-secondary">$275</h4>
+                <p class="text-white">{{room.short_description}}</p>
+                <div class="cta-wrap">
+                  <a class="link--cta text-white mr-2" href="/rooms/{{room.url_friendly_name}}">View Room</a>
+                  <a class="btn btn--secondary" href="{{room.booking_url}}" target="_blank">Book Room</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="container rooms-slider-controls-wrap">
+    <div class="custom-control-items" id="customNavItemsRooms">
+      <span class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
+        <i class="fa fa-arrow-left"></i>
+      </span>
+      <div class="custom-control-items__nav">
+        {% for room in rooms %}
+        <button data-nav="{{forloop.index0}}" tabindex="0" aria-selected="true" aria-controls="tns1-item{{forloop.index0}}" type="button" class="{% if forloop.index == 1 %}tns-nav-active{% endif %}"></button>
+        {% endfor %}
+      </div>
+      <span class="next" data-controls="next" aria-controls="customize" tabindex="-1">
+        <i class="fa fa-arrow-right"></i>
+      </span>
+      <div class="cta-wrap">
+        {% regionblock rooms_carousel_cta, type:text %}
+          <a href="/rooms/" class="link--cta">View All Rooms</a>
+        {% endregionblock %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg--white">
+  <div class="container pb-3 pb-md-5">
+    <section class="row py-3 py-md-5">
+      <div class="col-md-4 d-flex justify-content-md-center">
+        <div class="d-inline-block text-md-right pb-md-0 pb-3" tabindex="0">
+          {% regionblock eatdrink_tagline, type: header %}
+          <h5 class="h4 with-line black">Eat & Drink</h5>
+          {% endregionblock %}
+          {% regionblock eatdrink_title, type: header %}
+          <h4 class="h2">Dining & Bar</h4>
+          {% endregionblock %}
+        </div>
+      </div>
+      <div class="col-md-8 px-2 px-xl-5">
+        <div tabindex="0">
+          {% regionblock eatdrink_detail, type: text %}
+          <p>Mosaic Hotel Beverly Hills’ Dining Room, with its fresh California cuisine, offers intimate indoor seating or in our outdoor privately heated cabanas.</p>
+          {% endregionblock %}
+        </div>
+        {% regionblock eatdrink_url, type: html %}
+        <a href='/restaurant/' class="link--cta">Learn More</a>
+        {% endregionblock %}
+      </div>
+    </section>
+    <section class="row">
+      <div class="col-7">
+        <div class="objectfit w-100 h-100">
+          {% regionblock eatdrink_img1, type: image %}
+          <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553181569/za3rxfq54l2hhvbfzebs.jpg" alt="Eat and Drink">
+          {% endregionblock %}
+        </div>
+      </div>
+      <div class="col-5">
+        <div class="objectfit w-100 h-100">
+          {% regionblock eatdrink_img2, type: image %}
+          <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553181573/saoz47lpo4wq1shqxxl1.jpg" alt="Eat and Drink">
+          {% endregionblock %}
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+
+<section class="bg--light home-location">
+  <div class="container">
+    <div class="row align-items-center py-3 py-md-4">
+      <div class="col-md-6">
+        {% regionblock home_location_img, type: image %}
+        <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1552916831/tzr92iqhx4ygjzq9cmsx.jpg" alt="Map" class="w-100">
+        {% endregionblock %}
+      </div>
+      <div class="col-md-6 pt-3 pt-md-0 pl-md-5">
+        <div tabindex="0">
+          {% regionblock home_location_subheading, type: header %}
+          <p class="h4">Our Location</p>
+          {% endregionblock %}
+        </div>
+        <hr/>
+        <div tabindex="0">
+          {% regionblock home_location_heading, type: header %}
+          <h2 class="h2 mb-3">Just steps away from Hollywood’s finest</h2>
+          {% endregionblock %}
+        </div>
+        <div tabindex="0">
+          {% regionblock home_location_content, type: text %}
+          <p>A diverse collection of world-class restaurants, museums, nightclubs, and the shops of Rodeo Drive, Wilshire Boulevard, and Century City are within comfortable walking distance from the hotel.</p>
+          {% endregionblock %}
+        </div>
+        {% regionblock home_location_url, type: text %}
+        <a href="#" class="link--cta">Explore More</a>
+        {% endregionblock %}
+      </div>
+    </div>
+    <div class="row location-home__images pb-3 pb-md-4">
+      <div class="col-lg-4">
+        <div class="location-image-wrap">
+          <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1552918691/jmom5ibytqjozae3q5ov.jpg" class="objectfit w-100">
+        </div>
+      </div>
+      <div class="col-lg-4 d-none d-lg-block">
+        <div class="location-image-wrap">
+          <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1552918691/y3fcqvd94t75twzuiv1x.jpg" class="objectfit w-100">
+        </div>
+      </div>
+      <div class="col-lg-4 d-none d-lg-block">
+        <div class="location-image-wrap">
+          <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1552918692/rf4xc2fqb9fjq1govtfp.jpg" class="objectfit w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="splash splash--bordered" style="background-image:url('//res.cloudinary.com/traveltripperweb/image/upload/v1552920050/pbnets1kdany3sb1wjzo.jpg');">
+	<div class="container">
+		<div class="splash__content">
+      <div tabindex="0">
+        {% regionblock splash_subtitle, type:header %}
+        <h4 class="h4 mb-3">Special Occasions</h4>
+        {% endregionblock %}
+      </div>
+      <div tabindex="0">
+        {% regionblock splash_title, type:header %}
+        <h2 class="h1 mb-3">Planning a stylish &<br>memorable event?</h2>
+        {% endregionblock %}
+      </div>
+      <div>
+        {% regionblock splash_cta, type:html %}
+        <a href="#" role="button" class="link--cta">Learn More</a>
+        {% endregionblock %}
+      </div>
+		</div>
+	</div>
+</section>
+
+{% include components/instagram %}

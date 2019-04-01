@@ -1,0 +1,116 @@
+---
+layout: generic
+---
+
+<section class="bg--light">
+  <div class="container">
+    <div class="row align-items-center py-2 py-md-4">
+      <div class="col-md-6">
+        <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553634451/cojnfbtim7fsves3t03x.jpg" class="objectfit">
+      </div>
+      <div class="col-md-6 pt-3 pt-md-0">
+        <p class="h4">You've Arrived</p>
+        <hr/>
+        <h2 class="h2 mb-3">Step outside into Hollywood’s Best</h2>
+        <p>Mosaic Hotel is just steps from a diverse collection of world-class restaurants, museums, nightclubs, and the shops of Rodeo Drive, Wilshire Boulevard, and Century City. The Pacific Ocean is only 15 minutes away from the Mosaic at Santa Monica Beach. If you’re Hollywood bound, Mosaic Hotel is also the perfect location for you.</p>
+        <a href="/contact" class="link--cta">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg--light py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 align-items-center d-flex">
+        <p class="blockquote border--left">The Pacific Ocean & the Hollywood Hills are only 15 minutes away</p>
+      </div>
+      <div class="col-lg-9">
+        <div class="row">
+          <div class="col-md-7">
+            <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553636397/a3pdfxfow4wp5vatkcfo.jpg" class="objectfit">
+          </div>
+          <div class="col-md-5">
+            <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553636397/dv0aimptnhndphs7uywe.jpg" class="objectfit">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="c-map">
+  <div class="c-map__headings">
+      {% region location_map_detail, type:html %}
+  </div>
+  <div class="c-map__box">
+    <div class="c-map__box__tabs">
+      <ul>
+        <li data-category="attraction" class="attractions-filter">
+          <span class="icons attractions-icon"></span>
+          Attractions
+        </li>
+        <!-- <li data-category="dining" class="attractions-filter" >
+          <span class="icons dining-icon"></span>
+          Dining
+        </li> -->
+        <li data-category="entertainment" class="attractions-filter">
+          <span class="icons entertain-icon"></span>
+          Entertainment
+        </li>
+        <li data-category="shopping" class="attractions-filter">
+          <span class="icons shop-icon"></span>
+          Shopping
+        </li>
+      </ul>
+    </div>
+    <div id="leafletmap" class="map" data-attractions="show"></div>
+  </div>
+</div>
+
+<section class="splash splash--bordered" style="background-image:url('//res.cloudinary.com/traveltripperweb/image/upload/v1553635760/jtkhfgyg0wefbbhdraxx.jpg');">
+	<div class="container">
+		<div class="splash__content">
+      {% regionblock splash_subtitle, type:header %}
+        <h4 class="h4 mb-3">Dine & Drink</h4>
+      {% endregionblock %}
+      <hr class="hr">
+      {% regionblock splash_title, type:header %}
+        <h2 class="h1 mb-3">Join Us for<br>Apre´ Spree</h2>
+      {% endregionblock %}
+      <div>
+        {% regionblock splash_cta, type:html %}
+          <a href="/dining" role="button" class="link--cta">Learn More</a>
+        {% endregionblock %}
+      </div>
+		</div>
+	</div>
+</section>
+
+{% include components/instagram %}
+
+
+<script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"></script>
+
+<script type="text/javascript">
+{% assign mapitems = site.data._models.attractions | sort: 'order' %}
+  var attractions = [];
+  attractions = [
+   {% for mapitem in mapitems %}[ '{{ mapitem.name | escape | replace :'&#39;',''}}', {{ mapitem.location.latitude }}, {{ mapitem.location.longitude }}, '{{ mapitem.category }}','{{ mapitem.location.address }}','{{ mapitem.location.google_place.website }}','{{ mapitem.image.url_thumb }}'] {% unless forloop.last %},{% endunless %}{% endfor %} ];
+</script>
+<script src="/assets/js/leaflet-plugin.js"></script>
+<script type="text/javascript">
+   var leaflet = LeafletMap({
+     target: document.getElementById('leafletmap'),
+     hotelTitle: '{{ site.data.hotel_settings.name }}',
+     hotelAddress: '{{ site.data.hotel_settings.address.street1 }}, {{ site.data.hotel_settings.address.city }}, {{ site.data.hotel_settings.address.state }}',
+     hotelLat: {{ site.data.hotel_settings.latitude }},
+     hotelLong: {{ site.data.hotel_settings.longitude }},
+     hotelMarker: '/assets/img/marker.png',
+     markerSize: [36, 36],
+     zoom: 13,
+     getDirectionBtn: true,
+     attractionsList: attractions
+   });
+   leaflet.init();
+</script>

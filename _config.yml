@@ -71,6 +71,9 @@ page_gen:
 - data: rooms
   template: room_layout
   dir: rooms
+- data: offers
+  template: offer_layout
+  dir: offers
 plugins_dir:
 - _plugins-38
 - _plugins
