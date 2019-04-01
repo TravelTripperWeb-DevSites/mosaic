@@ -35,7 +35,7 @@
     "required": true,
     "localizable": true,
     "type": "integer",
-    "label": "Maximum Guests",
+    "label": "Maximum Guests"
   },
   "room_category": {
     "required": true,
