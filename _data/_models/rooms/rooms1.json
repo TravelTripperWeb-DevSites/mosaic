@@ -7,10 +7,10 @@
     "en": "deluxe-king-room"
   },
   "short_description_localized": {
-    "en": "Newly-Redesigned Deluxe Room with 1 King Bed, includes some with pool views."
+    "en": "Newly redesigned 300 sq. ft. Deluxe Room with one king bed."
   },
   "description_localized": {
-    "en": "<p>Newly-Redesigned Deluxe Room with 1 King Bed, includes some with pool views.</p>\n<p>Our newly-redesigned contemporary guestrooms offer pool view rooms upon request, distinctive low-slung clean-lined chairs, luxurious linens and state-of-the-art technology. In-room amenities at our boutique hotel in Beverly Hills CA include Nespresso machines, recessed lights and electronic &ldquo;do not disturb&rdquo; signs.</p>"
+    "en": "<p>Newly redesigned 300 sq. ft. Deluxe Room with one king bed.</p>\n<p>Our newly-redesigned contemporary guestrooms offer pool view rooms upon request, distinctive low-slung clean-lined chairs, luxurious linens and state-of-the-art technology. In-room amenities at our boutique hotel in Beverly Hills CA include Nespresso machines, recessed lights and electronic &ldquo;do not disturb&rdquo; signs.</p>"
   },
   "amenities_list": [
     "Complimentary high speed Internet access",
@@ -23,7 +23,6 @@
     "Highly personalized in-room connectivity and entertainment options"
   ],
   "bed_types": "room_bed_types1",
-  "max_guests": 5,
   "room_category": "room_categories2",
   "images": [
     {
@@ -117,5 +116,6 @@
   ],
   "booking_url_localized": {
     "en": "#"
-  }
+  },
+  "max_guests_localized": null
 }
