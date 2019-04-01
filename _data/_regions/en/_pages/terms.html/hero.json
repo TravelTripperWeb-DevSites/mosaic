@@ -29,6 +29,9 @@
     "hero_title": {
       "content": "Terms of use",
       "_template": "header"
+    },
+    "hero_html": {
+      "content": "<p><span style=\"font-family: Avenir, 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; font-weight: 600; text-align: justify;\">Last updated June 06, 2018</span></p>"
     }
   }
 ]
