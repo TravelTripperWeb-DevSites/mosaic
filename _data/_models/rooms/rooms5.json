@@ -7,23 +7,29 @@
     "en": "executive-suite-with-pool-view"
   },
   "short_description_localized": {
-    "en": "900 sq ft suite with private balcony overlooking pool. Living room and dining room w/ wet bar."
+    "en": "900 sq. ft. suite with a private balcony overlooking our intimate pool area."
   },
   "description_localized": {
-    "en": "<p>900 sq ft suite with private balcony overlooking pool. Living room and dining room w/ wet bar.</p>\n<p>The Executive Suite offers the ultimate in Beverly Hills luxury with a king bedroom and separate living room and dining areas with a full wet bar. Guests can enjoy the 75-foot private balcony overlooking the pool and their own private entrance. This 900 sq foot suite can also double as a meeting room.</p>"
+    "en": "<p>Guests enjoy a 75-foot private balcony overlooking the pool, a separate living area, dining area, full wet bar, and a private entrance. This 900 sq. ft. suite can also double as a meeting room.</p>"
   },
   "amenities_list": [
-    "Complimentary high speed Internet access",
-    "50″ Flat Panel HD LCD televisions in the suites",
-    "Bamboo terry and plush spa collection robes",
-    "Goose down blankets",
-    "Calacatta marble vanities",
+    "50″ Flat Panel HD LCD television",
+    "Luxury linens and bedding",
+    "Oversized glass-enclosed shower",
+    "Spa bamboo terry robe",
+    "BVLGARI® bath products",
+    "Minibar, Honor, and Wet Bar",
+    "In-room Nespresso® machine",
+    "Iron and ironing board",
+    "Hair dryer",
     "Bedside USB charging stations",
-    "Electric “do not disturb” signs",
-    "Highly personalized in-room connectivity and entertainment options"
+    "JBL Bluetooth in-room speaker",
+    "Electronic laptop safe",
+    "Oversized workstations with eye-level laptop connection",
+    "Phone with voicemail capability",
+    "Complimentary stationery supplies"
   ],
   "bed_types": "room_bed_types2",
-  "max_guests": 4,
   "room_category": "room_categories4",
   "images": [
     {
@@ -95,5 +101,6 @@
   ],
   "booking_url_localized": {
     "en": "#"
-  }
+  },
+  "max_guests_localized": null
 }
