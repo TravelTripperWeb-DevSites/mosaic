@@ -13,10 +13,9 @@
       "type": "boolean"
     },
     "category": {
-      "type": "enum", 
+      "type": "enum",
       "options": [
-        "attraction",
-        "dining",
+        "attraction", 
         "entertainment",
         "shopping"
       ]
