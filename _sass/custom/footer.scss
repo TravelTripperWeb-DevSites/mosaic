@@ -68,3 +68,28 @@
     text-decoration: underline;
   }
 }
+
+.footer-extras {
+  .iprefer-logos {
+    a {
+      &:first-child {
+        img {
+          width: 80px;
+
+          @include media-breakpoint-up(xl) {
+            width: 100px;
+          }
+        }
+      }
+      &:last-child {
+        img {
+          width: 120px;
+
+          @include media-breakpoint-up(xl) {
+            width: 165px;
+          }
+        }
+      }
+    }
+  }
+}
