@@ -25,6 +25,10 @@
         "description": ""
       }
     },
-    "_template": "hero"
+    "_template": "hero",
+    "hero_title": {
+      "content": "Terms of use",
+      "_template": "header"
+    }
   }
 ]
