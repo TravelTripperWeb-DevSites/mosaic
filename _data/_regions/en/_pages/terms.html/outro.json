@@ -1,5 +1,6 @@
 [
   {
-    "_template": "1_col"
+    "_template": "1_col",
+    "container_classes": ""
   }
 ]
