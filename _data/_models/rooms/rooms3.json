@@ -7,10 +7,10 @@
     "en": "preferred-corner-king"
   },
   "short_description_localized": {
-    "en": "Newly Redesigned Spacious Corner Room with one king bed"
+    "en": "Spacious 350 sq. ft. corner room with one king bed."
   },
   "description_localized": {
-    "en": "<p>Newly Redesigned Spacious Corner Room with one king bed</p>\n<p>Our newly-redesigned spacious corner guestrooms offer distinctive low-slung clean-lined chairs, luxurious linens and state-of-the-art technology. In-room amenities at our boutique hotel in Beverly Hills CA include Nespresso machines, recessed lights and electronic &ldquo;do not disturb&rdquo; signs.</p>"
+    "en": "<p>Spacious 350 sq. ft. corner room with one king bed.</p>\n<p>Our newly-redesigned spacious corner guestrooms offer distinctive low-slung clean-lined chairs, luxurious linens and state-of-the-art technology. In-room amenities at our boutique hotel in Beverly Hills CA include Nespresso machines, recessed lights and electronic &ldquo;do not disturb&rdquo; signs.</p>"
   },
   "amenities_list": [
     "Complimentary high speed Internet access",
@@ -23,7 +23,6 @@
     "Highly personalized in-room connectivity and entertainment options"
   ],
   "bed_types": "room_bed_types1",
-  "max_guests": 2,
   "room_category": "room_categories2",
   "images": [
     {
@@ -95,5 +94,6 @@
   ],
   "booking_url_localized": {
     "en": "#"
-  }
+  },
+  "max_guests_localized": null
 }
