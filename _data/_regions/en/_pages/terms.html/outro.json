@@ -1,6 +1,11 @@
 [
   {
     "_template": "1_col",
-    "container_classes": ""
+    "container_classes": "",
+    "html": {
+      "custom_classes": [
+        "inner: p-4"
+      ]
+    }
   }
 ]
