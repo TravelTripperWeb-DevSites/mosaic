@@ -29,6 +29,9 @@
     "hero_title": {
       "content": "Privacy Policy",
       "_template": "header"
+    },
+    "hero_html": {
+      "content": "<p>Last updated June 6th 2018</p>"
     }
   }
 ]
