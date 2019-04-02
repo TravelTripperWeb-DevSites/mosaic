@@ -10,7 +10,7 @@
     "en": "ADA accessible contemporary guestroom featuring a roll-in shower and king bed."
   },
   "description_localized": {
-    "en": "<p>ADA accessible contemporary guestroom featuring a roll-in shower and king bed.</p>\n<p>The comfortable Deluxe King room features a roll-in shower with grab bars for ultimate ease.</p>"
+    "en": "<p>The comfortable Deluxe King room features a roll-in shower with grab bars for ultimate ease.</p>"
   },
   "amenities_list": [
     "42” Flat Panel HD LCD television with closed captioning and options for audio and visually impaired guests",
@@ -28,7 +28,8 @@
     "Electronic laptop safe",
     "Oversized workstations with eye-level laptop connection",
     "Phone with voicemail capability",
-    "Complimentary stationery supplies"
+    "Complimentary stationery supplies",
+    ""
   ],
   "bed_types": "room_bed_types2",
   "room_category": "room_categories2",
@@ -101,7 +102,7 @@
     }
   ],
   "booking_url_localized": {
-    "en": "#"
+    "en": "https://gc.synxis.com/rez.aspx?tps=fml&adult=1&step=1&hotel=27262&shell=rLAXTM&chain=10237&template=rLAXTM&avcurrency=USD&=%20numberOfChildren-0&_ga=2.218580570.238037357.1554143398-1299618083.1553280165"
   },
   "max_guests_localized": null
 }

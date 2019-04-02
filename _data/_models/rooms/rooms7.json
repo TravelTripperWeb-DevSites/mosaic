@@ -10,7 +10,7 @@
     "en": "600 sq. ft. one bedroom suite with comfortable accessible amenities."
   },
   "description_localized": {
-    "en": "<p>600 sq. ft. one bedroom suite with comfortable accessible amenities.</p>\n<p>Intimate and comfortable, the Mobility Accessible One Bedroom Suite offers a detached living area with a sofa area, one king bedroom, and a roll-in shower with grab bars.</p>"
+    "en": "<p>Intimate and comfortable, the Mobility Accessible One Bedroom Suite offers a detached living area with a sofa area, one king bedroom, and a roll-in shower with grab bars.</p>"
   },
   "amenities_list": [
     "42” Flat Panel HD LCD television with closed captioning and options for audio and visually impaired guests",
@@ -29,7 +29,8 @@
     "Electronic laptop safe",
     "Oversized workstations with eye-level laptop connection",
     "Phone with voicemail capability",
-    "Complimentary stationery supplies"
+    "Complimentary stationery supplies",
+    ""
   ],
   "bed_types": "room_bed_types1",
   "room_category": "room_categories3",
@@ -102,7 +103,7 @@
     }
   ],
   "booking_url_localized": {
-    "en": "#"
+    "en": "https://gc.synxis.com/rez.aspx?tps=fml&adult=1&step=1&hotel=27262&shell=rLAXTM&chain=10237&template=rLAXTM&avcurrency=USD&=%20numberOfChildren-0&_ga=2.218580570.238037357.1554143398-1299618083.1553280165"
   },
   "max_guests_localized": null
 }

@@ -6,14 +6,25 @@ layout: generic
   <div class="container">
     <div class="row align-items-center py-2 py-md-4">
       <div class="col-md-6">
+        {% regionblock location_intro_img, type: image %}
         <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553634451/cojnfbtim7fsves3t03x.jpg" class="objectfit">
+        {% endregionblock %}
       </div>
       <div class="col-md-6 pt-3 pt-md-0">
+        {% regionblock location_intro_subheading, type: header %}
         <p class="h4">You've Arrived</p>
+        {% endregionblock %}
         <hr/>
-        <h2 class="h2 mb-3">Step outside into Hollywood’s Best</h2>
-        <p>Mosaic Hotel is just steps from a diverse collection of world-class restaurants, museums, nightclubs, and the shops of Rodeo Drive, Wilshire Boulevard, and Century City. The Pacific Ocean is only 15 minutes away from the Mosaic at Santa Monica Beach. If you’re Hollywood bound, Mosaic Hotel is also the perfect location for you.</p>
+        {% regionblock location_intro_heading, type: header %}
+        <h2 class="h2 mb-3">Our Beverly Hills Hotel Neighborhood</h2>
+        {% endregionblock %}
+        {% regionblock location_intro_content, type: html %}
+        <p>From popular destinations to world-class upscale shopping, Beverly Hills is at your doorstep when staying at Mosaic Hotel. Only steps from the shops of Rodeo Drive, Beverly Gardens Park, and Century City, Mosaic Hotel is easily accessible from the area’s top attractions. Mosaic Hotel is located in the heart of Beverly Hills and only a short car ride away from Hollywood, Universal Studios, Venice Beach, and the Santa Monica Pier.</p>
+        <p>At our Beverly Hills hotel, you get high quality accommodations at the best value. Our staff will help personalize each trip and help you get to where you need to go. Plan your next luxury stay at the Mosaic Hotel and take on the town.  with our Destination Guide.</p>
+        {% endregionblock %}
+        {% regionblock location_intro_link, type: html %}
         <a href="/contact" class="link--cta">Contact Us</a>
+        {% endregionblock %}
       </div>
     </div>
   </div>

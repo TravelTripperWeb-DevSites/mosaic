@@ -6,8 +6,7 @@
     },
     "sub_title":
     {
-      "localizable": true,
-      "required": true
+      "localizable": true
     },
     "featured": {
       "type": "boolean"
@@ -15,7 +14,7 @@
     "category": {
       "type": "enum",
       "options": [
-        "attraction", 
+        "attraction",
         "entertainment",
         "shopping"
       ]
