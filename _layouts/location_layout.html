@@ -6,15 +6,25 @@ layout: generic
   <div class="container">
     <div class="row align-items-center py-2 py-md-4">
       <div class="col-md-6">
+        {% regionblock location_intro_img, type: image %}
         <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553634451/cojnfbtim7fsves3t03x.jpg" class="objectfit">
+        {% endregionblock %}
       </div>
       <div class="col-md-6 pt-3 pt-md-0">
+        {% regionblock location_intro_subheading, type: header %}
         <p class="h4">You've Arrived</p>
+        {% endregionblock %}
         <hr/>
+        {% regionblock location_intro_heading, type: header %}
         <h2 class="h2 mb-3">Our Beverly Hills Hotel Neighborhood</h2>
+        {% endregionblock %}
+        {% regionblock location_intro_content, type: html %}
         <p>From popular destinations to world-class upscale shopping, Beverly Hills is at your doorstep when staying at Mosaic Hotel. Only steps from the shops of Rodeo Drive, Beverly Gardens Park, and Century City, Mosaic Hotel is easily accessible from the area’s top attractions. Mosaic Hotel is located in the heart of Beverly Hills and only a short car ride away from Hollywood, Universal Studios, Venice Beach, and the Santa Monica Pier.</p>
         <p>At our Beverly Hills hotel, you get high quality accommodations at the best value. Our staff will help personalize each trip and help you get to where you need to go. Plan your next luxury stay at the Mosaic Hotel and take on the town.  with our Destination Guide.</p>
+        {% endregionblock %}
+        {% regionblock location_intro_link, type: html %}
         <a href="/contact" class="link--cta">Contact Us</a>
+        {% endregionblock %}
       </div>
     </div>
   </div>
