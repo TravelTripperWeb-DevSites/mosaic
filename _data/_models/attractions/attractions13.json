@@ -1,0 +1,122 @@
+{
+  "order": 12,
+  "name_localized": {
+    "en": "Annenberg Space For Photography"
+  },
+  "category": "entertainment",
+  "seo_title_localized": {
+    "en": "Annenberg Space For Photography"
+  },
+  "website_url": "https://www.annenbergphotospace.org/",
+  "seo_description_localized": {
+    "en": "The Annenberg Space for Photography is a cultural destination dedicated to exhibiting both digital and print photography in an intimate environment. The space features state-of-the-art, 4K digital technology as well as traditional prints by some of the world’s most renowned photographers."
+  },
+  "description_localized": {
+    "en": "<p>The Annenberg Space for Photography is a cultural destination dedicated to exhibiting both digital and print photography in an intimate environment. The space features state-of-the-art, 4K digital technology as well as traditional prints by some of the world&rsquo;s most renowned photographers.</p>"
+  },
+  "location": {
+    "name": "2000 Avenue of the Stars",
+    "address": "2000 Avenue of the Stars, Los Angeles, CA 90067, USA",
+    "place_id": "ChIJG9P_d6O7woARk0kYVBeV788",
+    "reference": "ChIJG9P_d6O7woARk0kYVBeV788",
+    "latitude": 34.0584038,
+    "longitude": -118.41503260000002,
+    "google_place": {
+      "address_components": [
+        {
+          "long_name": "2000",
+          "short_name": "2000",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Avenue of the Stars",
+          "short_name": "Avenue of the Stars",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Century City",
+          "short_name": "Century City",
+          "types": [
+            "neighborhood",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Los Angeles",
+          "short_name": "Los Angeles",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Los Angeles County",
+          "short_name": "Los Angeles County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "California",
+          "short_name": "CA",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "90067",
+          "short_name": "90067",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "adr_address": "<span class=\"street-address\">2000 Avenue of the Stars</span>, <span class=\"locality\">Los Angeles</span>, <span class=\"region\">CA</span> <span class=\"postal-code\">90067</span>, <span class=\"country-name\">USA</span>",
+      "formatted_address": "2000 Avenue of the Stars, Los Angeles, CA 90067, USA",
+      "geometry": {
+        "location": {
+          "lat": 34.0584038,
+          "lng": -118.41503260000002
+        },
+        "viewport": {
+          "south": 34.0569587197085,
+          "west": -118.41641428029152,
+          "north": 34.0596566802915,
+          "east": -118.4137163197085
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "8de2a3b0386e5065d70257a30afc08d1b9c69af8",
+      "name": "2000 Avenue of the Stars",
+      "place_id": "ChIJG9P_d6O7woARk0kYVBeV788",
+      "plus_code": {
+        "compound_code": "3H5M+9X Los Angeles, California, United States",
+        "global_code": "85633H5M+9X"
+      },
+      "reference": "ChIJG9P_d6O7woARk0kYVBeV788",
+      "scope": "GOOGLE",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "url": "https://maps.google.com/?cid=14983358412712593811",
+      "utc_offset": -420,
+      "vicinity": "2000 Avenue of the Stars, Los Angeles",
+      "html_attributions": null
+    }
+  }
+}
