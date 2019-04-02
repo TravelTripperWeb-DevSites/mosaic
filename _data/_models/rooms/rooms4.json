@@ -10,7 +10,7 @@
     "en": "600 sq. ft. suite with one bedroom and a separate living area with a plush sofa."
   },
   "description_localized": {
-    "en": "<p>600 sq. ft. suite with one bedroom and a separate living area with a plush sofa.</p>\n<p>Intimate and comfortable, the One Bedroom Suite offers a living area with one detached king-bedroom, a comfortable L-shaped sofa, dining table, and a 50 inch HD LCD television and Bose Radio.</p>"
+    "en": "<p>Intimate and comfortable, the One Bedroom Suite offers a living area with one detached king-bedroom, a comfortable L-shaped sofa, dining table, and a 42 inch Plasma television and Bose Radio.</p>"
   },
   "amenities_list": [
     "50″ Flat Panel HD LCD television",
@@ -122,7 +122,7 @@
     }
   ],
   "booking_url_localized": {
-    "en": "#"
+    "en": "https://gc.synxis.com/rez.aspx?tps=fml&adult=1&step=1&hotel=27262&shell=rLAXTM&chain=10237&template=rLAXTM&avcurrency=USD&=%20numberOfChildren-0&_ga=2.218580570.238037357.1554143398-1299618083.1553280165"
   },
   "max_guests_localized": null
 }

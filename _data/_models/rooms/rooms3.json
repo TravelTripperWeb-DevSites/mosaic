@@ -10,7 +10,7 @@
     "en": "Spacious 350 sq. ft. corner room with one king bed."
   },
   "description_localized": {
-    "en": "<p>Spacious 350 sq. ft. corner room with one king bed.</p>\n<p>The spacious Corner King guestroom offers the ultimate in Beverly Hills luxury with ample space and a comfortable king bed.</p>"
+    "en": "<p>The spacious Corner King guestroom offers the ultimate in Beverly Hills luxury with ample space and a comfortable king bed.</p>"
   },
   "amenities_list": [
     "42” Flat Panel HD LCD television",
@@ -99,7 +99,7 @@
     }
   ],
   "booking_url_localized": {
-    "en": "#"
+    "en": "https://gc.synxis.com/rez.aspx?tps=fml&adult=1&step=1&hotel=27262&shell=rLAXTM&chain=10237&template=rLAXTM&avcurrency=USD&=%20numberOfChildren-0&_ga=2.218580570.238037357.1554143398-1299618083.1553280165"
   },
   "max_guests_localized": null
 }

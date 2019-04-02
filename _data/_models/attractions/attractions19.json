@@ -1,0 +1,135 @@
+{
+  "order": 18,
+  "name_localized": {
+    "en": "Beverly Gardens"
+  },
+  "seo_title_localized": {
+    "en": "Beverly Gardens"
+  },
+  "category": "attraction",
+  "website_url": "https://www.beverlygardens.net/",
+  "seo_description_localized": {
+    "en": "We know how important your upcoming event is to you. You planned for months, maybe even years. Let us help you with the details."
+  },
+  "description_localized": {
+    "en": "<p>We know how important your upcoming event is to you. You planned for months, maybe even years. Let us help you with the details.</p>"
+  },
+  "image": {
+    "name": "beverly",
+    "content_type": "image/jpeg",
+    "date_added": "2019-04-02-025503",
+    "url_thumb": "//res.cloudinary.com/traveltripperweb/image/upload/c_fill,g_faces,h_140,w_140/v1554188103/um0qmxgg9fxhum3ntwhv.jpg",
+    "url_xsmall": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_300,w_300/v1554188103/um0qmxgg9fxhum3ntwhv.jpg",
+    "url_small": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_768,w_768/v1554188103/um0qmxgg9fxhum3ntwhv.jpg",
+    "url_medium": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_992,w_992/v1554188103/um0qmxgg9fxhum3ntwhv.jpg",
+    "url_large": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_1200,w_1200/v1554188103/um0qmxgg9fxhum3ntwhv.jpg",
+    "url_xlarge": "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_1920,w_1920/v1554188103/um0qmxgg9fxhum3ntwhv.jpg",
+    "width": 285,
+    "height": 177,
+    "format": "jpg",
+    "url": "//res.cloudinary.com/traveltripperweb/image/upload/v1554188103/um0qmxgg9fxhum3ntwhv.jpg",
+    "resource_type": "image",
+    "size": 12026,
+    "path": "//res.cloudinary.com/traveltripperweb/image/upload/v1554188103/um0qmxgg9fxhum3ntwhv.jpg",
+    "file_size": null,
+    "alt": "beverly",
+    "caption": "",
+    "description": ""
+  },
+  "location": {
+    "name": "9439 S Santa Monica Blvd",
+    "address": "9439 S Santa Monica Blvd, Beverly Hills, CA 90210, USA",
+    "place_id": "ChIJhdetSga8woARSByoMl7V6cg",
+    "reference": "ChIJhdetSga8woARSByoMl7V6cg",
+    "latitude": 34.0716085,
+    "longitude": -118.40312890000001,
+    "google_place": {
+      "address_components": [
+        {
+          "long_name": "9439",
+          "short_name": "9439",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "South Santa Monica Boulevard",
+          "short_name": "S Santa Monica Blvd",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Beverly Hills",
+          "short_name": "Beverly Hills",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Los Angeles County",
+          "short_name": "Los Angeles County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "California",
+          "short_name": "CA",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "90210",
+          "short_name": "90210",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "adr_address": "<span class=\"street-address\">9439 S Santa Monica Blvd</span>, <span class=\"locality\">Beverly Hills</span>, <span class=\"region\">CA</span> <span class=\"postal-code\">90210</span>, <span class=\"country-name\">USA</span>",
+      "formatted_address": "9439 S Santa Monica Blvd, Beverly Hills, CA 90210, USA",
+      "geometry": {
+        "location": {
+          "lat": 34.0716085,
+          "lng": -118.40312890000001
+        },
+        "viewport": {
+          "south": 34.0701967197085,
+          "west": -118.40442933029152,
+          "north": 34.0728946802915,
+          "east": -118.4017313697085
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id": "5dd347cc271221743fc65e8f1c8418cd74dde706",
+      "name": "9439 S Santa Monica Blvd",
+      "place_id": "ChIJhdetSga8woARSByoMl7V6cg",
+      "plus_code": {
+        "compound_code": "3HCW+JP Beverly Hills, California, United States",
+        "global_code": "85633HCW+JP"
+      },
+      "reference": "ChIJhdetSga8woARSByoMl7V6cg",
+      "scope": "GOOGLE",
+      "types": [
+        "street_address"
+      ],
+      "url": "https://maps.google.com/?q=9439+S+Santa+Monica+Blvd,+Beverly+Hills,+CA+90210,+USA&ftid=0x80c2bc064aadd785:0xc8e9d55e32a81c48",
+      "utc_offset": -420,
+      "vicinity": "Beverly Hills",
+      "html_attributions": null
+    }
+  }
+}
