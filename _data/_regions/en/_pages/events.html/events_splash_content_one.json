@@ -1,6 +1,6 @@
 [
   {
-    "content": "<p>Labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Labore et dolore magna aliquyam erat, sed diam voluptua.</p>",
+    "content": "<ul>\n<li style=\"text-align: left;\">One complimentary guest room per 15 rooms booked</li>\n<li style=\"text-align: left;\">One room upgrade per 10 rooms booked</li>\n<li style=\"text-align: left;\">One VIP amenity per 10 rooms booked</li>\n</ul>",
     "_template": "html"
   }
 ]
