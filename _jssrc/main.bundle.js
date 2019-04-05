@@ -1,6 +1,7 @@
 'use strict';
 
 //fallback ready document
+
 function readyDoc(fn) {
 	var d = document;
 	d.readyState == 'loading' ? d.addEventListener('DOMContentLoaded', fn) : fn();

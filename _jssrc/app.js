@@ -1,4 +1,5 @@
 //fallback ready document
+
 function readyDoc(fn) {
 	var d = document;
 	(d.readyState == 'loading') ? d.addEventListener('DOMContentLoaded', fn): fn();
@@ -122,76 +123,76 @@ readyDoc(function() {
 		var slider = tns({
 			container: '.room-features__list',
 			mouseDrag: true,
-      nav: false,
-      items: 2,
-      prevButton: "#customNavItemsRoomFeatures .prev", // previous button
-      nextButton: "#customNavItemsRoomFeatures .next", // next button
-      navContainer: '#customNavItemsRoomFeatures .custom-control-items__nav',
-      "responsive": {
-        "768": {
-          items: 3
-        },
-        "992": {
-          items: 5
-        }
-      }
+			nav: false,
+			items: 2,
+			prevButton: "#customNavItemsRoomFeatures .prev", // previous button
+			nextButton: "#customNavItemsRoomFeatures .next", // next button
+			navContainer: '#customNavItemsRoomFeatures .custom-control-items__nav',
+			"responsive": {
+				"768": {
+					items: 3
+				},
+				"992": {
+					items: 5
+				}
+			}
 		});
 	}
 
-  if (document.getElementsByClassName('filtered-galleries').length > 0) {
-    document.querySelector(".filtered-galleries #list").onclick = function() {
-      document.querySelector(".filtered-galleries .gallery-items").classList.remove("grid-view");
-    };
-    document.querySelector(".filtered-galleries #grid").onclick = function() {
-      document.querySelector(".filtered-galleries .gallery-items").classList.add("grid-view");
-    };
-    var filterItems = document.querySelectorAll(".filtered-galleries .gallery-nav li a");
-    document.querySelector(".filtered-galleries .gallery-nav .fa-chevron-down").onclick = function() {
-      for(var i=0;i<filterItems.length;i++) {
-        filterItems[i].style.display = "block";
-      }
-    }
-    if(window.innerWidth < 768) {
-      for(var i=0;i<filterItems.length;i++) {
-        filterItems[i].onclick = function(e) {
-          for(var j=0;j<document.querySelectorAll(".filtered-galleries .gallery-nav li a").length;j++) {
-            document.querySelectorAll(".filtered-galleries .gallery-nav li a")[j].style.display = "none";
-          }
-          e.target.style.display = "block";
-        }
-      }
-    }
+	if (document.getElementsByClassName('filtered-galleries').length > 0) {
+		document.querySelector(".filtered-galleries #list").onclick = function() {
+			document.querySelector(".filtered-galleries .gallery-items").classList.remove("grid-view");
+		};
+		document.querySelector(".filtered-galleries #grid").onclick = function() {
+			document.querySelector(".filtered-galleries .gallery-items").classList.add("grid-view");
+		};
+		var filterItems = document.querySelectorAll(".filtered-galleries .gallery-nav li a");
+		document.querySelector(".filtered-galleries .gallery-nav .fa-chevron-down").onclick = function() {
+			for (var i = 0; i < filterItems.length; i++) {
+				filterItems[i].style.display = "block";
+			}
+		}
+		if (window.innerWidth < 768) {
+			for (var i = 0; i < filterItems.length; i++) {
+				filterItems[i].onclick = function(e) {
+					for (var j = 0; j < document.querySelectorAll(".filtered-galleries .gallery-nav li a").length; j++) {
+						document.querySelectorAll(".filtered-galleries .gallery-nav li a")[j].style.display = "none";
+					}
+					e.target.style.display = "block";
+				}
+			}
+		}
 
-  }
-  // cendyn newsletter post data
-  document.getElementById('newsletterForm').onsubmit = function() {
-    var formId = document.getElementById('formID').value
-    var url    = 'https://web2.cendynhub.com/FormsRest/submit/' + formId + '?format=json';
-    var data   = JSON.stringify({
-      "PostData" :{
-        "emailAddress": document.getElementById('emailAddress').value
-      }
-    });
-    makeRESTCall(url, data, function() {
-      window.location = '/thankyou';
-    })
-    return false;
-  }
+	}
+	// cendyn newsletter post data
+	document.getElementById('newsletterForm').onsubmit = function() {
+		var formId = document.getElementById('formID').value
+		var url = 'https://web2.cendynhub.com/FormsRest/submit/' + formId + '?format=json';
+		var data = JSON.stringify({
+			"PostData": {
+				"emailAddress": document.getElementById('emailAddress').value
+			}
+		});
+		makeRESTCall(url, data, function() {
+			window.location = '/thankyou';
+		})
+		return false;
+	}
 
-  function makeRESTCall(url, data, callback) {
-    var request = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
+	function makeRESTCall(url, data, callback) {
+		var request = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
 
-    request.onreadystatechange = function() {
-      if (request.readyState == 4 && request.status == 200) {
-        console.log(request.responseText);
-        if(callback) {
-          callback(request.responseText);
-        }
-      }
-    }
-    request.open('post', url, true);
-    request.setRequestHeader('Content-Type', 'application/json');
-    request.send(data);
-  }
+		request.onreadystatechange = function() {
+			if (request.readyState == 4 && request.status == 200) {
+				console.log(request.responseText);
+				if (callback) {
+					callback(request.responseText);
+				}
+			}
+		}
+		request.open('post', url, true);
+		request.setRequestHeader('Content-Type', 'application/json');
+		request.send(data);
+	}
 
 })
