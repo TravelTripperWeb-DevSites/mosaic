@@ -1,14 +1,14 @@
 .is-fixed-top+.main {
-  padding-top: 0px !important;
+  padding-top: 0 !important;
 }
 
 .hero {
-  color: $white;
   height: 100vh;
+  color: $white;
 
   .container-fluid {
-    text-align: left !important;
     z-index: 1;
+    text-align: left !important;
   }
 
   .hero-content {
@@ -21,7 +21,14 @@
 }
 
 .hero--short {
-  height: 50vh;
+  height: 430px;
+  padding-top: 88px;
+  @include media-breakpoint-up(md) {
+    height: 640px;
+  }
+  @include media-breakpoint-up(lg) {
+    padding-top: 124px;
+  }
 }
 
 hr {
@@ -44,13 +51,13 @@ hr {
 }
 
 .splash {
-  background-repeat: no-repeat;
-	background-position: top center;
-	background-size: cover;
-	padding: 20px 15px;
-  justify-content: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  padding: 20px 15px;
+  background-repeat: no-repeat;
+	background-position: top center;
+  background-size: cover;
 
 	@include media-breakpoint-up(md) {
 		min-height: 625px;
@@ -68,8 +75,8 @@ hr {
 
 .instagram__listings {
   .instagram__listing {
-    line-height: 0;
     max-width: 225px;
+    line-height: 0;
 
     img {
       width: 100%;
@@ -96,9 +103,9 @@ hr {
   .photo-list {
     display: flex;
     justify-content: space-between;
-    height: 162px;
-    max-width: 720px;
     width: 100%;
+    max-width: 720px;
+    height: 162px;
 
     .photo {
       width: 159px;
@@ -117,11 +124,11 @@ hr {
 }
 
 .form-control.custom-input {
+  padding-left: 0;
   border-top: transparent;
-  border-left: transparent;
   border-right: transparent;
   border-bottom: 1px solid $black;
-  padding-left: 0;
+  border-left: transparent;
 
   &:focus {
     box-shadow: none;
@@ -187,8 +194,8 @@ hr {
   line-height: 40px;
 
   &.border--left {
-    border-left: 8px solid $secondary;
     padding-left: $spacer;
+    border-left: 8px solid $secondary;
   }
 }
 
@@ -205,8 +212,8 @@ hr {
 }
 
 .card-listing__image {
-  line-height: 0;
   height: 200px;
+  line-height: 0;
 
   @include media-breakpoint-up(md) {
     height: 275px;
