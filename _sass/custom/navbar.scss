@@ -147,6 +147,7 @@
 
 .navbar {
   &.sticky-fixed {
+    background-color: $white; 
     .nav__link {
       color: $black;
     }

@@ -59,7 +59,7 @@ function leafletMap(options) {
     getDirectionBtn: false,
     googleLink: false,
     websiteLink: false,
-    getDirectionBtnLabel: 'Get Direction',
+    getDirectionBtnLabel: 'Get Directions',
     hideMarkerLabelHover: false,
     hoverActive: false,
     showPopup: true,
