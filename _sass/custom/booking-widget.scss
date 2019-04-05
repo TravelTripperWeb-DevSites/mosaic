@@ -1,0 +1,832 @@
+// Booking Widget
+// ==========================================================================
+
+/* variables for this widget only */
+
+/* colors as per site theme start */
+$widget-head-color: $light-grey; // YOUR BOOKING section
+$book-now-button-bg-color: $black;
+$book-now-button-text-color: $white;
+$date-selection-bg-color: $secondary; // selected dates cell color
+$date-selection-text-color: $black;
+
+$radio-selector-color: $secondary;
+$today-color: $black;
+$today-bg-color: $gray-500;
+
+$skipto-bg-color: $light-grey;
+/* colors as per site theme end */
+
+$widget-main-color: $gray-100;
+$calendar-header-border-color: $gray-200;
+$widget-text-color: $black;
+$calendar-cell: $gray-200;
+$inactive-color: #e4dcc7;
+$info-color: $black;
+
+$primary-font-regular: $base-body-font;
+$secondary-font: $base-body-font;
+
+
+.ttweb-booking-widget {
+    box-sizing: border-box;
+    font-family: $primary-font-regular;
+    font-size: 14px;
+    position: fixed;
+    z-index: 2140000000;
+    top: 0;
+    bottom: 0;
+    right: -320px;
+    width: 320px;
+    background: $white;
+    -webkit-transition: right 0.4s, box-shadow 0.4s;
+    transition: right 0.4s, box-shadow 0.4s;
+    overflow: hidden;
+    * {
+        box-sizing: border-box;
+    }
+    &.show {
+        right: 0;
+        box-shadow: 0 0 75px 15px rgba(0, 0, 0, 0.25);
+    }
+    .special_rate_input {
+        display: none;
+        width: 100%;
+        line-height: 1.5rem;
+    }
+}
+.ttweb-booking-widget__header,
+.ttweb-booking-widget__body,
+.ttweb-booking-widget__footer {
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.ttweb-booking-widget__header {
+    height: 58px;
+    top: 0;
+    position: absolute;
+    background: $widget-head-color;
+    color: $white;
+    outline: none;
+}
+.ttweb-booking-widget__header__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    cursor: pointer;
+    z-index: 1;
+    .bw-close-icon {
+        font-size: 20px;
+    }
+}
+.ttweb-booking-widget__header__title {
+    font-size: 20px;
+    line-height: 58px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+.ttweb-booking-widget__footer {
+    position: absolute;
+    bottom: 0;
+    height: 62px;
+    z-index: 3;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+}
+.ttweb-booking-widget__body {
+    position: absolute;
+    top: 58px;
+    bottom: 70px;
+    padding: 0;
+    z-index: 2;
+    overflow-y: auto;
+    &__skip-to {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: $skipto-bg-color;
+        color: $white;
+        white-space: nowrap;
+
+    }
+
+    &__skip-to {
+        &:hover, &:focus, &:active {
+            width: auto;
+            height: auto;
+            padding: 5px 10px;
+            left: 50%;
+        }
+    }
+}
+.ttweb-booking-widget__body__flex-dates {
+    text-transform: uppercase;
+    padding: 0 15px;
+    margin: 1em 0;
+    height: 28px;
+    a {
+        color: $widget-text-color;
+        text-decoration: none;
+        &:hover, &:active, &:visited {
+            color: $widget-text-color;
+            text-decoration: none;
+        }
+    }
+}
+.ttweb-booking-widget__body__flex-dates__link:after {
+    content: "";
+    clear: both;
+}
+.ttweb-booking-widget__body__flex-dates__link__label,
+.ttweb-booking-widget__body__flex-dates__link .elegant {
+    float: left;
+    height: 28px;
+}
+.ttweb-booking-widget__body__flex-dates__link__label {
+    line-height: 2em;
+}
+.ttweb-booking-widget__body__flex-dates__link .elegant-icon {
+    font-size: 1.5em;
+    line-height: 28px;
+    margin-left: 1em;
+}
+.ttweb-booking-widget__body__date-selection__selected-dates {
+    overflow: hidden;
+    margin: 10px 10px;
+}
+.ttweb-booking-widget__body__date-selection__selected-dates__selected-date {
+    float: left;
+    width: 42%;
+    font-weight: 600;
+    margin: 0;
+    background: $widget-main-color;
+    padding: 1em 0;
+    line-height: 16px;
+    height: calc(16px + 2em);
+    .elegant-icon {
+        margin-right: 10px;
+        display: inline-block;
+        font-weight: normal;
+    }
+}
+.ttweb-booking-widget__body__date-selection__selected-dates__selected-date__label,
+.ttweb-booking-widget__body__date-selection__selected-dates__selected-date .elegant-icon {
+    display: none;
+}
+.ttweb-booking-widget__body__date-selection__selected-dates__selected-date__display {
+    float: left;
+    font-size: 16px;
+    line-height: 16px;
+    width: 100%;
+    text-align: center;
+}
+.ttweb-booking-widget__body__date-selection__selected-dates__selected-date--checkin {
+    width: 58%;
+    &:after {
+        content: "through";
+        display: block;
+        float: left;
+        line-height: 16px;
+        width: 27%;
+        text-align: center;
+        font-size: 11px;
+        font-weight: 400;
+        font-style: italic;
+    }
+}
+.ttweb-booking-widget__body__date-selection__selected-dates__selected-date--checkin__display {
+    width: 73%;
+}
+.ttweb-booking-widget__body__date-selection__calendar {
+    width: 100%;
+    background: $widget-main-color;
+
+    .calendar-month__header__control,
+    .calendar-month__header__name,
+    .ui-datepicker-title {
+        float: left;
+        text-align: center;
+
+    }
+    .calendar-month__header__control {
+        cursor: pointer;
+        line-height: 1em;
+        height: 52px;
+        width: 20%;
+        padding: 13px;
+        font-size: 26px;
+    }
+    .calendar-month__header__control--disabled {
+        cursor: default;
+        color: $inactive-color;
+    }
+    .calendar-month__header__name,
+    .ui-datepicker-title {
+        width: 60%;
+        font-size: 17px;
+        height: 52px;
+        line-height: 52px;
+    }
+    .calendar-month table.calendar-month__grid {
+        width: 100%;
+        border-spacing: 6px;
+        th, td {
+            text-align: center;
+            height: 3em;
+        }
+        th {
+            text-transform: uppercase;
+            font-size: 11px;
+        }
+
+
+    }
+
+}
+.ttweb-booking-widget__body__people {
+    overflow: hidden;
+    margin: 10px 0;
+}
+.ttweb-booking-widget__body__people__selector {
+    width: 50%;
+    float: left;
+    select {
+        text-align: center;
+        font-size: 17px;
+        height: 3em;
+        margin: 0 10px;
+        padding: 0 10px;
+        width: calc(100% - 20px);
+        background: $widget-main-color;
+        border: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: $widget-main-color url("/assets/img/arrow-bottom.svg") no-repeat;
+        background-size: 11px 9px;
+        background-position: calc(100% - 10px) center;
+        font-weight: lighter;
+    }
+}
+.ttweb-booking-widget__body__people__selector__description {
+    font-size: 11px;
+    color: $info-color;
+    font-style: italic;
+    margin: 0 10px;
+    padding: 0 10px;
+}
+
+.ttweb-booking-widget__body__offer-code {
+    margin: 10px 10px;
+    padding: 10px;
+    background: #f8f8f8;
+    overflow: hidden;
+}
+
+.ttweb-booking-widget__body__offer-code label {
+    float: left;
+    width: 40%;
+    margin-bottom: 0;
+    text-align: left;
+    text-transform: uppercase;
+}
+.ttweb-booking-widget__body__offer-code input {
+    float: left;
+    width: 60%;
+    border: 1px solid #6b6b6b;
+}
+.ttweb-booking-widget__body__specials {
+    margin: 10px 10px;
+    padding: 10px;
+    background: $widget-main-color;
+}
+.ttweb-booking-widget__body__specials__title {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1em 0;
+    position: relative;
+    font-weight: 600;
+    cursor: pointer;
+}
+.ttweb-booking-widget__body__specials__title__icon {
+    position: absolute;
+    top: 50%;
+    font-size: 21px;
+    font-weight: 400;
+    transform: translateY(-50%);
+    right: 20px;
+}
+.ttweb-booking-widget__body__specials__title__icon--up {
+    display: none;
+}
+.ttweb-booking-widget__body__specials.show {
+    .ttweb-booking-widget__body__specials__title__icon--up {
+        display: block;
+    }
+    .ttweb-booking-widget__body__specials__title__icon--down {
+        display: none;
+    }
+    .ttweb-booking-widget__body__specials__rates {
+        display: block;
+    }
+}
+.ttweb-booking-widget__body__specials__rates {
+    display: none;
+}
+.ttweb-booking-widget__body__specials__rates__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.ttweb-booking-widget__body__specials__rates__list__item {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1em;
+    overflow: hidden;
+}
+.ttweb-booking-widget__body__specials__rates__list__item__radio {
+    position: relative;
+    display: inline-block;
+    input[type="radio"] {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        &:checked + .ttweb-booking-widget__body__specials__rates__list__item__radio__icon:before {
+            visibility: visible;
+        }
+    }
+}
+.ttweb-booking-widget__body__specials__rates__list__item__radio__icon {
+    float: left;
+    margin-top: 2px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid $widget-text-color;
+    position: relative;
+    &:before {
+        visibility: hidden;
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -5px;
+        margin-left: -5px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: $radio-selector-color;
+    }
+}
+.ttweb-booking-widget__body__specials__rates__list__item__radio__title {
+    float: left;
+    margin-right: 5px;
+    margin-left: 10px;
+    line-height: 1.6em;
+}
+.ttweb-booking-widget__footer__error {
+    height: 50px;
+    text-align: center;
+    color: red;
+    padding: 0 10px;
+    margin: 11px 0 0;
+    display: none;
+    &.show {
+        display: block;
+    }
+}
+.ttweb-booking-widget__footer__rate {
+    overflow: hidden;
+    height: 50px;
+    margin: 11px 0 0;
+}
+.ttweb-booking-widget__footer__rate__label,
+.ttweb-booking-widget__footer__rate__cost {
+    display: none;
+    float: left;
+    width: 50%;
+    height: 50px;
+}
+.ttweb-booking-widget__footer__rate {
+    &.hide {
+        display: none;
+    }
+    &.show {
+        .ttweb-booking-widget__footer__rate__label, .ttweb-booking-widget__footer__rate__cost {
+            display: block;
+        }
+    }
+}
+.ttweb-booking-widget__footer__rate__label {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2px 20px 0;
+    font-size: 18px;
+}
+.ttweb-booking-widget__footer__rate__cost {
+    line-height: 1em;
+    font-size: 50px;
+}
+.ttweb-booking-widget__footer__powered-by {
+    text-align: center;
+    height: 38px;
+    margin: 11px 0 0;
+    span {
+        text-transform: uppercase;
+        font-size: 11px;
+        font-weight: 700;
+    }
+    img {
+        margin-left: 5px;
+        width: 120px;
+        vertical-align: middle;
+    }
+}
+.ttweb-booking-widget button.ttweb-booking-widget__submit {
+    display: block;
+    width: 100%;
+    font-size: 17px;
+    line-height: 1em;
+    padding: 1em 0;
+    height: 51px;
+    text-transform: uppercase;
+    margin: 11px 0 0;
+    font-family: $primary-font-regular;
+    cursor: pointer;
+    color: $book-now-button-text-color;
+    background-color: $book-now-button-bg-color;
+
+}
+
+/* for date picker */
+
+  .ttweb-booking-widget {
+      .ui-datepicker {
+          width: 100% !important;
+          padding: 20px;
+          background: $widget-main-color !important;
+          .ui-datepicker-prev, .ui-datepicker-next {
+              top: 20px;
+              width: 10px;
+              height: 10px;
+              cursor: pointer;
+              &.ui-state-disabled {
+                  opacity: 0.2;
+              }
+          }
+          .ui-datepicker-prev {
+              left: 20px;
+          }
+          .ui-datepicker-next {
+              right: 20px;
+          }
+          .ui-datepicker-title {
+              margin: 0;
+              line-height: normal;
+          }
+          .ui-datepicker-calendar {
+              font-family: $primary-font-regular;
+              font-size: 14px;
+              font-weight: lighter;
+              th {
+                  font-size: 14px;
+                  font-weight: normal;
+                  color: $widget-text-color;
+                  height: 3em;
+              }
+              td a,
+              td span {
+                  text-align: center;
+                  color: $widget-text-color;
+                  border: none;
+                  padding: 0.8em;
+                  background-color: $calendar-cell;
+              }
+              .ui-state-disabled {
+                  opacity: .3;
+              }
+
+          }
+
+      }
+      // .ui-state-hover {
+      //     background: none;
+      //     border-left: none;
+      //     border-bottom: none;
+      //     border-right : none;
+      // }
+      .ui-datepicker-header {
+          font-family: $primary-font-regular;
+          font-size: 13px;
+          font-weight: normal;
+          color: $widget-text-color;
+          height: 52px;
+          background: $widget-main-color !important;
+          border-bottom: 1px  solid $calendar-header-border-color !important;
+          border-top: none !important;
+          border-left: none !important;
+          border-right: none !important;
+          border-radius: 0px !important;
+      }
+      .ui-widget-content {
+          border: 0px !important;
+      }
+
+      .ui-datepicker-month {
+          width: 60%;
+          font-size: 17px;
+          height: 52px;
+          line-height: 44px;
+      }
+      .dp-highlight .ui-state-default {
+          background: $date-selection-bg-color !important;
+          color: $date-selection-text-color !important;
+          border: 1px solid $date-selection-bg-color;
+          position: relative;
+          height: 3em;
+      }
+      .ui-datepicker-today:not(.dp-highlight) .ui-state-default  {
+          background: $today-bg-color !important;
+          color: $today-color;
+      }
+      @media only screen and (max-width: 1120px) {
+          #ui-datepicker-div, div.ui-datepicker {
+              font-size: 14px;
+          }
+      }
+  }
+  .ttweb-booking-widget {
+      &.show {
+          font-family: $primary-font-regular;
+          .ui-datepicker-inline {
+              font-family: $primary-font-regular;
+              .ui-datepicker-header {
+                  font-family: $secondary-font;
+                  letter-spacing: .1rem;
+              }
+              table {
+                  &.ui-datepicker-calendar {
+                      font-family: $primary-font-regular;
+                  }
+              }
+          }
+          select {
+              font-family: $primary-font-regular;
+          }
+          button {
+              font-family: $primary-font-regular;
+              letter-spacing: .1rem;
+          }
+          .ttweb-booking-widget__body__specials__title {
+              letter-spacing: .1rem;
+              .ttweb-booking-widget__body__specials__title__icon {
+                  top: 44%;
+              }
+          }
+          .ttweb-booking-widget__body__flex-dates__link__label {
+              letter-spacing: .1rem;
+          }
+          .ttweb-booking-widget__body__people__selector__description {
+              padding: 0;
+          }
+      }
+  }
+
+
+  .ttweb-booking-widget {
+    /* Interaction Cues
+    ----------------------------------*/
+    /* Icons
+    ----------------------------------*/
+    /* states and images */
+    /* Misc visuals
+    ----------------------------------*/
+    /* Overlays */
+    /* with multiple calendars */
+    /* RTL support */
+  }
+  .ttweb-booking-widget .ui-helper-hidden {
+    display: none;
+  }
+  .ttweb-booking-widget .ui-helper-hidden-accessible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  .ttweb-booking-widget .ui-helper-reset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    line-height: 1.3;
+    text-decoration: none;
+    font-size: 100%;
+    list-style: none;
+  }
+  .ttweb-booking-widget .ui-helper-clearfix:before,
+  .ttweb-booking-widget .ui-helper-clearfix:after {
+    content: "";
+    display: table;
+    border-collapse: collapse;
+  }
+  .ttweb-booking-widget .ui-helper-clearfix:after {
+    clear: both;
+  }
+  .ttweb-booking-widget .ui-helper-clearfix {
+    min-height: 0;
+    /* support: IE7 */
+  }
+  .ttweb-booking-widget .ui-helper-zfix {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    filter: Alpha(Opacity=0);
+    /* support: IE8 */
+  }
+  .ttweb-booking-widget .ui-front {
+    z-index: 100;
+  }
+  .ttweb-booking-widget .ui-state-disabled {
+    cursor: default !important;
+  }
+  // .ttweb-booking-widget .ui-widget-header .ui-icon {
+  //   display: block;
+  //   text-indent: -99999px;
+  //   overflow: hidden;
+  //   background-repeat: no-repeat;
+  //   background: none;
+  // }
+  .ttweb-booking-widget .ui-widget-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .ttweb-booking-widget .ui-datepicker {
+    width: 17em;
+    padding: .2em .2em 0;
+    display: none;
+  }
+  .ttweb-booking-widget .ui-datepicker .ui-datepicker-header {
+    position: relative;
+    padding: .2em 0;
+  }
+  // .ttweb-booking-widget .ui-datepicker .ui-datepicker-prev,
+  // .ttweb-booking-widget .ui-datepicker .ui-datepicker-next {
+  //   position: absolute;
+  //   top: 35%;
+  //   width: 1em;
+  //   height: 1em;
+  // }
+  // .ttweb-booking-widget .ui-datepicker .ui-datepicker-prev {
+  //   left: 12px;
+  // }
+  // .ttweb-booking-widget .ui-datepicker .ui-datepicker-next {
+  //   right: 12px;
+  // }
+  // .ttweb-booking-widget .ui-datepicker .ui-datepicker-prev span,
+  // .ttweb-booking-widget .ui-datepicker .ui-datepicker-next span {
+  //   display: block;
+  //   position: absolute;
+  //   left: 50%;
+  //   margin-left: -8px;
+  //   top: 50%;
+  //   margin-top: -8px;
+  // }
+  .ttweb-booking-widget .ui-datepicker .ui-datepicker-title {
+    margin: 0 0;
+    line-height: 1.8em;
+    text-align: center;
+    width:100%;
+    padding: 0;
+  }
+  .ttweb-booking-widget .ui-datepicker .ui-datepicker-title select {
+    font-size: 1em;
+    margin: 1px 0;
+  }
+  .ttweb-booking-widget .ui-datepicker select.ui-datepicker-month,
+  .ttweb-booking-widget .ui-datepicker select.ui-datepicker-year {
+    width: 45%;
+  }
+  .ttweb-booking-widget .ui-datepicker table {
+
+    width: 100%;
+      border-spacing: 6px;
+  }
+  .ttweb-booking-widget .ui-datepicker th {
+        cursor: pointer;
+      width: calc(100% / 7);
+    text-align: center;
+
+
+  }
+  .ttweb-booking-widget .ui-datepicker td {
+      /* padding: .2em; */
+      cursor: pointer;
+      width: calc(100% / 7);
+      text-align: center;
+      height: 3em;
+  }
+  .ttweb-booking-widget .ui-datepicker td span,
+  .ttweb-booking-widget .ui-datepicker td a {
+    display: block;
+    padding: .6em;
+    text-align: center;
+    text-decoration: none;
+  }
+  .ttweb-booking-widget .ui-datepicker .ui-datepicker-buttonpane {
+    background-image: none;
+    margin: .7em 0 0 0;
+    padding: 0 .2em;
+
+  }
+  .ttweb-booking-widget .ui-datepicker .ui-datepicker-buttonpane button {
+    float: right;
+    margin: .5em .2em .4em;
+    cursor: pointer;
+    padding: .2em .6em .3em .6em;
+    width: auto;
+    overflow: visible;
+  }
+  .ttweb-booking-widget .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+    float: left;
+  }
+  .ttweb-booking-widget .ui-datepicker.ui-datepicker-multi {
+    width: auto;
+  }
+  .ttweb-booking-widget .ui-datepicker-multi .ui-datepicker-group {
+    float: left;
+  }
+  .ttweb-booking-widget .ui-datepicker-multi .ui-datepicker-group table {
+    width: 95%;
+    margin: 0 auto .4em;
+  }
+  .ttweb-booking-widget .ui-datepicker-multi-2 .ui-datepicker-group {
+    width: 50%;
+  }
+  .ttweb-booking-widget .ui-datepicker-multi-3 .ui-datepicker-group {
+    width: 33.3%;
+  }
+  .ttweb-booking-widget .ui-datepicker-multi-4 .ui-datepicker-group {
+    width: 25%;
+  }
+  .ttweb-booking-widget .ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header,
+  .ttweb-booking-widget .ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+    border-left-width: 0;
+  }
+  .ttweb-booking-widget .ui-datepicker-multi .ui-datepicker-buttonpane {
+    clear: left;
+  }
+  .ttweb-booking-widget .ui-datepicker-row-break {
+    clear: both;
+    width: 100%;
+    font-size: 0;
+  }
+  .ttweb-booking-widget .ui-datepicker-rtl {
+    direction: rtl;
+  }
+  .ttweb-booking-widget .ui-datepicker-rtl .ui-datepicker-prev {
+    right: 2px;
+    left: auto;
+  }
+  .ttweb-booking-widget .ui-datepicker-rtl .ui-datepicker-next {
+    left: 2px;
+    right: auto;
+  }
+  .ttweb-booking-widget .ui-datepicker-rtl .ui-datepicker-prev:hover {
+    right: 1px;
+    left: auto;
+  }
+  .ttweb-booking-widget .ui-datepicker-rtl .ui-datepicker-next:hover {
+    left: 1px;
+    right: auto;
+  }
+  .ttweb-booking-widget .ui-datepicker-rtl .ui-datepicker-buttonpane {
+    clear: right;
+  }
+  .ttweb-booking-widget .ui-datepicker-rtl .ui-datepicker-buttonpane button {
+    float: left;
+  }
+  .ttweb-booking-widget .ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current,
+  .ttweb-booking-widget .ui-datepicker-rtl .ui-datepicker-group {
+    float: right;
+  }
