@@ -1,5 +1,6 @@
 ---
 layout: default
+bannerfill: true
 ---
 {% assign room = page.data %}
 <section class="details-banner">
@@ -7,7 +8,7 @@ layout: default
   <div class="details-banner__text container-fluid container-lg">
     <h1 class="h1">{{room.name}}</h1>
     <hr class="hr--light">
-    <p class="details-banner__text__price">tonight’s rate $275</p>
+    <!-- <p class="details-banner__text__price">tonight’s rate $275</p> -->
     <a class="btn btn--secondary" href="{{room.booking_url}}" target="_blank">Book Room</a>
   </div>
 </section>
