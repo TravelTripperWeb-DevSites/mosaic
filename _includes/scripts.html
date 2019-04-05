@@ -14,7 +14,8 @@ TODO: Evaluate use of script vs CSS. If using CSS, should it go here?
 
 {% comment %} This include does the base include & setup for TTWeb plugins{% endcomment %}
 
-{% include reztrip/setup-ttweb-plugins.html %}
+{% comment %}{% include reztrip/setup-ttweb-plugins.html %}{% endcomment %}
 
 {% comment %}Pull any site-specific scripts here {% endcomment %}
 {% include scripts/custom.html %}
+{% include scripts/booking-widget.html %}

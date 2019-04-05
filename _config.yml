@@ -3,8 +3,12 @@ title: Bedrock
 title_separator: "|"
 name: Hotel Property Name
 description: Site default description.
-url: 
-repository: 
+url:
+repository:
+booking_url: "https://gc.synxis.com/rez.aspx?Hotel=68047&Chain=5415"
+booking_link: "https://gc.synxis.com/rez.aspx"
+hotel: 27262
+chain: 10237
 default_lang: en
 languages:
 - en
@@ -66,7 +70,7 @@ sass:
   - _sass
   style: compressed
 permalink: pretty
-timezone: 
+timezone:
 page_gen:
 - data: rooms
   template: room_layout
