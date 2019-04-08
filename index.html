@@ -11,10 +11,14 @@ meta_tags:
 <section class="bg--light bg--white">
   <div class="container">
     <div class="row py-2 py-md-5">
-      <div class="col-md-6 objectfit border-box-image">
-        {% regionblock home_intro_image, type: image %}
-        <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1552663289/fkl75c2jkeykeve7yvev.jpg" alt="Home Intro" class="objectfit">
-        {% endregionblock %}
+      <div class="col-md-6 objectfit home-intro_slider border-box-image">
+       <div class="home-intro-images" id="intro_slide_hover">
+         {% for introimage in site.data._models.intro_images[0].images %}
+         <div>
+          <img src="{{ introimage.url_medium }}" alt="{{ introimage.alt }}" class="objectfit">
+        </div>
+         {% endfor %}
+       </div>
       </div>
       <div class="col-md-6 bordered-box">
         <div tabindex="0">

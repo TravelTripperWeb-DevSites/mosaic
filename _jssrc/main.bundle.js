@@ -9,6 +9,38 @@ function readyDoc(fn) {
 
 readyDoc(function () {
 
+	if (document.getElementById("intro_slide_hover")) {
+		var sliderIntro = tns({
+			container: '#intro_slide_hover',
+			autoplayTimeout: 2000,
+			mode: 'gallery',
+			freezable: false,
+			loop: true,
+			speed: 500,
+			items: 1,
+			autoplay: true
+		});
+
+		var info = sliderIntro.getInfo();
+		sliderIntro.pause();
+		var checkhover = 0;
+		info.container.onmouseover = function () {
+			if (checkhover == 0) {
+				checkhover = 1;
+				sliderIntro.goTo('next');
+			} else {
+				sliderIntro.play();
+			}
+		};
+		info.container.onmouseleave = function (e) {
+			setTimeout(function () {
+				checkhover = 0;
+			}, 500);
+			sliderIntro.pause();
+		};
+		// },1000);
+	}
+
 	if (document.getElementById("close_offer_btn")) {
 		document.getElementById("close_offer_btn").addEventListener('click', function () {
 			var offerBar = document.getElementById("hero-offer");
