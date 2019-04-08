@@ -6,7 +6,7 @@
   "booking_url": "https://www.phgsecure.com/IBE/bookingRedirect.ashx?propertyCode=LAXTM&rateCode=aaa&numberOfNights=2&numberOfAdults=1",
   "short_description": "Enjoy member-only rates when you present a valid AAA membership card.",
   "description": "<p>Mosaic Hotel is the perfect destination to take advantage of your AAA rate discount. Enjoy member-only rates and free cancellation using the promo code AAA when booking.</p>",
-  "terms": "<p>*Must show valid AAA/AARP membership card at check-in. Reservations are non-refundable. Deposit will be charged to your credit card within 24 hours of booking. Promotion cannot be used in conjunction with any other promotions.</p>",
+  "terms": "<p>*Must show valid AAA membership card at check-in. Reservations are non-refundable. Deposit will be charged to your credit card within 24 hours of booking. Promotion cannot be used in conjunction with any other promotions.</p>",
   "image": {
     "name": "Location FW pic@2x",
     "content_type": "image/jpeg",
