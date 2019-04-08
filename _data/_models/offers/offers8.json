@@ -1,12 +1,12 @@
 {
   "order": 7,
-  "name": "AAA / AARP Member Discount",
+  "name": "AAA Hot Deals",
   "tagline": " ",
-  "url_friendly_name": "aaa-aarp-member-discount",
-  "booking_url": "https://gc.synxis.com/rez.aspx?tps=fml&adult=1&step=1&hotel=27262&shell=rLAXTM&chain=10237&template=rLAXTM&avcurrency=USD&=%20numberOfChildren-0&_ga=2.218580570.238037357.1554143398-1299618083.1553280165",
-  "short_description": "Enjoy member-only rates when you present a valid AAA/AARP membership card.",
-  "description": "<p>Mosaic Hotel is the perfect destination to take advantage of your AAA or AARP rate discount. Enjoy member-only rates and free cancellation using the promo code AAA when booking.</p>",
-  "terms": "<p>*Must show valid AAA/AARP membership card at check-in. Reservations are non-refundable. Deposit will be charged to your credit card within 24 hours of booking. Promotion cannot be used in conjunction with any other promotions.</p>",
+  "url_friendly_name": "aaa-member-discount",
+  "booking_url": "https://www.phgsecure.com/IBE/bookingRedirect.ashx?propertyCode=LAXTM&rateCode=aaa&numberOfNights=2&numberOfAdults=1",
+  "short_description": "Enjoy member-only rates when you present a valid AAA membership card.",
+  "description": "<p>Mosaic Hotel is the perfect destination to take advantage of your AAA rate discount. Enjoy member-only rates and free cancellation using the promo code AAA when booking.</p>",
+  "terms": "<p>*Must show valid AAA membership card at check-in. Reservations are non-refundable. Deposit will be charged to your credit card within 24 hours of booking. Promotion cannot be used in conjunction with any other promotions.</p>",
   "image": {
     "name": "Location FW pic@2x",
     "content_type": "image/jpeg",
