@@ -1,5 +1,23 @@
 // Shared Page Elements
 // ==========================================================================
+.home-intro_slider {
+  .home-intro-images {
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .tns-item {
+    -webkit-transition: transform 0s, opacity .6s ease-out !important;
+    -moz-transition: transform 0s, opacity .6s  ease-out;
+    transition: transform 0s, opacity .6s  ease-out !important;
+    &.active {
+      transition: transform 0s, opacity .6s  ease-in !important;
+    }
+  }
+
+  button, .tns-nav, .tns-controls {
+    display: none !important;
+  }
+}
 .tns-outer {
   .tns-nav {
     button {
