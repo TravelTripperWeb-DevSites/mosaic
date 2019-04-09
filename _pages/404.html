@@ -1,0 +1,31 @@
+---
+layout: default
+title_localized:
+ en: Page Not Found
+meta_description:
+permalink_localized:
+ en: /page-not-found/
+meta_tags:
+  robots:
+sitemap:
+  exclude: true
+bannerfill: true
+---
+
+<div class="gallery-intro not-found-wrap bg--light">
+  <h1 class="h1">404 Page Not Found</h1>
+  <p>Return <a href="/">Home</a></p>
+  <ul class="list-unstyled">
+    {% assign items = site.data._menus.main.items %}
+    {% include nav/nav-item-list.html items=items %}
+  </ul>
+
+  {% assign footer-items = site.data._menus.footer.items %}
+  <ul>
+    {% for item in footer-items %}
+    {% assign url = item.url %}
+    {% assign text = item.label %}
+    <li><a href="{{url}}" {% if item.target %}target="{{ item.target }}"{% endif %}>{{text}}</a></li>
+    {% endfor %}
+  </ul>
+</div>
