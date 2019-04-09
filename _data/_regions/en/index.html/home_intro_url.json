@@ -1,6 +1,6 @@
 [
   {
-    "content": "<p><a class=\"link--cta\" href=\"about/\">Learn More</a></p>",
+    "content": "<p><a class=\"link--cta link--cta--black\" href=\"about/\">Learn More</a></p>",
     "_template": "html"
   }
 ]

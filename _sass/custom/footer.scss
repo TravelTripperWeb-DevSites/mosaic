@@ -29,10 +29,26 @@
 
   > img {
     width: 159px;
+    margin-bottom: 15px;
   }
 
-  .fa-circle {
-    color: $light;
+  .fa-stack {
+    width: 32px;
+    height: 32px;
+    margin: 0 10px;
+    background-color: $light;
+    border-radius: 50%;
+    &:hover {
+      background-color: $black;
+      i {
+        color: $white !important;
+      }
+    }
+    i {
+      padding: 7px 0;
+      font-size: 16px;
+      line-height: normal;
+    }
   }
 
   a:hover {
