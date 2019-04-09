@@ -36,7 +36,7 @@
       <div tabindex="0">
         <h2 class="h1 mb-3">Pacific Proximity at its Best</h2>
       </div>
-      <a href="/location/" role="button" class="link--cta">Discover More</a>
+      <a href="/location/" role="button" class="link--cta link--cta--black">Discover More</a>
 		</div>
 	</div>
 </section>

@@ -23,7 +23,7 @@ layout: default
               <h4 class="h4 mb-3">{{ offer.tagline }}</h4>
               <p>{{ offer.short_description }}</p>
               <div class="cta-wrap">
-                <a class="link--cta mr-4" href="/offers/{{ offer.url_friendly_name }}">View Offer</a>
+                <a class="link--cta link--cta--black mr-4" href="/offers/{{ offer.url_friendly_name }}">View Offer</a>
                 <a class="btn btn--tertiary" href="{{ offer.booking_url }}" target="_blank">Book Offer</a>
               </div>
             </div>
@@ -47,7 +47,7 @@ layout: default
       {% endregionblock %}
       <div>
         {% regionblock splash_cta, type:html %}
-          <a href="/rooms" role="button" class="link--cta">View Rooms</a>
+          <a href="/rooms" role="button" class="link--cta link--cta--black">View Rooms</a>
         {% endregionblock %}
       </div>
 		</div>

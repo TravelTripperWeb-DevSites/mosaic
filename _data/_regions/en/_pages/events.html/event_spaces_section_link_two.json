@@ -1,6 +1,6 @@
 [
   {
-    "content": "<p><a class=\"link--cta\" href=\"#rfp-form\">reserve this space</a></p>",
+    "content": "<p><a class=\"link--cta link--cta--black\" href=\"#rfp-form\">reserve this space</a></p>",
     "_template": "html"
   }
 ]

@@ -120,6 +120,7 @@ hr {
 
 .form-control {
   height: auto;
+  font-family: $family-primary;
   font-size: .75rem;
 }
 
@@ -137,9 +138,21 @@ hr {
 
 .form-wrap {
   max-width: 800px;
+  .form-group {
+    margin-bottom: 48px;
+    input, textarea {
+      background-color: transparent !important;
+    }
+    textarea {
+      height: 144px;
+      margin-top: 10px;
+      padding: 10px;
+    }
+  }
 }
 
 .custom-select {
+  background-color: transparent !important;
   -webkit-appearance: none;
   padding-left: 1rem;
 }
@@ -149,6 +162,7 @@ hr {
   font-size: 12px;
   line-height: $base-line-height;
   text-transform: uppercase;
+  background-color: transparent !important;
 }
 
 .review-box {
