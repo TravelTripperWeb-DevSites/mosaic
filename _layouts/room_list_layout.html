@@ -1,0 +1,47 @@
+---
+layout: generic
+---
+
+{% assign rooms = site.data._models.rooms | sort:"order" %}
+{% assign roomCategories = site.data._models.room_categories | sort:"order" %}
+<section>
+  <ul class="nav--filter list-unstyled bg--light d-flex justify-content-center py-3 flex-column flex-lg-row align-items-center">
+    <li>
+      <a data-filter="all" class="filter--option active">All Rooms</a>
+    </li>
+    {% for roomCategory in roomCategories %}
+      <li>
+        <a data-filter="{{roomCategory.name}}" class="filter--option">{{roomCategory.name}}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  <section class="room-list">
+    {% for room in rooms %}
+    <div class="room-listing py-4 filter-item" data-filter="{{room.room_category.name}}">
+      <div class="container align-items-center d-lg-flex">
+        <div class="col-lg-6">
+          <div class="room-listing__image">
+            <img class="objectfit" src="{{room.images[0].url}}" alt="{{room.room_category.name}}">
+          </div>
+        </div>
+        <div class="col-lg-6 p-4">
+          <div>
+            <h3 class="h3">{{room.name}}</h3>
+            <hr class="hr">
+            <!-- <h4 class="h4 mb-3 room-listing__price">tonights rate <span>$275</span></h4> -->
+            <p>{{room.short_description}}</p>
+            <div class="cta-wrap">
+              <a class="link--cta link--cta--black mr-4" href="/rooms/{{room.url_friendly_name}}/">View Room</a>
+              <a class="btn btn--tertiary" href="{{room.booking_url}}" target="_blank">Book Room</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </section>
+</section>
+
+{% include components/special-offers.html %}
+
+{% include components/instagram %}

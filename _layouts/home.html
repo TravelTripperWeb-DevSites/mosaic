@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<div class="home-hero">
+  {% region hero, type:hero %}
+
+  <div class="home-hero__actions-bar" id="hero-offer">
+    <div class="home-hero__actions-bar__wrap">
+      <div class="home-hero__actions-bar__text-group" id="brg-banner">
+        <div class="home-hero__offer-text">
+          {% region hero_offer, type:html %}
+        </div>
+        <div class="home-hero__offer-btn">
+          {% region hero_offer_link, type:html %}
+        </div>
+        <i id="close_offer_btn" class="fas fa-times"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% regionblock intro, type:mixed %}
+  <h1>New Page</h1>
+  <p>Edit your content</p>
+{% endregionblock %}
+
+{{ content }}
+
+{% region outro, type:mixed %}

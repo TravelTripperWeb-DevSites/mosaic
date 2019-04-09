@@ -1,0 +1,111 @@
+.footer-main__wrap {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 400px;
+
+  @include media-breakpoint-up(lg){
+    max-width: none;
+    flex-direction: row;
+  }
+}
+
+.footer-main__newsletter {
+  order: 2;
+  @include media-breakpoint-up(lg){
+    flex: 1 1 33.3%;
+    order: 1;
+
+    .custom-input {
+      width: 65%;
+    }
+  }
+}
+
+.footer-main__social {
+  order: 1;
+  margin: auto;
+  width: 250px;
+
+  > img {
+    width: 159px;
+    margin-bottom: 15px;
+  }
+
+  .fa-stack {
+    width: 32px;
+    height: 32px;
+    margin: 0 10px;
+    background-color: $light;
+    border-radius: 50%;
+    &:hover {
+      background-color: $black;
+      i {
+        color: $white !important;
+      }
+    }
+    i {
+      padding: 7px 0;
+      font-size: 16px;
+      line-height: normal;
+    }
+  }
+
+  a:hover {
+    text-decoration: none;
+
+    .fa-stack-1x {
+      color: $secondary;
+    }
+  }
+
+  @include media-breakpoint-up(lg){
+    order: 2;
+  }
+}
+
+.footer-main__contact {
+  order: 3;
+
+  ul {
+    margin-left: $spacer;
+  }
+
+  @include media-breakpoint-up(lg){
+    flex: 1 1 33.3%;
+  }
+}
+
+.footer-extras a {
+  color: $white;
+
+  &:hover {
+    color: $white;
+    text-decoration: underline;
+  }
+}
+
+.footer-extras {
+  .iprefer-logos {
+    a {
+      &:first-child {
+        img {
+          width: 80px;
+
+          @include media-breakpoint-up(xl) {
+            width: 100px;
+          }
+        }
+      }
+      &:last-child {
+        img {
+          width: 120px;
+
+          @include media-breakpoint-up(xl) {
+            width: 165px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,2 +1,19 @@
+@import "typography";
+@import "buttons";
+@import "components";
+@import "navbar";
+@import "background";
+@import "footer";
+@import "greedy-nav";
+@import "booking-widget";
+
+@import "../mixins";
+@import "../pages/home";
+@import "../pages/about";
 @import "../pages/shared";
 @import "../pages/offers";
+@import "../pages/location";
+@import "../pages/rooms";
+@import "../pages/events";
+@import "../pages/dining";
+@import "../pages/gallery";

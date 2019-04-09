@@ -1,0 +1,33 @@
+{
+  "order": 10,
+  "name": "Preferred Bed And Breakfast",
+  "tagline": " ",
+  "url_friendly_name": "preferred-bed-and-breakfast",
+  "booking_url": "https://gc.synxis.com/rez.aspx?tps=fml&adult=1&step=1&hotel=27262&shell=rLAXTM&chain=10237&template=rLAXTM&avcurrency=USD&=%20numberOfChildren-0&_ga=2.218580570.238037357.1554143398-1299618083.1553280165",
+  "short_description": "Enjoy our best rate and a complimentary daily breakfast for two.",
+  "description": "<p>A bountiful breakfast from The Restaurant at Mosaic offers a variety of favorites to satisfy your morning appetite and jumpstart your day. Enjoy our best rate and a complimentary daily breakfast for two.</p>",
+  "terms": "<p>*All reservations must be guaranteed with a credit card. Cancel 48 hours prior to day of arrival at 12 p.m. local hotel time to avoid penalty charges or forfeiture of deposit.</p>",
+  "image": {
+    "name": "PAGE MUSEUM",
+    "content_type": "image/jpeg",
+    "date_added": "2019-03-29-060103",
+    "url_thumb": "//res.cloudinary.com/traveltripperweb/image/upload/c_fill,g_faces,h_140,w_140/v1553853663/pln73sdd2hizthhs726j.jpg",
+    "url_xsmall": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_300,w_300/v1553853663/pln73sdd2hizthhs726j.jpg",
+    "url_small": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_768,w_768/v1553853663/pln73sdd2hizthhs726j.jpg",
+    "url_medium": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_992,w_992/v1553853663/pln73sdd2hizthhs726j.jpg",
+    "url_large": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_1200,w_1200/v1553853663/pln73sdd2hizthhs726j.jpg",
+    "url_xlarge": "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_1920,w_1920/v1553853663/pln73sdd2hizthhs726j.jpg",
+    "width": 2464,
+    "height": 1632,
+    "format": "jpg",
+    "url": "//res.cloudinary.com/traveltripperweb/image/upload/v1553853663/pln73sdd2hizthhs726j.jpg",
+    "resource_type": "image",
+    "size": 657606,
+    "git_file_name": "_assets/image_data/la-1688210.jpg.json",
+    "path": "//res.cloudinary.com/traveltripperweb/image/upload/v1553853663/pln73sdd2hizthhs726j.jpg",
+    "file_size": null,
+    "alt": "PAGE MUSEUM",
+    "caption": "",
+    "description": ""
+  }
+}

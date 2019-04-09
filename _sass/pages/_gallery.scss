@@ -1,2 +1,123 @@
 // Gallery Page Elements
 // ==========================================================================
+
+.gallery-intro {
+  max-width: 1000px;
+  margin: 124px auto 0;
+  padding: 0 15px;
+  text-align: center;
+
+  .h2 {
+    padding: 28px 0 44px;
+    @include media-breakpoint-up(md) {
+      padding: 48px 0 64px;
+    }
+  }
+}
+
+.filtered-galleries {
+  max-width: 1200px;
+  padding: 0;
+  @include media-breakpoint-up(md) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .gallery-nav {
+    position: relative;
+    width: auto;
+    margin: 0 12px 52px;
+    padding: 0;
+    background-color: $gray-100;
+    @include media-breakpoint-down(sm) {
+      display: inline-block;
+      width: 60%;
+      margin: 0 0 30px;
+      padding: 12px 0;
+    }
+    li {
+      padding: 12px;
+      @include media-breakpoint-down(sm) {
+        padding: 0;
+      }
+      a {
+        display: block;
+        padding: 0 4px;
+        font-size: .75rem;
+        line-height: 22px;
+        color: $black;
+        text-decoration: none;
+
+        @include media-breakpoint-down(sm) {
+          display: none;
+          &.active, &:hover {
+            display: block;
+            border-bottom: 0;
+          }
+        }
+
+      }
+    }
+    .fa-chevron-down {
+      position: absolute;
+      top: 26px;
+      right: 10px;
+      display: inline-block;
+      width: 50px;
+      height: 28px;
+      font-size: 22px;
+      text-align: center;
+      cursor: pointer;
+      @include media-breakpoint-up(md) {
+        display: none;
+      }
+    }
+  }
+  .list-grid {
+    display: inline-block;
+    float: right;
+    width: 39%;
+    height: 77px;
+    text-align: right;
+    background: $gray-100;
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+    a {
+      display: inline-block;
+      margin: 12px 7px;
+      padding: 10px 7px;
+      font-size: 22px;
+      opacity: .75;
+      &.active {
+        opacity: 1;
+      }
+      &:hover {
+        color: $black;
+        opacity: 1;
+      }
+    }
+  }
+  .gallery-items {
+    li {
+      flex: 0 0 100%;
+      max-width: 100%;
+      height: 336px;
+      padding: 0 6px 12px;
+      @include media-breakpoint-up(md) {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+        height: 390px;
+        padding: 12px;
+      }
+    }
+    &.grid-view {
+      li {
+        @include media-breakpoint-down(sm) {
+          flex: 0 0 33.33333%;
+          max-width: 33.33333%;
+          height: 104px;
+        }
+      }
+    }
+  }
+}

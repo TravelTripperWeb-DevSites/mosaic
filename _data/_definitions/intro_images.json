@@ -1,0 +1,10 @@
+{
+  "name": {
+    "required": true
+  },
+  "images": {
+    "type":"image",
+    "multiple": true,
+    "required": true
+  }
+}

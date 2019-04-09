@@ -2,11 +2,258 @@
 layout: generic
 title_localized:
  en: About
- es: Sobre
 meta_description_localized:
-  en: 
+  en:
 permalink_localized:
   en: /about/
 meta_tags:
   robots:
 ---
+
+<section class="bg--light">
+  <div class="container">
+    <div class="row py-2 py-md-5">
+      <div class="col-md-6 objectfit border-box-image">
+        {% regionblock ourstory_image, type: image %}
+        <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1552663289/fkl75c2jkeykeve7yvev.jpg" alt="Our Story">
+        {% endregionblock %}
+      </div>
+      <div class="col-md-6 bordered-box">
+        {% regionblock ourstory_tagline, type: header %}
+        <p class="h4">Our Story</p>
+        {% endregionblock %}
+        <hr/>
+        {% regionblock ourstory_title, type: header %}
+        <h2 class="h2 mb-3">Urban Oasis</h2>
+        {% endregionblock %}
+        {% regionblock ourstory_detail, type: text %}
+        <p>The Mosaic Hotel Beverly Hills, is an exclusive luxury Beverly Hills hotel. Whether you are traveling to Beverly Hills for business or pleasure, you will find a world of comfort, just steps from Rodeo Drive shopping and Beverly Hills attractions. You will find elegant styles, unpretentious service and luxury at the Mosaic.</p>
+        {% endregionblock %}
+        {% regionblock ourstory_url, type: html %}
+        <a href="/contact/" class="link--cta link--cta--black">Contact Us</a>
+        {% endregionblock %}
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container">
+  <div class="row align-items-center py-4 py-md-5">
+    <div class="col-lg-5 mb-3 mb-lg-0 px-3 px-md-5">
+      {% regionblock visualtour_tagline, type: header %}
+      <p class="h4">Visual Tour</p>
+      {% endregionblock %}
+      <hr/>
+      {% regionblock visualtour_title, type: header %}
+      <h2 class="h2 mb-3">Newly-redesigned contemporary luxury</h2>
+      {% endregionblock %}
+      {% regionblock visualtour_detail, type: text %}
+      <p>The most intimate hotel in Beverly Hills and Los Angeles, the Mosaic Hotel offers richly designed rooms and suites only found in true luxury boutique hotels.</p>
+      {% endregionblock %}
+      {% regionblock visualtour_url, type: html %}
+      <a href="/gallery/" class="link--cta link--cta--black">View Gallery</a>
+      {% endregionblock %}
+    </div>
+    <div class="col-lg-7">
+      <div class="row mr-0">
+        <div class="col-7 pr-md-3">
+          <div class="objectfit w-100 h-100">
+            {% regionblock visualtour_image1, type: image %}
+            <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553111600/scjefjqb0t1kmj8jgkrz.jpg">
+            {% endregionblock %}
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="row">
+            <div class="objectfit mb-2 mb-md-3">
+              {% regionblock visualtour_image2, type: image %}
+              <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553111607/kq4jkg878pjehexu2h8f.jpg">
+              {% endregionblock %}
+            </div>
+            <div class="objectfit">
+              {% regionblock visualtour_image3, type: image %}
+              <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553111613/dvgzi4iiwndbpcnvj7j8.jpg">
+              {% endregionblock %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="splash" style="background-image:url('//res.cloudinary.com/traveltripperweb/image/upload/v1553113126/ev8cifrfzefunztwtkao.jpg');">
+	<div class="container">
+    <div class="row">
+  		<div class="review-box text-white col-xl-5">
+        <p class="h4 mb-3">Guest Reviews</p>
+        <hr class="hr--secondary">
+        {% assign reviewz = site.data._models.reviews  | sort:"order" %}
+        <div class="review-box__wrap">
+          {% for review in reviewz %}
+          <div class="review-box__item">
+            <blockquote class="blockquote">{{ review.text }}</blockquote>
+            <p class="h4 small">{{ review.reviewer_name }}{% if review.review_date and review.review_date != '' %}, {{ review.review_date | date: "%-d %B %Y" }}{% endif %}</p>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="review-box__controls" id="reviews-controls">
+          <span class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
+            <i class="fa fa-arrow-left"></i>
+          </span>
+          <div class="custom-control-items__nav">
+            {% for review in reviewz %}
+              <button data-nav="{{forloop.index0}}" tabindex="0" aria-selected="true" aria-controls="tns1-item{{forloop.index0}}" type="button" class="{% if forloop.index == 1 %}tns-nav-active{% endif %}"></button>
+            {% endfor %}
+          </div>
+          <span class="next" data-controls="next" aria-controls="customize" tabindex="-1">
+            <i class="fa fa-arrow-right"></i>
+          </span>
+        </div>
+  		</div>
+    </div>
+	</div>
+</section>
+
+<section class="container pb-3 pb-md-4 amenities-section">
+  <a id="amenities"></a>
+  <p class="h2 text-center py-3 py-md-5">Hotel Amenities</p>
+  <div class="row no-gutters mb-3">
+    <div class="col-md-6 amenities__image">
+      <div class="objectfit w-100 h-100">
+        {% regionblock amenity1_image, type: image %}
+        <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553120266/gya6ilhv30er9ryh8da5.jpg">
+        {% endregionblock %}
+      </div>
+    </div>
+    <div class="col-md-6 bg--light justify-content-center d-flex flex-column p-3 p-md-5">
+      {% regionblock amenity1_title, type: header %}
+      <h3 class="h3">Dining & Bar</h3>
+      {% endregionblock %}
+      <hr class="hr">
+      {% regionblock amenity1_detail, type: text %}
+      <p>Mosaic Hotel Beverly Hills’ Dining Room, with its fresh California cuisine, offers intimate indoor seating or al fresco dining nestled amidst the lush gardens. Open for breakfast, lunch, and dinner, the Dining Room at our Beverly Hills hotel provides a comfortable neighborhood retreat with an elegant lobby bar showcasing the finest liqueurs, wines and cocktails.</p>
+      {% endregionblock %}
+      <div>
+        {% regionblock amenity1_url, type: html %}
+        <a href="/dining/" class="link--cta link--cta--black">Learn More</a>
+        {% endregionblock %}
+      </div>
+    </div>
+  </div>
+  <div class="row no-gutters mb-3">
+    <div class="col-md-6 bg--light justify-content-center d-flex flex-column p-3 p-md-5 order-2 order-md-1">
+      {% regionblock amenity2_title, type: header %}
+      <h3 class="h3">Pool</h3>
+      {% endregionblock %}
+      <hr class="hr">
+      {% regionblock amenity2_detail, type: text %}
+      <p>Mosaic Hotel in Beverly Hills’ refreshed pool area with its sleek white furniture, cabanas and cozy fire pit delivers an inspiring setting to swim or unwind.</p>
+      {% endregionblock %}
+    </div>
+    <div class="col-md-6 order-1 order-md-2 amenities__image">
+      <div class="objectfit w-100 h-100">
+        {% regionblock amenity2_image, type: image %}
+        <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553120266/qddkibckaq63vxg5klao.jpg">
+        {% endregionblock %}
+      </div>
+    </div>
+  </div>
+  <div class="row no-gutters mb-3">
+    <div class="col-md-6 amenities__image">
+      <div class="objectfit w-100 h-100">
+        {% regionblock amenity3_image, type: image %}
+        <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553179347/hjg0hmaoxxq8y6zo9j55.jpg" class="objectfit">
+        {% endregionblock %}
+      </div>
+    </div>
+    <div class="col-md-6 bg--light justify-content-center d-flex flex-column p-3 p-md-5">
+      {% regionblock amenity3_title, type: header %}
+      <h3 class="h3">In-room Features</h3>
+      {% endregionblock %}
+      <hr class="hr">
+      {% regionblock amenity3_detail, type: text %}
+      <ul>
+        <li>Flat Panel HD LCD televisions</li>
+        <li>300-thread count linens</li>
+        <li>Bamboo terry & plush spa collection robes</li>
+        <li>Goose down blankets</li>
+        <li>BVLGARI® bath products</li>
+        <li>Rainfall showerheads</li>
+        <li>Minibar and Honor Bar</li>
+        <li>Complimentary electronic laptop safe</li>
+        <li>Personal Nespresso &reg; machine</li>
+      </ul>
+      {% endregionblock %}
+    </div>
+  </div>
+  <div class="row no-gutters mb-3">
+    <div class="col-md-6 bg--light justify-content-center d-flex flex-column p-3 p-md-5 order-2 order-md-1">
+      {% regionblock amenity4_title, type: header %}
+      <h3 class="h3">Hotel Features</h3>
+      {% endregionblock %}
+      <hr class="hr">
+      {% regionblock amenity4_detail, type: text %}
+      <ul>
+        <li>Complimentary high speed Internet access</li>
+        <li>Complimentary bike rental</li>
+        <li>Valet hours from 7am-11pm, $42 per night for overnight parking</li>
+        <li>The Mosaic Hotel is proudly dog-friendly,
+              and gladly welcomes dogs that weigh up to
+              40 pounds. Guests with dogs are required
+              to pay a non-refundable $150 deposit
+              per stay.</li>
+      </ul>
+      {% endregionblock %}
+    </div>
+    <div class="col-md-6 order-1 order-md-2 amenities__image">
+      <div class="objectfit w-100 h-100">
+        {% regionblock amenity4_image, type: image %}
+        <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553179347/n4ock9nlyz39fnarsply.jpg" >
+        {% endregionblock %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="events--callout bg--dark">
+  <div class="container pb-3 pb-md-5">
+    <section class="row py-3 py-md-5">
+      <div class="col-md-4 d-flex justify-content-md-center text-white">
+        <div class="d-inline-block text-md-right pb-md-0 pb-3">
+          {% regionblock event_tagline, type: header %}
+          <h5 class="h4 with-line">Special Events</h5>
+          {% endregionblock %}
+          {% regionblock event_title, type: header %}
+          <h4 class="h2">Let's Celebrate!</h4>
+          {% endregionblock %}
+        </div>
+      </div>
+      <div class="col-md-8 px-2 px-xl-5 text-white">
+        {% regionblock event_detail, type: text %}
+        <p>Mosaic Hotel Beverly Hills’ Dining Room, with its fresh California cuisine, offers intimate indoor seating or in our outdoor privately heated cabanas.</p>
+        {% endregionblock %}
+        {% regionblock event_url, type: html %}
+        <a href='/restaurant/' class="link--cta text-white">Learn More</a>
+        {% endregionblock %}
+      </div>
+    </section>
+    <section class="row">
+      <div class="col-7">
+        <div class="objectfit w-100 h-100">
+          {% regionblock event_img1, type: image %}
+          <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553181569/za3rxfq54l2hhvbfzebs.jpg">
+          {% endregionblock %}
+        </div>
+      </div>
+      <div class="col-5">
+        <div class="objectfit w-100 h-100">
+          {% regionblock event_img2, type: image %}
+          <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553181573/saoz47lpo4wq1shqxxl1.jpg">
+          {% endregionblock %}
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+
+{% include components/instagram %}

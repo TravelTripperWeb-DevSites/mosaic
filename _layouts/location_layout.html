@@ -1,0 +1,128 @@
+---
+layout: generic
+---
+
+<section class="bg--light">
+  <div class="container">
+    <div class="row align-items-center py-2 py-md-4">
+      <div class="col-md-6 objectfit">
+        {% regionblock location_intro_img, type: image %}
+        <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553634451/cojnfbtim7fsves3t03x.jpg" class="objectfit">
+        {% endregionblock %}
+      </div>
+      <div class="col-md-6 pt-3 pt-md-0">
+        {% regionblock location_intro_subheading, type: header %}
+        <p class="h4">You've Arrived</p>
+        {% endregionblock %}
+        <hr/>
+        {% regionblock location_intro_heading, type: header %}
+        <h2 class="h2 mb-3">Our Beverly Hills Hotel Neighborhood</h2>
+        {% endregionblock %}
+        {% regionblock location_intro_content, type: html %}
+        <p>From popular destinations to world-class upscale shopping, Beverly Hills is at your doorstep when staying at Mosaic Hotel. Only steps from the shops of Rodeo Drive, Beverly Gardens Park, and Century City, Mosaic Hotel is easily accessible from the area’s top attractions. Mosaic Hotel is located in the heart of Beverly Hills and only a short car ride away from Hollywood, Universal Studios, Venice Beach, and the Santa Monica Pier.</p>
+        <p>At our Beverly Hills hotel, you get high quality accommodations at the best value. Our staff will help personalize each trip and help you get to where you need to go. Plan your next luxury stay at the Mosaic Hotel and take on the town.  with our Destination Guide.</p>
+        {% endregionblock %}
+        {% regionblock location_intro_link, type: html %}
+        <a href="/contact/" class="link--cta link--cta--black">Contact Us</a>
+        {% endregionblock %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg--light py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 align-items-center d-flex">
+        <p class="blockquote border--left">The Pacific Ocean & the Hollywood Hills are only 15 minutes away</p>
+      </div>
+      <div class="col-lg-9">
+        <div class="row">
+          <div class="col-md-7">
+            <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553636397/a3pdfxfow4wp5vatkcfo.jpg" class="objectfit">
+          </div>
+          <div class="col-md-5">
+            <img src="//res.cloudinary.com/traveltripperweb/image/upload/v1553636397/dv0aimptnhndphs7uywe.jpg" class="objectfit">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="c-map">
+  <a id="map"></a>
+  <div class="c-map__headings">
+      {% region location_map_detail, type:html %}
+  </div>
+  <div class="c-map__box">
+    <div class="c-map__box__tabs">
+      <ul>
+        <li data-category="attraction" class="attractions-filter">
+          <span class="icons attractions-icon"></span>
+          Attractions
+        </li>
+        <!-- <li data-category="dining" class="attractions-filter" >
+          <span class="icons dining-icon"></span>
+          Dining
+        </li> -->
+        <li data-category="entertainment" class="attractions-filter">
+          <span class="icons entertain-icon"></span>
+          Entertainment
+        </li>
+        <li data-category="shopping" class="attractions-filter">
+          <span class="icons shop-icon"></span>
+          Shopping
+        </li>
+      </ul>
+    </div>
+    <div id="leafletmap" class="map" data-attractions="show"></div>
+  </div>
+</div>
+
+<section class="splash splash--bordered" style="background-image:url('//res.cloudinary.com/traveltripperweb/image/upload/v1553635760/jtkhfgyg0wefbbhdraxx.jpg');">
+	<div class="container">
+		<div class="splash__content">
+      {% regionblock splash_subtitle, type:header %}
+        <h4 class="h4 mb-3">Dine & Drink</h4>
+      {% endregionblock %}
+      <hr class="hr">
+      {% regionblock splash_title, type:header %}
+        <h2 class="h1 mb-3">Join Us for<br>Apre´ Spree</h2>
+      {% endregionblock %}
+      <div>
+        {% regionblock splash_cta, type:html %}
+          <a href="/dining/" role="button" class="link--cta link--cta--black">Learn More</a>
+        {% endregionblock %}
+      </div>
+		</div>
+	</div>
+</section>
+
+{% include components/instagram %}
+
+
+<script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"></script>
+
+<script type="text/javascript">
+{% assign mapitems = site.data._models.attractions | sort: 'order' %}
+  var attractions = [];
+  attractions = [
+   {% for mapitem in mapitems %}[ '{{ mapitem.name | escape | replace :'&#39;',''}}', {{ mapitem.location.latitude }}, {{ mapitem.location.longitude }}, '{{ mapitem.category }}','{{ mapitem.location.address }}','{{ mapitem.location.google_place.website }}','{{ mapitem.image.url_thumb }}'] {% unless forloop.last %},{% endunless %}{% endfor %} ];
+</script>
+<script src="/assets/js/leaflet-plugin.js"></script>
+<script type="text/javascript">
+   var leaflet = LeafletMap({
+     target: document.getElementById('leafletmap'),
+     hotelTitle: '{{ site.data.hotel_settings.name }}',
+     hotelAddress: '{{ site.data.hotel_settings.address.street1 }}, {{ site.data.hotel_settings.address.city }}, {{ site.data.hotel_settings.address.state }}',
+     hotelLat: {{ site.data.hotel_settings.latitude }},
+     hotelLong: {{ site.data.hotel_settings.longitude }},
+     hotelMarker: '/assets/img/marker.png',
+     markerSize: [36, 36],
+     zoom: 13,
+     getDirectionBtn: true,
+     attractionsList: attractions
+   });
+   leaflet.init();
+</script>

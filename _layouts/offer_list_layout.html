@@ -1,0 +1,57 @@
+---
+layout: default
+---
+
+{% region hero, type:hero %}
+
+{% assign offers = site.data._models.offers | sort: "order" %}
+<section class="offers">
+  {% for offer in offers %}
+  <div class="offers__wrap">
+    <div class="container py-4 py-md-5">
+      <div class="row">
+        <div class="offer-listing align-items-center d-lg-flex">
+          <div class="col-lg-6">
+            <div class="offer-listing__image">
+              <img class="objectfit" src="{{ offer.image.url_large }}" alt="{{ offer.image.alt }}">
+            </div>
+          </div>
+          <div class="col-lg-6 pt-4 pr-4 pl-4 pb-0 pb-md-4">
+            <div>
+              <h3 class="h3">{{ offer.name }}</h3>
+              <hr class="hr">
+              <h4 class="h4 mb-3">{{ offer.tagline }}</h4>
+              <p>{{ offer.short_description }}</p>
+              <div class="cta-wrap">
+                <a class="link--cta link--cta--black mr-4" href="/offers/{{ offer.url_friendly_name }}">View Offer</a>
+                <a class="btn btn--tertiary" href="{{ offer.booking_url }}" target="_blank">Book Offer</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</section>
+
+<section class="splash splash--bordered" style="background-image:url('//res.cloudinary.com/traveltripperweb/image/upload/v1553288319/up0bc07d1vmeuyyt7r03.jpg');">
+	<div class="container">
+		<div class="splash__content">
+      {% regionblock splash_subtitle, type:header %}
+        <h4 class="h4 mb-3">Rooms & Suites</h4>
+      {% endregionblock %}
+      <hr class="hr">
+      {% regionblock splash_title, type:header %}
+        <h2 class="h1 mb-3">Sink into newly-<br>renovated luxury</h2>
+      {% endregionblock %}
+      <div>
+        {% regionblock splash_cta, type:html %}
+          <a href="/rooms" role="button" class="link--cta link--cta--black">View Rooms</a>
+        {% endregionblock %}
+      </div>
+		</div>
+	</div>
+</section>
+
+{% include components/instagram %}

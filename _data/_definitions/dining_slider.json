@@ -1,0 +1,11 @@
+{
+  "image": {
+    "required": true,
+    "type": "image",
+    "instructions": "Image dimensions should be 1310px X 700px and file size should not exceed 200kb."
+  },
+  "order": {
+    "required": true,
+    "type": "order"
+  }
+}

@@ -1,5 +1,5 @@
 //    //grays
-//    $gray-100: #f8f9fa !default;
+   $gray-100: #f7f7f7 !default;
 //    $gray-200: #e9ecef !default;
 //    $gray-300: #dee2e6 !default;
 //    $gray-400: #ced4da !default;
@@ -11,9 +11,11 @@
 //
 //    // colors
 //    $primary: #007bff !default;
-//    $secondary: $gray-600;
-//    $black: #16141a;
-//    $white: #fff;
+   $secondary: #d5d2a8;
+   $black: #161a1b;
+   $dark-text: #29384a;
+   $white: #fff;
+   $light-grey: #626c75;
 //
 //    $green: #28a745 !default;
 //    $cyan: #17a2b8 !default;
@@ -24,7 +26,7 @@
 //    $info: $cyan !default;
 //    $warning: $yellow !default;
 //    $danger: $red !default;
-//    $light: $gray-100 !default;
+   $light: $gray-100 !default;
 //    $dark: $gray-800 !default;
 //
 //    $theme-colors: () !default;
@@ -43,7 +45,7 @@
 //    );
 //
 //    $body-bg: $white;
-//    $base-text-color: $black;
+   $base-text-color: $black;
 //    $secondary-hover: #1e1c23;
 //    $background-gray: $gray-100;
 //    $footer-color: $black;
@@ -61,20 +63,20 @@
 //    $yiq-text-dark: $gray-900 !default;
 //    $yiq-text-light: $white !default;
 //
-//    $link-color: $base-text-color;
+   $link-color: $base-text-color;
 //    $link-decoration: none !default;
 //    $link-hover-color: $primary;
 //    $link-hover-decoration: underline !default;
 //
 //    // Fonts
-//    $family-primary: "Open Sans", sans-serif;
-//    $family-secondary: "Playfair Display", serif;
+   $family-primary: "Gotham A", "Gotham B";
+   $family-secondary: "Playfair Display", serif;
 //    $family-terciary: "Roboto", sans-serif;
 //
-//    $base-font-color: $base-text-color;
-//    $base-body-font: $family-primary;
-//    $base-font-size: 1rem; //1rem = 16px
-//    $base-line-height: 1.5;
+   $base-font-color: $base-text-color;
+   $base-body-font: $family-primary;
+   $base-font-size: 1rem; //1rem = 16px
+   $base-line-height: 1.5;
 //    $font-size-lg: ($base-font-size * 1.25) !default;
 //    $font-size-sm: ($base-font-size * 0.875) !default;
 //    $scale-factor: 1.25; // Major Third
@@ -124,7 +126,7 @@
 //    $grid-columns: 12 !default;
 //    $grid-gutter-width: 30px !default;
 //
-//    $spacer: $base-line-height * 1rem !default;
+   $spacer: $base-line-height * 1rem !default;
 //    $spacers: () !default;
 //    $spacers: map-merge(
 //      (
@@ -166,12 +168,12 @@
 //
 //    $border-width: 1px !default;
 //    $border-color: $base-text-color;
-//    $border-radius: 0.25rem !default;
+   $border-radius: 0 !default;
 //
-//    $input-btn-padding-y: 0.5rem !default;
-//    $input-btn-padding-x: 1rem !default;
-//    $input-btn-font-size: $base-font-size !default;
-//    $input-btn-line-height: $base-line-height !default;
+   $input-btn-padding-y: 0rem !default;
+   $input-btn-padding-x: 2rem !default;
+   $input-btn-font-size: 0.75rem !default;
+   $input-btn-line-height: 3.2 !default;
 //
 //    $input-btn-focus-width: 0.2rem !default;
 //    $input-btn-focus-color: rgba($border-color, 0.25) !default;
@@ -185,9 +187,9 @@
 //    $component-active-bg:         theme-color("primary") !default;
 //
 //    //buttons
-//    $btn-letter-spacing: normal;
+   $btn-letter-spacing: 1px;
 //    $btn-font-size: $input-btn-font-size !default;
-//    $btn-font-weight: 400 !default;
+   $btn-font-weight: 700 !default;
 //    $btn-line-height: $input-btn-line-height;
 //    $btn-border-radius: $border-radius !default;
 //    $btn-border-width: $input-btn-border-width;
@@ -212,7 +214,7 @@
 //
 //    $input-padding-y: $input-btn-padding-y !default;
 //    $input-padding-x: $input-btn-padding-x !default;
-//    $input-font-size: $base-font-size !default;
+   $input-font-size: .75rem;
 //    $input-line-height: $input-btn-line-height !default;
 //    $input-font-weight: 400 !default;
 //
@@ -220,9 +222,9 @@
 //    $input-disabled-bg: $gray-200 !default;
 //
 //    $input-color: $gray-700 !default;
-//    $input-border-color: $gray-400 !default;
+   $input-border-color: $black !default;
 //    $input-border-width: $input-btn-border-width !default;
-//    $input-box-shadow: inset 0 1px 1px rgba($black, 0.075) !default;
+   $input-box-shadow: none !default;
 //
 //    $input-border-radius: $border-radius !default;
 //
@@ -230,7 +232,7 @@
 //    $input-focus-border-color: $gray-600 !default;
 //    $input-focus-color: $input-color !default;
 //    $input-focus-width: $input-btn-focus-width !default;
-//    $input-focus-box-shadow: $input-btn-focus-box-shadow !default;
+   $input-focus-box-shadow: none !default;
 //
 //    $input-placeholder-color: $gray-600 !default;
 //    $input-plaintext-color: $base-text-color !default;
@@ -307,7 +309,7 @@
 //    $custom-select-padding-y:           $input-btn-padding-y !default;
 //    $custom-select-padding-x:           $input-btn-padding-x !default;
 //    $custom-select-font-size:           $input-font-size !default;
-//    $custom-select-height:              $input-height !default;
+   $custom-select-height:              auto !default;
 //    $custom-select-indicator-padding:   1rem !default; // Extra padding to account for the presence of the background-image based indicator
 //    $custom-select-font-weight:         $input-font-weight !default;
 //    $custom-select-line-height:         $input-line-height !default;
@@ -320,18 +322,18 @@
 //    $custom-select-indicator:           str-replace(url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='#{$custom-select-indicator-color}' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e"), "#", "%23") !default;
 //    $custom-select-background:          $custom-select-indicator no-repeat right $custom-select-padding-x center / $custom-select-bg-size !default; // Used so we can have multiple background elements (e.g., arrow and feedback icon)
 //
-//    $custom-select-feedback-icon-padding-right: $input-height-inner * 3 / 4 + $custom-select-padding-x + $custom-select-indicator-padding !default;
+   $custom-select-feedback-icon-padding-right: 1rem !default;
 //    $custom-select-feedback-icon-position:      center right ($custom-select-padding-x + $custom-select-indicator-padding) !default;
 //    $custom-select-feedback-icon-size:          ($input-height-inner / 2) ($input-height-inner / 2) !default;
 //
 //    $custom-select-border-width:        $input-border-width !default;
 //    $custom-select-border-color:        $input-border-color !default;
-//    $custom-select-border-radius:       $border-radius !default;
-//    $custom-select-box-shadow:          inset 0 1px 2px rgba($black, .075) !default;
+   $custom-select-border-radius:       0 !default;
+   $custom-select-box-shadow:          none !default;
 //
-//    $custom-select-focus-border-color:  $input-focus-border-color !default;
+  //  $custom-select-focus-border-color:  $input-focus-border-color !default;
 //    $custom-select-focus-width:         $input-focus-width !default;
-//    $custom-select-focus-box-shadow:    0 0 0 $custom-select-focus-width rgba($custom-select-focus-border-color, .5) !default;
+   $custom-select-focus-box-shadow:    none !default;
 //
 //    $custom-range-track-width:          100% !default;
 //    $custom-range-track-height:         .5rem !default;
@@ -426,15 +428,15 @@
 //    //navbar
 //    $navbar-z: 30 !default;
 //    $navbar-fixed-z: 30 !default;
-//    $navbar-main-height: 124px;
+   $navbar-main-height: 168px;
 //    $navbar-device-height: 88px;
-//    $navbar-background: transparent;
-//    $navbar-sticky-background: $white;
+  $navbar-background: transparent;
+  $navbar-sticky-background: $white;
 //    $navbar-padding-y: ($spacer / 2) !default;
 //    $navbar-padding-x: $spacer !default;
-//    $navbar-link-font-size: 0.875rem;
-//    $navbar-link-color: $link-color;
-//    $navbar-link-hover: $link-hover-color;
+  $navbar-link-font-size: 0.75rem;
+  $navbar-link-color: $white;
+  $navbar-link-hover: $link-color;
 //    $navbar-group-font-size: 0.875rem;
 //    $navbar-group-color: $link-color;
 //    $navbar-group-hover: $link-hover-color;
@@ -446,11 +448,11 @@
 //    $navbar-group-hover-decoration: none !default;
 //    $navbar-sticky-link-color: $black;
 //    $navbar-sticky-link-decoration: none !default;
-//    $navbar-sticky-link-hover-decoration: underline !default;
-//    $navbar-sticky-link-hover: $primary;
+   $navbar-sticky-link-hover-decoration: none;
+   $navbar-sticky-link-hover: $black;
 //
 //    $nav-link-padding-y: $spacer !default;
-//    $nav-link-padding-x: 2rem !default;
+   $nav-link-padding-x: $spacer !default;
 //
 //    $subnav-item-padding-y: 0 !default;
 //    $subnav-item-padding-x: 0 !default;

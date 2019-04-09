@@ -1,0 +1,37 @@
+{
+  "name": {
+    "required": true
+  },
+  "tagline": {
+    "required": true
+  },
+  "url_friendly_name": {
+    "required": true,
+    "label": "URL Friendly Name",
+    "type": "url_slug"
+  },
+  "booking_url": {
+    "required": true,
+    "label": "Booking URL"
+  },
+  "short_description": {
+    "required": true,
+    "type": "text"
+  },
+  "description": {
+    "required": true,
+    "type": "richtext"
+  },
+  "terms": {
+    "required": true,
+    "type": "richtext"
+  },
+  "image": {
+    "required": true,
+    "type": "image"
+  },
+  "order": {
+    "type": "integer",
+    "required": true
+  }
+}
