@@ -1,12 +1,12 @@
 ---
-title: Bedrock
+title: Mosaic Hotel
 title_separator: "|"
-name: Hotel Property Name
-description: Site default description.
-url:
+name: Mosiac Hotel
+description: The Mosaic is an intimate boutique LA hotel located in the heart of Beverly Hills featuring an ellegant and luxurious setting for the perfect weekend getaway.
+url: https://www.mosaichotel.com
 repository:
-booking_url: "https://gc.synxis.com/rez.aspx?Hotel=68047&Chain=5415"
-booking_link: "https://gc.synxis.com/rez.aspx"
+booking_url: https://gc.synxis.com/rez.aspx?Hotel=68047&Chain=5415
+booking_link: https://gc.synxis.com/rez.aspx
 hotel: 27262
 chain: 10237
 default_lang: en
