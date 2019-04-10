@@ -55,6 +55,18 @@
 }
 .rooms-slider-controls-wrap {
   max-width: 1064px;
+  .slide-next,
+  .slide-prev {
+    span {
+      &:after {
+        border-top: 1px solid $white;
+      }
+      &:before {
+        border-top: 1px solid $white;
+        border-left: 1px solid $white;
+      }
+    }
+  }
 }
 .custom-control-items {
   position: relative;
@@ -115,5 +127,64 @@
 .not-found-wrap {
   .nav__link {
     color: $black;
+  }
+}
+
+.slide-next,
+.slide-prev {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  text-align: right;
+
+  span {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 13px;
+    margin-left: auto;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+
+    &:after {
+      position: absolute;
+      top: 6px;
+      left: 0;
+      width: 100%;
+      content: '';
+      border-top: 1px solid $black;
+    }
+
+    &:before {
+      position: absolute;
+      left: 3px;
+      display: block;
+      width: 13px;
+      height: 13px;
+      content: '';
+      border-top: 1px solid $black;
+      border-left: 1px solid $black;
+      transform: rotate(-45deg);
+    }
+
+    &:hover {
+      width: 36px;
+    }
+  }
+
+  &.slide-next {
+    text-align: left;
+
+    span {
+      margin-right: auto;
+      margin-left: 0;
+
+      &:before {
+        right: 3px;
+        left: auto;
+        transform: rotate(135deg);
+      }
+    }
   }
 }
