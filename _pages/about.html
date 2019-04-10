@@ -97,17 +97,13 @@ meta_tags:
           {% endfor %}
         </div>
         <div class="review-box__controls" id="reviews-controls">
-          <span class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
-            <i class="fa fa-arrow-left"></i>
-          </span>
+          <div class="prev slide-prev" data-controls="prev" aria-controls="customize" tabindex="-1"><span></span></div>
           <div class="custom-control-items__nav">
             {% for review in reviewz %}
               <button data-nav="{{forloop.index0}}" tabindex="0" aria-selected="true" aria-controls="tns1-item{{forloop.index0}}" type="button" class="{% if forloop.index == 1 %}tns-nav-active{% endif %}"></button>
             {% endfor %}
           </div>
-          <span class="next" data-controls="next" aria-controls="customize" tabindex="-1">
-            <i class="fa fa-arrow-right"></i>
-          </span>
+          <div class="next slide-next" data-controls="next" aria-controls="customize" tabindex="-1"><span></span></div>
         </div>
   		</div>
     </div>

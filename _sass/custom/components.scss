@@ -198,6 +198,18 @@ hr {
       list-style: none;
     }
   }
+  .slide-next,
+  .slide-prev {
+    span {
+      &:after {
+        border-top: 1px solid $white;
+      }
+      &:before {
+        border-top: 1px solid $white;
+        border-left: 1px solid $white;
+      }
+    }
+  }
 }
 
 .blockquote {
