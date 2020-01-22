@@ -4,6 +4,6 @@
 - a-list/: ''
 - contact-us/: contact/
 - test-(.*):
-  to: result-$1
-  code: 302
-  type: regex
+    to: result-$1
+    code: 302
+    type: regex
