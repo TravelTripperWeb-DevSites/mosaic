@@ -6,7 +6,7 @@
     to: new-path
     code: '301'
     type: regex
-- old-path2/.*(\?.+)?:
+- old-path2/[^\?]*(\?.+)?:
     to: new-path2$1
     code: '302'
     type: regex
