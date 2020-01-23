@@ -8,7 +8,7 @@
     type: regex
 - old-path2/.*(\?.+)?:
     to: new-path2$1
-    code: '301'
+    code: '302'
     type: regex
 - old-dynamic-path/(.*):
     to: new-dynamic-path/$1
