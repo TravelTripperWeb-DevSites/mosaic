@@ -1,1 +1,15 @@
---- []
+---
+- old-url:
+    to: new-url
+    code: '301'
+- old-path/.*:
+    to: new-path
+    code: '301'
+    type: regex
+- old-path2/.*(\?.+)?:
+    to: new-path2$1
+    code: '301'
+    type: regex
+- old-dynamic-path/(.*):
+    to: new-dynamic-path/$1
+    code: '301'
