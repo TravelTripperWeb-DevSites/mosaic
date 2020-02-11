@@ -1,0 +1,10 @@
+items:
+  - id: __pages__
+    label: Pages
+  - id: x
+    label: Room Content
+    items:
+      - id: rooms
+        label: Rooms
+      - id: room_bed_types
+        label: Bed Types
