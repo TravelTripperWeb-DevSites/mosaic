@@ -8,6 +8,9 @@
     {
       "localizable": true
     },
+    "test": {
+        "multiple": true
+    },
     "featured": {
       "type": "boolean"
     },
