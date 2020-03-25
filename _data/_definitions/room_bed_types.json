@@ -2,5 +2,8 @@
   "name": {
     "required": true,
     "localizable": true
+  },
+  "my_order": {
+      "type": "integer"
   }
 }
