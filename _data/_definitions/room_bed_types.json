@@ -4,6 +4,6 @@
     "localizable": true
   },
   "my_order": {
-      "type": "integer"
+      "type": "order"
   }
 }
