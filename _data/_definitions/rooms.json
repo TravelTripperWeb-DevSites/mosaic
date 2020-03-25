@@ -30,7 +30,7 @@
     "type": "model",
     "display_field": "name",
     "model_name": "room_bed_types",
-    "order_field": "my_order"
+    "order_field": "name"
   },
   "max_guests": {
     "required": true,
