@@ -13,6 +13,7 @@ chain: 10237
 default_lang: en
 languages:
 - en
+- it
 include:
 - _ttio_templates/bedrock/_permanent_pages
 - _pages
