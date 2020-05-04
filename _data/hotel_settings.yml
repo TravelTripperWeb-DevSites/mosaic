@@ -19,6 +19,7 @@ _ttweb_plugins_version: v3.2.2
 __EDITABLE_FIELDS__:
   name:
     required: true
+    localizable: true
   logo:
     type: image
   email:
