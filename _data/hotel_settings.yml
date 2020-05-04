@@ -62,5 +62,10 @@ logo:
   resource_type: image
   size: 18372
   path: "//res.cloudinary.com/traveltripperweb/image/upload/v1551973033/mdqklsrfuatzn3guxbec.png"
-  file_size:
+  file_size: 
   alt: Logo WhiteMosaic@2x
+  caption: ''
+  description: ''
+name_localized:
+  en: Mosaic Hotel
+  it: La Mosaic Hotel
