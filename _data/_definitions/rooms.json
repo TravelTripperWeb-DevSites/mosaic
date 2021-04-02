@@ -23,7 +23,8 @@
     "required": true,
     "type": "text",
     "multiple": true,
-    "label": "Amenities"
+    "label": "Amenities",
+    "instructions": "Test instruction content to make sure styling works correctly"
   },
   "bed_types": {
     "required": true,
