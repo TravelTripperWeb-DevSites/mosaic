@@ -47,7 +47,8 @@
   "images": {
     "required": true,
     "type": "image",
-    "multiple": true
+    "multiple": true,
+    "instructions": "Image test instruction content to test layout options"
   },
   "booking_url": {
     "required": true,
