@@ -23,7 +23,8 @@
     "required": true,
     "type": "text",
     "multiple": true,
-    "label": "Amenities"
+    "label": "Amenities",
+    "instructions": "Test instruction content to make sure styling works correctly"
   },
   "bed_types": {
     "required": true,
@@ -46,7 +47,8 @@
   "images": {
     "required": true,
     "type": "image",
-    "multiple": true
+    "multiple": true,
+    "instructions": "Image test instruction content to test layout options. This text needs to be long for layout testing."
   },
   "booking_url": {
     "required": true,
